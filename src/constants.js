@@ -1,8 +1,8 @@
 const TEAM_MEMBERS = [
   {
     id: "m1",
-    image: "/src/assets/about-us/azar.png",
-    description: "/src/assets/about-us/azar_description.png",
+    image: "/assets/about-us/azar.png",
+    description: "/assets/about-us/azar_description.png",
   },
   {
     id: "m2",
