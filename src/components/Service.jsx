@@ -3,7 +3,7 @@ import React from "react";
 const Service = ({ image, text, title }) => {
   return (
     <div
-      className=" hover:scale-105 hover:shadow-xl duration-300"
+      className=" hover:scale-105 duration-300"
       
       style={{
        
