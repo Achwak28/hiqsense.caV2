@@ -1,0 +1,177 @@
+.about-hero-section {
+  background-image: url("../../assets/about-us/about-bg.png");
+  height: fit-content;
+}
+
+
+.about-hero-section-container {
+  background-image: url("../../assets/about-us/about-bg.png");
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.text-transform {
+  text-align: left;
+}
+
+.line {
+  width: 16.25rem;
+  border: 2px;
+}
+
+.about-services {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../../assets/about-us/bg-grid2.png");
+  padding: 4rem 3rem;
+}
+
+.about-services .about-services-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  align-items: flex-start;
+}
+.btn-services-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-services .about-services-right {
+  display: flex;
+}
+
+.about-achievements {
+  height: 52rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.achievements-delivery {
+  position: absolute;
+  top: 0;
+  left: 7.81rem;
+}
+.achievements-legacy {
+  margin-top: 17.5rem;
+}
+.achievements-relationship {
+  position: absolute;
+  top: 0;
+  left: 43.87rem;
+}
+.achievements-relationship-text {
+  position: absolute;
+  top: 48%;
+  left: 63.81rem;
+}
+.about-team {
+  background-image: url("../../assets/about-us/team-bg.png");
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.about-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/about-us/bg-values.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 60.98rem;
+}
+.about-values .pseudo {
+  width: 5.25rem;
+  height: 0.625rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.about-values .about-features {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-hero-section {
+    min-height: 100vh !important;
+   
+  }
+
+  .about-hero-section-container {
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: fit-content;
+  }
+  .hero-about-text {
+    margin-top: 2rem !important;
+  }
+
+  .hero-about-content {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .transform-text {
+    text-align: center;
+  }
+  .line {
+    margin: auto;
+  }
+  .about-services {
+    flex-direction: column;
+  }
+  .about-services .about-services-right {
+    flex-direction: column;
+    margin: auto;
+  }
+  .about-services .about-services-left {
+    text-align: center;
+  }
+
+  .about-services .about-services-left .services-btn {
+    width: 100% !important;
+  }
+  .btn-services-container {
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .about-achievements {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+  .achievements-legacy {
+    margin-top: 2rem;
+  }
+  .about-values {
+    background-position: none;
+    height: fit-content;
+  }
+
+  .about-values .about-features {
+    flex-direction: column;
+  }
+  .text-transform {
+    text-align: center;
+  }
+  .addWidth {
+    width: 43.75rem;
+  }
+  .about-hero-text{
+    margin:2rem auto !important;
+  }
+}
