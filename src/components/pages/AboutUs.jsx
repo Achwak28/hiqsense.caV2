@@ -193,7 +193,7 @@ const AboutUs = () => {
         </div>
 
         <img className="pseudo" src={pseudo} alt="pseudo" />
-        <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
+        <div className="about-features ">
           {features.map((feature) => (
             <Feature
               key={feature.id}
