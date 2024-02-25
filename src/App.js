@@ -8,6 +8,7 @@ import "@fontsource/roboto/700.css";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutUs from "./components/pages/AboutUs";
 import React from "react";
 import theme from "./Theme";
 import { ThemeProvider } from "@mui/material/styles";
@@ -18,6 +19,7 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
           <Header />
+           <AboutUs />
           # add your pages here
           <Footer />
         </BrowserRouter>
