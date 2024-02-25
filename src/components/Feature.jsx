@@ -10,7 +10,7 @@ const Feature = ({ image, text, title }) => {
         width: "19.19rem",
         height: "14rem",
         margin: "2rem",
-        rotate: "-3deg",
+        transform: 'skew(0, -5deg)',
         borderRadius: "0.625rem",
         display:"flex",
         flexDirection:"column",
@@ -19,13 +19,13 @@ const Feature = ({ image, text, title }) => {
       }}
     >
       <img
-        style={{ height: "5.31rem", width: "5.7rem", rotate: "5deg" }}
+        style={{ height: "5.31rem", width: "5.7rem",  transform: 'skew(0, 5deg)', }}
         src={image}
         alt={title}
       />
       <p
         className="font-bold text-2xl font-subTitle"
-        style={{ color: "#E4E4E4", margin: "1rem", rotate: "5deg" }}
+        style={{ color: "#E4E4E4", margin: "1rem",  transform: 'skew(0, 5deg)', }}
       >
         {text}
       </p>
