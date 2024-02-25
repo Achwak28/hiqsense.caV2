@@ -15,7 +15,7 @@ function ClientTestimonials() {
                 <PrimaryHeading headingText="Client Testimonials" />
                 <PrimarySubHeading subText="Read what our clients have to say about us" />
 
-                <Splide aria-label="My Favorite Images" options={
+                <Splide aria-label="Client Testimonials images" className="clientSplide" options={
                     {
                         heightRatio: "auto",         // Set the height ratio of the slider
                         pagination: true,       // Enable or disable pagination

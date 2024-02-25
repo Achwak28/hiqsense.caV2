@@ -8,13 +8,13 @@ module.exports = {
     extend: {
       colors: {
         'btn-primary': '#F6393D',
-        'txt-primary': '#0A0628',  
+        'txt-primary': '#0A0628',
       },
       gridTemplateColumns: {
         // Simple 16 column grid
         'whyChooseCols': '0.7fr 2fr 0.3fr',
 
-       
+
       }
 
     },
@@ -23,7 +23,8 @@ module.exports = {
       'garamond-semibold': ['EB Garamond-SemiBold'],
       'hebrew-regular': ['Open Sans Hebrew-Regular'],
       'hebrew-bold': ['Open Sans Hebrew-Bold'],
-      'garamond-bold': ['EB Garamond-Bold']
+      'garamond-bold': ['EB Garamond-Bold'],
+      'hebrew-light': ['Open Sans Hebrew-Light']
 
     }
   },

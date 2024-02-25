@@ -20,6 +20,7 @@ import FeaturedWork from "./components/pages/HomePage/FeaturedWork/FeaturedWork"
 import ClientTestimonials from "./components/pages/HomePage/ClientTestimonials/ClientTestimonials";
 import TimelineSection from "./components/pages/HomePage/TimelineSection/TimelineSection";
 import Awards from "./components/pages/HomePage/Awards/Awards";
+import PricingOptions from "./components/pages/HomePage/PricingOptions/PricingOptions";
 
 
 export default function App() {
@@ -35,7 +36,8 @@ export default function App() {
           <FeaturedWork />
           <ClientTestimonials />
           <TimelineSection />
-          <Awards/>
+          <Awards />
+          <PricingOptions />
           <Footer />
         </BrowserRouter>
       </div>

@@ -22,9 +22,43 @@
   filter: drop-shadow(0 4px 0px rgba(0, 0, 0, 1));
 }
 
-.rightLine{
+.rightLine {
   padding: 45px 30px 20px 30px;
   margin-bottom: 50px;
+}
+
+.awardsSplide .splide__slide {
+  margin: auto;
+}
+
+.awardsSplide img {
+  margin: auto;
+}
+
+.awardsSplide {
+  position: relative;
+}
+
+.awardsSplide .splide__arrow {
+  background: transparent;
+  border: 2.5px solid #186EF2;
+  opacity: 1 !important;
+}
+
+.awardsSplide .splide__arrow svg {
+  fill: #196ded;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+
+
+.awardsSplide .splide__arrow--prev {
+  left: 0em;
+}
+
+.awardsSplide .splide__arrow--next {
+  right: 0em;
 }
 
 /* Font Face Starts Here */
