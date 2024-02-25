@@ -47,7 +47,7 @@ const AboutUs = () => {
               }}
               className="about-hero-text text-center md:text-left text-whiteTitle font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
             </p>
           </div>
           <img
@@ -69,7 +69,7 @@ const AboutUs = () => {
               style={{ fontSize: "2rem" }}
               className=" transform-text sm:text-3xl  font-bold text-left font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
             </p>
             <p
               style={{
@@ -84,9 +84,9 @@ const AboutUs = () => {
             >
               Welcome to a decade of design excellence where innovation meets
               urban evolution. At [Your Company Name], we take pride in our
-              commitment to shaping Saskatoon's landscape through cutting-edge
+              commitment to shaping Saskatoon&apos;s landscape through cutting-edge
               design solutions. Our journey has been marked by a relentless
-              pursuit of excellence, leaving an indelible mark on the city's
+              pursuit of excellence, leaving an indelible mark on the city&apos;s
               digital transformation.
             </p>
             <p
