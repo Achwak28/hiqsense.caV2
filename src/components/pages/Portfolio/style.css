@@ -1,0 +1,7 @@
+.bg-custom-background {
+  z-index: 999;
+  background-size: 70px 70px;
+  background-image:
+    linear-gradient(to right, #614f4f 1px, transparent 1px),
+    linear-gradient(to bottom, #614f4f 1px, transparent 1px);
+}

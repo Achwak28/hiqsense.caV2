@@ -11,14 +11,14 @@ import Footer from "./components/Footer";
 import React from "react";
 import theme from "./Theme";
 import { ThemeProvider } from "@mui/material/styles";
-
+import Portfolio from './components/pages/Portfolio'
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
         <BrowserRouter>
           <Header />
-          # add your pages here
+          <Portfolio/>
           <Footer />
         </BrowserRouter>
       </div>
