@@ -1,0 +1,9 @@
+
+
+function ServiceCards({ img1, altText, cardText }) {
+    return (
+        <><a href="#"><div className="w-full h-[325px] mb-5 relative flex flex-col flex-wrap justify-end"><img src={img1} alt={altText} className="absolute top-0 left-0 z-[-1]" /><h3 className="text-[#FFFFFF] font-hebrew-bold text-center custom-drop-shadow z-0 text-[32px] leading-[75px]">{cardText}</h3></div></a></>
+    )
+}
+
+export default ServiceCards;

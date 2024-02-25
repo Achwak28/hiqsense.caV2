@@ -2,6 +2,80 @@
   font-family: sans-serif;
   text-align: center;
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .hero-heading-styles {
+    @apply font-garamond-semibold text-[32px] text-center text-[#F9F9F9] mb-4 leading-tight;
+  }
+
+  .hero-sub-heading {
+    @apply font-hebrew-regular text-[14px] text-center text-[#FFFFFF] mb-4 tracking-[0.25px] leading-6;
+  }
+}
+
+.custom-drop-shadow {
+  filter: drop-shadow(0 4px 0px rgba(0, 0, 0, 1));
+}
+
+.rightLine{
+  padding: 45px 30px 20px 30px;
+  margin-bottom: 50px;
+}
+
+/* Font Face Starts Here */
+/* Garamond Font face Stars Here */
+@font-face {
+  font-family: 'EB Garamond-SemiBold';
+  src: url('../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2') format('woff2'),
+    url('../public/fonts/EBGaramond/EBGaramond-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond-Bold';
+  src: url('../public/fonts/EBGaramond/EBGaramond-Bold.woff2') format('woff2'),
+    url('../public/fonts/EBGaramond/EBGaramond-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Garamond Font face Ends Here */
+
+/* Open Sans Hebrew Font face Stars Here */
+@font-face {
+  font-family: 'Open Sans Hebrew-Regular';
+  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2') format('woff2'),
+    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew-Bold';
+  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2') format('woff2'),
+    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew-Light';
+  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2') format('woff2'),
+    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Open Sans Hebrew Font face Ends Here */
+/* Font Face Ends Here */
