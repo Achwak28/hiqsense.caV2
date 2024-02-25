@@ -20,7 +20,6 @@ export default function App() {
         <BrowserRouter>
           <Header />
            <AboutUs />
-          # add your pages here
           <Footer />
         </BrowserRouter>
       </div>
