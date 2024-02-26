@@ -267,14 +267,49 @@ select {
 
 .whyLargeEllipseBlock {
   position: absolute;
-    bottom: -330px;
-    z-index: -1;
-    width: 705px;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+  bottom: -330px;
+  z-index: -1;
+  width: 705px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
+.featuredLeftPulse {
+  position: absolute;
+  left: -90%;
+  top: -84px;
+  z-index: -1;
+  width: 735px;
+}
+
+.featuredRightPulse {
+  position: absolute;
+  right: -90%;
+  bottom: -84px;
+  z-index: -1;
+  width: 735px;
+}
+
+.clientSplide .splide__pagination {
+  bottom: -5px !important;
+}
+
+.clientSplide .splide__pagination__page{
+  height: 17px;
+  width: 17px;
+  background: #C5C5C5;
+}
+
+.clientSplide .splide__pagination__page.is-active{
+  background: #525252 !important;
+  transform: scale(1);
+}
+
+.clientBox{
+  box-shadow: 0px 16px 20px #0000006b;
+    margin-bottom: 50px;
+}
 
 
 /* Font Face Starts Here */
@@ -328,4 +363,25 @@ select {
 }
 
 /* Open Sans Hebrew Font face Ends Here */
+
+/* Lato Font Face Starts Here */
+@font-face {
+  font-family: 'Lato-bold';
+  src: url('../public/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+    url('../public/fonts/Lato/Lato-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-regular';
+  src: url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+    url('../public/fonts/Lato/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Lato Font Face Ends Here */
 /* Font Face Ends Here */
