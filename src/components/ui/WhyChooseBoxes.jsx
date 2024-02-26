@@ -3,7 +3,7 @@ import arrow from '../images/why-choose-us/arrow.svg'
 function WhyChooseBoxes({ whyImg, altText }) {
     return (
         <>
-            <div className="grid grid-cols-whyChooseCols gap-x-2.5 items-center p-2.5 rounded-xl border-2 border-txt-primary mb-4 justify-items-center">
+            <div className="grid grid-cols-whyChooseCols lg:w-[445px] gap-x-2.5 items-center p-2.5 rounded-xl border-2 border-txt-primary mb-4 justify-items-center">
                 <div><img src={whyImg} alt={altText} /></div>
                 <div><h3 className="text-left font-hebrew-bold text-txt-primary text-lg mb-1">Creative Design</h3><p className="font-hebrew-regular text-sm text-txt-primary text-left leading-6">We only deliver high-quality of
                     products at an optimum speed.</p></div>

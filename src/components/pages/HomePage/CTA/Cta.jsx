@@ -4,7 +4,7 @@ import PrimarySubHeading from "../../../ui/PrimarySubHeading";
 function Cta() {
     return (
         <>
-            <section className="px-4 py-10">
+            <section className="px-4 lg:px-40 py-10 lg:py-20">
                 <PrimaryHeading headingText="Stay Connected with Our Newsletter" />
                 <PrimarySubHeading subText="Subscribe to receive the latest updates, offers, and news." />
 

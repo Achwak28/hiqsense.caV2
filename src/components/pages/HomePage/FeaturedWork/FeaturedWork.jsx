@@ -8,7 +8,7 @@ import featuredPulseImg from '../../../images/featured-work/pulse.svg'
 function FeaturedWork() {
     return (
         <>
-            <section className="bg-txt-primary h-auto px-4 py-10 relative z-[1] overflow-hidden">
+            <section className="bg-txt-primary h-auto px-4 lg:px-40 py-10 lg:py-20 relative z-[1] overflow-hidden">
 
             <div className="featuredLeftPulse">
                 <img src={featuredPulseImg} alt="FeaturedPulseImg" />
@@ -23,7 +23,7 @@ function FeaturedWork() {
                 <div>
                     <Projects img1={projectOneImg} altText="Project One" projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you." linkText="View Project" />
                     <Projects img1={projectTwoImg} altText="Project Two" projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you." linkText="View Project" />
-                    <PrimaryButtonOutlined buttonlabel="View All" />
+                    <PrimaryButtonOutlined buttonlabel="View All" lgInline="lg:inline-block" lgWidth="lg:w-[200px]"/>
                 </div>
             </section>
         </>

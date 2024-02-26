@@ -56,7 +56,7 @@ function PricingOptions() {
   useEffect(() => {}, [pricingObj]);
   return (
     <>
-      <section className="px-4 py-10 relative overflow-hidden">
+      <section className="px-4 lg:px-40 py-10 lg:py-20 relative overflow-hidden">
         <PrimaryHeading headingText="Pricing Options" />
         <PrimarySubHeading subText="Choose the plan that fits your budget" />
 

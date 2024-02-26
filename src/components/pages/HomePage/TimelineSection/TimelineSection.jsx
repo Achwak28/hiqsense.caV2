@@ -8,7 +8,7 @@ function TimelineSection() {
   return (
     <>
       <section
-        className="px-3 pt-10 pb-20 relative z-[1] overflow-hidden rightStick"
+        className="px-3 lg:px-40 pt-10 pb-20 lg:py-20 relative z-[1] overflow-hidden rightStick"
         style={{
           backgroundImage: `url(${timelineBg})`,
           backgroundRepeat: "no-repeat",

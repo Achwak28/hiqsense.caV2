@@ -69,7 +69,7 @@ function ClientTestimonials() {
   return (
     <>
       <section
-        className="py-10 h-auto"
+        className="py-10 lg:py-20 h-auto"
         style={{
           backgroundImage: `url(${bgImg})`,
           backgroundRepeat: "no-repeat",
@@ -86,7 +86,16 @@ function ClientTestimonials() {
             heightRatio: "auto", // Set the height ratio of the slider
             pagination: true, // Enable or disable pagination
             arrows: true,
-
+            perPage: 3,
+            type: "loop",
+            gap: "7rem",
+            focus: "center",
+            padding: "7rem",
+            autoplay: true,
+            interval: 8000,
+            flickMaxPages: 3,
+            updateOnMove: true,
+            throttle: 300,
             breakpoints: {
               1024: {
                 perPage: 1,
@@ -95,7 +104,7 @@ function ClientTestimonials() {
                 gap: "4rem",
                 type: "loop",
                 padding: "5rem",
-                focus  : 'center',
+                focus: "center",
               },
               767: {
                 perPage: 1,
@@ -128,7 +137,7 @@ function ClientTestimonials() {
           ))}
         </Splide>
 
-        <div className="px-2 py-5">
+        <div className="px-2 py-5 lg:py-20 lg:px-40">
           <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
             <div>
               <PrimaryHeading headingText="Crafting Digital Experiences That Inspire and Engage" />
@@ -140,7 +149,11 @@ function ClientTestimonials() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
             <div className="md:order-2">
-              <img src={transformBusinessImg} alt="Transform Business" />
+              <img
+                src={transformBusinessImg}
+                alt="Transform Business"
+                className="lg:w-[1000px]"
+              />
             </div>
             <div className="md:order-1">
               <PrimaryHeading headingText="Transform Your Business Today" />

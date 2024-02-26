@@ -6,13 +6,13 @@ import characterImg from '../../../images/hero/character.svg'
 import rocketImg from '../../../images/hero/rocket.svg'
 import handImg from '../../../images/hero/handPencil.svg'
 import noteImg from '../../../images/hero/notePad.svg'
-import candelsticImg from '../../../images/hero/candlesticks.svg'
+import candelsticImg from '../../../images/hero/candlesticks.png'
 import worldImg from '../../../images/hero/world.svg'
 function HeroSection() {
     return (
         <>
             <section className="overflow-hidden">
-                <div className="bg-[#4334B6] h-[620px] w-100 flex flex-col justify-center items-center content-center flex-wrap px-2 relative z-[2]">
+                <div className="bg-[#4334B6] h-[620px] lg:h-screen w-100 flex flex-col justify-center items-center content-center flex-wrap px-2 relative z-[2]">
                     <div className="largeElipseBlock">
                         <img src={largeElipse} alt="largeElipse" className="dropShadow" />
                         <div className="mediumElipseBlock">
