@@ -202,4 +202,11 @@
   .about-hero-text{
     margin:2rem auto !important;
   }
+    .about-values .circular-bg {
+    top: 20%;
+    z-index: -99;
+    overflow: hidden;
+    height: 60.93rem;
+    width: 30rem;
+  }
 }
