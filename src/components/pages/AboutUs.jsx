@@ -53,7 +53,7 @@ const AboutUs = () => {
               }}
               className="about-hero-text text-center md:text-left text-whiteTitle font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
             </p>
           </div>
           <img
@@ -79,7 +79,7 @@ const AboutUs = () => {
               style={{ fontSize: "2rem" }}
               className=" transform-text sm:text-3xl  font-bold text-left font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
             </p>
             <p
               style={{
@@ -94,9 +94,9 @@ const AboutUs = () => {
             >
               Welcome to a decade of design excellence where innovation meets
               urban evolution. At [Your Company Name], we take pride in our
-              commitment to shaping Saskatoon's landscape through cutting-edge
+              commitment to shaping Saskatoon&apos;s landscape through cutting-edge
               design solutions. Our journey has been marked by a relentless
-              pursuit of excellence, leaving an indelible mark on the city's
+              pursuit of excellence, leaving an indelible mark on the city&apos;s
               digital transformation.
             </p>
             <p
@@ -142,9 +142,9 @@ const AboutUs = () => {
         </div>
         <div  className="about-services-right">
           {services.map((service, index) => (
-            <div data-aos="fade-right" data-aos-delay={`${(index+1) * 500}`}>
+            <div data-aos="fade-right" key={service.id} data-aos-delay={`${(index+1) * 500}`}>
             <Service
-              key={service.id}
+              
               image={service.image}
               text={service.text}
               tittle={service.title}
@@ -207,10 +207,10 @@ const AboutUs = () => {
         <img className="pseudo" src={pseudo} alt="pseudo" />
         <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
           {features.map((feature, index) => (
-            <div data-aos="fade-up" data-aos-delay={`${(index+1) * 500}`}>
+            <div data-aos="fade-up"  key={feature.id} data-aos-delay={`${(index+1) * 500}`}>
               <Feature
                 
-                key={feature.id}
+               
                 image={feature.image}
                 text={feature.text}
                 tittle={feature.title}
