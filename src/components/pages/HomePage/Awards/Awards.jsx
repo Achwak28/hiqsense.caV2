@@ -12,16 +12,16 @@ import ibmImg from '../../../images/awards/ibm.png';
 function Awards() {
     return (
         <>
-            <section className="px-4 py-10">
+            <section className="px-4 pt-10">
                 <PrimaryHeading headingText="Recognition and Awards" />
                 <PrimarySubHeading subText="Recognized by top industry leaders for exceptional work" />
 
-                <div className="grid grid-cols-1">
+                <div className="grid grid-cols-1 awardsBottomLine">
                     <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5">We’ve More Then 254+
                         Global Partners</h3></div>
                     <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] ">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
                 </div>
-                <div>
+                <div className="mt-10">
                     <Splide aria-label="Partners Images" className="awardsSplide" options={
                         {
                             heightRatio: "auto",         // Set the height ratio of the slider
@@ -39,15 +39,15 @@ function Awards() {
                                     perPage: 2,
                                     pagination: false,       // Enable or disable pagination
                                     arrows: true,
-                                    padding: "0.5rem",
-                                    gap: "1rem"
+                                    padding: "1rem",
+                                    
                                 },
                                 640: {
                                     perPage: 2,
                                     pagination: false,       // Enable or disable pagination
                                     arrows: true,
-                                    padding: "0.5rem",
-                                    gap: "1rem"
+                                    padding: "1rem",
+                                    
                                 },
                             },
                         }

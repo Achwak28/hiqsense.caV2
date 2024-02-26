@@ -47,8 +47,8 @@
 
 .awardsSplide .splide__arrow svg {
   fill: #196ded;
-  height: 1.2em;
-  width: 1.2em;
+  height: 1em;
+  width: 1em;
 }
 
 
@@ -295,22 +295,134 @@ select {
   bottom: -5px !important;
 }
 
-.clientSplide .splide__pagination__page{
+.clientSplide .splide__pagination__page {
   height: 17px;
   width: 17px;
   background: #C5C5C5;
 }
 
-.clientSplide .splide__pagination__page.is-active{
+.clientSplide .splide__pagination__page.is-active {
   background: #525252 !important;
   transform: scale(1);
 }
 
-.clientBox{
+.clientBox {
   box-shadow: 0px 16px 20px #0000006b;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
+/* TimeLine Blue Pulse Starts Here */
+.topLeftBluePulseBlock {
+  position: absolute;
+  top: 0;
+  left: -65%;
+  width: 700px;
+  z-index: -1;
+}
+
+.centerRightBluePulseBlock {
+  position: absolute;
+  right: -65%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 700px;
+  z-index: -1;
+}
+
+.bottomLeftBluePulseBlock {
+  position: absolute;
+  bottom: 0;
+  left: -65%;
+  width: 700px;
+  z-index: -1;
+}
+
+/* TimeLine Blue Pulse Ends Here */
+
+.awardsBottomLine {
+  position: relative;
+}
+
+.awardsBottomLine::after {
+  content: '';
+  border-bottom: 1px solid #4334B6;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+/* Price Eliipses Starts Here */
+.halfEllipseBlock {
+  position: absolute;
+  top: 28%;
+  left: -12%;
+  z-index: -1;
+}
+
+.halfEllipseRightBlock {
+  position: absolute;
+  top: 6%;
+  right: -54%;
+  z-index: -1;
+  transform: rotate3d(1, 0, -20, 181deg);
+}
+
+.pricingContainer> :nth-child(1) {
+  position: relative;
+}
+
+.pricingContainer> :nth-child(1)::after {
+  content: '';
+  background-image: url('../src/components/images/pricing-options/topHalfEllipse.png');
+  background-repeat: no-repeat;
+  height: 2000px;
+  position: absolute;
+  top: -139px;
+  width: 200px;
+  right: -35px;
+  z-index: -2;
+}
+
+.pricingContainer> :nth-child(2) {
+  position: relative;
+}
+
+.pricingContainer> :nth-child(2)::after {
+  content: '';
+  background-image: url('../src/components/images/pricing-options/halfElipse.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  left: -14%;
+  z-index: -2;
+}
+
+.pricingContainer> :nth-child(3) {
+  position: relative;
+}
+
+.pricingContainer> :nth-child(3)::after {
+  content: '';
+  background-image: url('../src/components/images/pricing-options/thirdEllipse.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  right: 0;
+  z-index: -2;
+}
+
+.pricingContainer> :nth-child(3),
+.pricingContainer> :nth-child(4) {
+  background-image: linear-gradient(to bottom, #4334b642, #9c8fff00);
+}
+
+/* Price Eliipses Ends Here */
 
 /* Font Face Starts Here */
 /* Garamond Font face Stars Here */
