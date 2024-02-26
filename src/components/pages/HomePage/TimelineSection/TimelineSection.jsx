@@ -2,39 +2,40 @@ import timelineBg from "../../../images/Timeline/bg.jpg";
 import PrimaryButtonOutlined from "../../../ui/PrimaryButtonOutlined";
 import PrimaryHeading from "../../../ui/PrimaryHeading";
 import { TimelineSteps, TimelineStepsLeft } from "../../../ui/TimelineSteps";
-import bluePulseImg from '../../../images/Timeline/blueEllipse.png'
+import bluePulseImg from "../../../images/Timeline/blueEllipse.png";
 
 function TimelineSection() {
   return (
     <>
       <section
-        className="px-3 py-10 relative z-[1] overflow-hidden"
+        className="px-3 pt-10 pb-20 relative z-[1] overflow-hidden rightStick"
         style={{
           backgroundImage: `url(${timelineBg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
-      <div className="topLeftBluePulseBlock">
-        <img src={bluePulseImg} alt="bluePulseImg" />
-      </div>
-      <div className="centerRightBluePulseBlock">
-        <img src={bluePulseImg} alt="bluePulseImg" />
-      </div>
-      <div className="bottomLeftBluePulseBlock">
-        <img src={bluePulseImg} alt="bluePulseImg" />
-      </div>
+        <div className="topLeftBluePulseBlock">
+          <img src={bluePulseImg} alt="bluePulseImg" />
+        </div>
+        <div className="centerRightBluePulseBlock">
+          <img src={bluePulseImg} alt="bluePulseImg" />
+        </div>
+        <div className="bottomLeftBluePulseBlock">
+          <img src={bluePulseImg} alt="bluePulseImg" />
+        </div>
         <PrimaryHeading
           headingText="From Concept to Completion: Our Process for Crafting Digital Experiences"
           custColor="#fff"
         />
 
-        <div className="grid grid-cols-1 mt-10">
+        <div className="grid grid-cols-1 mt-10 md:grid-cols-2 md:gap-20 md:mb-20">
           <TimelineSteps
             stepsContent={{
               Steps: "Step 1",
               Heading: "Planning",
               SubHeading: "Planning and brainstroming strategy",
+              lowerCol: "md:relative pointRight"
             }}
           />
           <TimelineStepsLeft
@@ -43,6 +44,7 @@ function TimelineSection() {
               Heading: "Communicate",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+              lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
           <TimelineSteps
@@ -51,6 +53,7 @@ function TimelineSection() {
               Heading: "Create",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                lowerCol: "md:relative pointRight"
             }}
           />
           <TimelineStepsLeft
@@ -59,6 +62,7 @@ function TimelineSection() {
               Heading: "Turnover",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+              lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
           <TimelineSteps
@@ -67,6 +71,7 @@ function TimelineSection() {
               Heading: "Design",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                lowerCol: "md:relative pointRight"
             }}
           />
           <TimelineStepsLeft
@@ -75,6 +80,7 @@ function TimelineSection() {
               Heading: "Maintenance",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+              lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
         </div>

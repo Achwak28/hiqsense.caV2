@@ -20,7 +20,7 @@ function WhyChooseUs() {
                     <div className="whyLargeEllipseBlock">
                         <img src={whyLargeEllipse} alt="whyLargeEllipse" />
                     </div>
-                    <div><img src={pcImg} alt="PC Image" className='mb-10' /></div>
+                    <div><img src={pcImg} alt="PC Image" className='mb-10 md:mx-auto' /></div>
                     <div>
                         <WhyChooseBoxes whyImg={creativeImg} altText="Creative Design" />
                         <WhyChooseBoxes whyImg={webStrategyimg} altText="Web Strategy" />

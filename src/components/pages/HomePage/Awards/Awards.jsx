@@ -19,7 +19,7 @@ function Awards() {
                 <div className="grid grid-cols-1 awardsBottomLine">
                     <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5">We’ve More Then 254+
                         Global Partners</h3></div>
-                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] ">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
+                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] w-[65%] mx-auto">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
                 </div>
                 <div className="mt-10">
                     <Splide aria-label="Partners Images" className="awardsSplide" options={

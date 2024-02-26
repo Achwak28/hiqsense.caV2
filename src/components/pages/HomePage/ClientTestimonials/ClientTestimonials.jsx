@@ -64,7 +64,8 @@ const clientsObj = [
 function ClientTestimonials() {
   useEffect(() => {}, [clientsObj]);
   // Dynamic import function to load images based on the index
-  const getClientImage = (index) => import(`../../../images/client-testimonials/client${index + 1}.png`);
+  const getClientImage = (index) =>
+    import(`../../../images/client-testimonials/client${index + 1}.png`);
   return (
     <>
       <section
@@ -88,9 +89,13 @@ function ClientTestimonials() {
 
             breakpoints: {
               1024: {
-                perPage: 3,
+                perPage: 1,
                 pagination: true, // Enable or disable pagination
                 arrows: true,
+                gap: "4rem",
+                type: "loop",
+                padding: "5rem",
+                focus  : 'center',
               },
               767: {
                 perPage: 1,
@@ -124,7 +129,7 @@ function ClientTestimonials() {
         </Splide>
 
         <div className="px-2 py-5">
-          <div className="grid grid-cols-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
             <div>
               <PrimaryHeading headingText="Crafting Digital Experiences That Inspire and Engage" />
             </div>
@@ -133,11 +138,11 @@ function ClientTestimonials() {
               <PrimaryButtonSolid buttonlabel="About Us" />
             </div>
           </div>
-          <div className="grid grid-cols-1">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
+            <div className="md:order-2">
               <img src={transformBusinessImg} alt="Transform Business" />
             </div>
-            <div>
+            <div className="md:order-1">
               <PrimaryHeading headingText="Transform Your Business Today" />
               <PrimarySubHeading subText="Schedule a free consultation or request a quote to get started." />
               <PrimaryButtonSolid

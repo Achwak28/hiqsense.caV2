@@ -21,7 +21,7 @@ function Services() {
             <PrimarySubHeading subText="Elevate your online presence with our diverse services. From captivating logo and graphic design to cutting-edge web design, we craft unique digital experiences. Boost visibility through our SEO optimization, and ensure seamless communication with our Email Hosting Configuration. Let us transform your digital presence into a powerful asset." />
 
             <div className="grid grid-cols-1">
-                <div className="grid grid-cols-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
                     <ServiceCards img1={webDesignImg} altText="Web design" cardText="Web Design" />
                     <ServiceCards img1={seoImg} altText="SEO Optimization" cardText="SEO Optimization" />
                     <ServiceCards img1={logoDesignImg} altText="Logo & Graphic Design" cardText="Logo & Graphic Design" />

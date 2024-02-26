@@ -5,7 +5,7 @@ function PricingCard({serviceName, packageName, priceTag, serviceList}) {
   return (
     <>
       <div
-        className="w-[100%] h-[710px] rounded-[26px] bg-transparent mb-4 text-left p-5 flex flex-col justify-between"
+        className="w-[100%] h-[710px] rounded-[26px] bg-transparent mb-4 text-left p-5 flex flex-col justify-between md:overflow-hidden"
         style={{ border: "1px solid #A9ACBB" }}
       >
         <div>

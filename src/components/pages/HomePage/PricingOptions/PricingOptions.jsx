@@ -60,7 +60,7 @@ function PricingOptions() {
         <PrimaryHeading headingText="Pricing Options" />
         <PrimarySubHeading subText="Choose the plan that fits your budget" />
 
-        <div className="grid grid-cols-1 pricingContainer">
+        <div className="grid grid-cols-1 pricingContainer md:grid-cols-2 md:gap-4">
           {/* Map over pricingObj and pass object keys as props */}
           {pricingObj.map((pricing, index) => (
             <PricingCard
