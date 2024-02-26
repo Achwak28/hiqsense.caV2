@@ -140,14 +140,16 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div data-aos="fade-right" className="about-services-right">
-          {services.map((service) => (
+        <div  className="about-services-right">
+          {services.map((service, index) => (
+            <div data-aos="fade-right" data-aos-delay={`${(index+1) * 500}`}>
             <Service
               key={service.id}
               image={service.image}
               text={service.text}
               tittle={service.title}
             />
+            </div>
           ))}
         </div>
       </div>
