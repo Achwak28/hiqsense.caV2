@@ -187,7 +187,10 @@ const AboutUs = () => {
       </div>
 
       <div className="about-values">
-         <img  className="circular-bg" src={circularBg} alt="circularBg" />
+       
+          <img  className="circular-bg" src={circularBg} alt="circularBg" />
+       
+
         <div>
           {" "}
           <p
@@ -207,12 +210,11 @@ const AboutUs = () => {
         </div>
 
         <img className="pseudo" src={pseudo} alt="pseudo" />
-        <div className="about-features">
+        <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
           {features.map((feature, index) => (
-            <div data-aos="fade-up"  key={feature.id} data-aos-delay={`${(index+1) * 500}`}>
+            <div data-aos="fade-up" data-aos-delay={`${(index + 1) * 500}`}>
               <Feature
-                
-               
+                key={feature.id}
                 image={feature.image}
                 text={feature.text}
                 tittle={feature.title}
