@@ -33,5 +33,19 @@ export const theme = {
       'opensanshebrew': ['"Open Sans Hebrew"', 'sans-serif'],
       'ebgaramond': ['"EB Garamond"', 'serif'],
     },
+    keyframes: {
+        slideLeft: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        slideLeft: 'slideLeft 0.5s ease-out forwards',
+        slideRight: 'slideRight 0.5s ease-out forwards'
+      },
   },
 };
