@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import person from "../../assets/about-us/hero-section.png";
 import people from "../../assets/about-us/transforming-section.png";
 import line from "../../assets/about-us/line.png";
@@ -13,8 +13,14 @@ import Feature from "../Feature";
 import AboutButton from "../AboutButton";
 import Service from "../Service";
 import Team from "../Team/Team";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <div className="about-hero-section w-full  ">
@@ -22,7 +28,7 @@ const AboutUs = () => {
           style={{ paddingBottom: "5rem" }}
           className=" mx-auto grid md:grid-cols-2 hero-about-content"
         >
-          <div className=" hero-about-text">
+          <div data-aos="fade-right" className=" hero-about-text">
             <p
               style={{
                 fontSize: "3rem",
@@ -47,7 +53,7 @@ const AboutUs = () => {
               }}
               className="about-hero-text text-center md:text-left text-whiteTitle font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
             </p>
           </div>
           <img
@@ -55,21 +61,25 @@ const AboutUs = () => {
             className="w-[500px] mx-auto my-4"
             src={person}
             alt="person"
+            data-aos="fade-left"
           />
         </div>
       </div>
 
-      
-
       <div className="w-full bg-white py-16 px-4">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-          <img className="w-[500px] mx-auto my-4" src={people} alt="/" />
-          <div className="flex flex-col justify-center">
+          <img
+            data-aos="fade-right"
+            className="w-[500px] mx-auto my-4"
+            src={people}
+            alt="/"
+          />
+          <div data-aos="fade-right" className="flex flex-col justify-center">
             <p
               style={{ fontSize: "2rem" }}
               className=" transform-text sm:text-3xl  font-bold text-left font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon's 10-Year Design Odyssey
             </p>
             <p
               style={{
@@ -84,9 +94,9 @@ const AboutUs = () => {
             >
               Welcome to a decade of design excellence where innovation meets
               urban evolution. At [Your Company Name], we take pride in our
-              commitment to shaping Saskatoon&apos;s landscape through cutting-edge
+              commitment to shaping Saskatoon's landscape through cutting-edge
               design solutions. Our journey has been marked by a relentless
-              pursuit of excellence, leaving an indelible mark on the city&apos;s
+              pursuit of excellence, leaving an indelible mark on the city's
               digital transformation.
             </p>
             <p
@@ -109,7 +119,7 @@ const AboutUs = () => {
       </div>
 
       <div className="about-services w-full">
-        <div className="about-services-left md:text-left">
+        <div data-aos="fade-right" className="about-services-left md:text-left">
           <p
             style={{
               fontSize: "2rem",
@@ -130,7 +140,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="about-services-right">
+        <div data-aos="fade-right" className="about-services-right">
           {services.map((service) => (
             <Service
               key={service.id}
@@ -147,17 +157,17 @@ const AboutUs = () => {
         className="my-10"
       >
         <div className="about-achievements">
-          <div>
+          <div data-aos="fade-up">
             <img src={milestone1} alt="milestone" />
           </div>
 
-          <div className="achievements-legacy">
+          <div data-aos="fade-down" className="achievements-legacy">
             <img src={legacy2} alt="delivery" />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <img src={relationship2} alt="delivery" />
           </div>
-          <div className="achievements-legacy">
+          <div data-aos="fade-down" className="achievements-legacy">
             <img src={delivery2} alt="delivery" />
           </div>
         </div>
@@ -193,14 +203,17 @@ const AboutUs = () => {
         </div>
 
         <img className="pseudo" src={pseudo} alt="pseudo" />
-        <div className="about-features ">
+        <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
           {features.map((feature) => (
-            <Feature
-              key={feature.id}
-              image={feature.image}
-              text={feature.text}
-              tittle={feature.title}
-            />
+            <div data-aos="fade-up">
+              <Feature
+                
+                key={feature.id}
+                image={feature.image}
+                text={feature.text}
+                tittle={feature.title}
+              />
+            </div>
           ))}
         </div>
         <AboutButton text="Get started" />
