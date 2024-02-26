@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+
 import { ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./styles.css";
 import "@fontsource/roboto/300.css";
@@ -19,7 +20,10 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Header />
-        <Service />
+        <Routes>
+          <Route path="/services" element={<Service />} />
+          <Route path="/about" />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>
