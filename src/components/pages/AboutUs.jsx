@@ -7,6 +7,7 @@ import delivery2 from "../../assets/about-us/delivery2.png";
 import legacy2 from "../../assets/about-us/legacy2.png";
 import milestone1 from "../../assets/about-us/milestone1.png";
 import relationship2 from "../../assets/about-us/relationship2.png";
+import circularBg from "../../assets/about-us/bg-values.png";
 import { features, services } from "../../constants";
 import "./AboutUs.css";
 import Feature from "../Feature";
