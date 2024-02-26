@@ -12,7 +12,7 @@ import ibmImg from '../../../images/awards/ibm.png';
 function Awards() {
     return (
         <>
-            <section className="px-2 py-10">
+            <section className="px-4 py-10">
                 <PrimaryHeading headingText="Recognition and Awards" />
                 <PrimarySubHeading subText="Recognized by top industry leaders for exceptional work" />
 

@@ -5,7 +5,7 @@ import PrimarySubHeading from "../../../ui/PrimarySubHeading";
 function PricingOptions() {
     return (
         <>
-            <section className="px-2 py-10">
+            <section className="px-4 py-10">
                 <PrimaryHeading headingText="Pricing Options" />
                 <PrimarySubHeading subText="Choose the plan that fits your budget" />
 

@@ -7,7 +7,7 @@ import PrimaryButtonOutlined from "../../../ui/PrimaryButtonOutlined";
 function FeaturedWork() {
     return (
         <>
-            <section className="bg-txt-primary h-auto px-2 py-10">
+            <section className="bg-txt-primary h-auto px-4 py-10">
 
                 <PrimaryHeading custColor="#fff" headingText="Featured Work" />
                 <PrimarySubHeading custColor="#fff" subText="Explore our diverse range of creative projects." />

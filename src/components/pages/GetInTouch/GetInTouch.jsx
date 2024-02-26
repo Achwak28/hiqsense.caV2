@@ -5,7 +5,7 @@ import emailIcon from '../../images/get-in-touch/email.svg';
 function GetInTouch() {
     return (
         <>
-            <section className="px-2 pb-20">
+            <section className="px-4 pb-20">
                 <div className="grid grid-cols-1"><div><h2 className="font-hebrew-bold text-[32px] text-center text-txt-primary mb-6">Get in <span className="text-btn-primary">Touch</span></h2>
 
                     <form className="getInTouchForm">

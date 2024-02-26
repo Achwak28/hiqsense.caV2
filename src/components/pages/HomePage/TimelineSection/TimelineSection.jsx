@@ -6,7 +6,7 @@ import { TimelineSteps, TimelineStepsLeft } from '../../../ui/TimelineSteps';
 function TimelineSection() {
     return (
         <>
-            <section className="px-2 py-10" style={{ backgroundImage: `url(${timelineBg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+            <section className="px-4 py-10" style={{ backgroundImage: `url(${timelineBg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
                 <PrimaryHeading headingText="From Concept to Completion: Our Process for Crafting Digital Experiences" custColor="#fff" />
 
                 <div className='grid grid-cols-1'>
