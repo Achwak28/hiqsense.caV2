@@ -186,6 +186,7 @@ const AboutUs = () => {
       </div>
 
       <div className="about-values">
+         <img  className="circular-bg" src={circularBg} alt="circularBg" />
         <div>
           {" "}
           <p
