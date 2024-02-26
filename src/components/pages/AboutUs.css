@@ -209,4 +209,9 @@
     height: 60.93rem;
     width: 30rem;
   }
+  .values-text-container{
+    width: 100% !important;
+    margin-left:1rem ;
+    margin-right: 1rem;
+  }
 }
