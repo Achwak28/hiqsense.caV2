@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import React from "react";
 
 const NavLink = ({ children }) => (
@@ -15,8 +14,7 @@ const NavigationBar = () => (
 );
 
 const Header = () => (
-  <Box  > 
-  <header style={{backgroundColor:"#4334B6", position:"fixed" , zIndex:"99"}} className="flex relative flex-row gap-5 justify-between self-center px-20 w-full text-sm bg-indigo-700 border-b border-solid 
+  <header className="flex flex-row gap-5 justify-between self-center px-20 w-full text-sm bg-indigo-700 border-b border-solid 
   shadow border-b-slate-800 border-b-opacity-10 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
     <div className="flex gap-5 justify-between py-5 tracking-wide leading-5 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
       <img 
@@ -33,7 +31,6 @@ const Header = () => (
       </button>
     </div>
   </header>
-  </Box>
 );
 
 export default Header;
