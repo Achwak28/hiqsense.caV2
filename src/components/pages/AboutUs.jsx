@@ -191,7 +191,7 @@ const AboutUs = () => {
           <img  className="circular-bg" src={circularBg} alt="circularBg" />
        
 
-        <div>
+        <div style={{width:"65%"}} className="values-text-container">
           {" "}
           <p
             style={{ fontSize: "3.5rem", marginTop: "5rem" }}
@@ -205,7 +205,7 @@ const AboutUs = () => {
           >
             {" "}
             Our approach combines cutting-edge technology with personalized
-            strategies <br /> to deliver exceptional results.
+            strategies to deliver exceptional results.
           </p>
         </div>
 
