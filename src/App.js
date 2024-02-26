@@ -21,6 +21,8 @@ import ClientTestimonials from "./components/pages/HomePage/ClientTestimonials/C
 import TimelineSection from "./components/pages/HomePage/TimelineSection/TimelineSection";
 import Awards from "./components/pages/HomePage/Awards/Awards";
 import PricingOptions from "./components/pages/HomePage/PricingOptions/PricingOptions";
+import Cta from "./components/pages/HomePage/CTA/Cta";
+import GetInTouch from "./components/pages/GetInTouch/GetInTouch";
 
 
 export default function App() {
@@ -38,6 +40,8 @@ export default function App() {
           <TimelineSection />
           <Awards />
           <PricingOptions />
+          <Cta/>
+          <GetInTouch/>
           <Footer />
         </BrowserRouter>
       </div>
