@@ -44,8 +44,8 @@ export const theme = {
         },
       },
       animation: {
-        slideLeft: 'slideLeft 0.5s ease-out forwards',
-        slideRight: 'slideRight 0.5s ease-out forwards'
+        slideLeft: 'slideLeft 2s forwards',
+        slideRight: 'slideRight 2s forwards'
       },
   },
 };
