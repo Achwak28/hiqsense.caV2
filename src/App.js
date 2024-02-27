@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useEffect } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,11 +12,12 @@ import "@fontsource/roboto/700.css";
 //import CatchAllRoute from "./components/BuilderIo";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutUs from "./components/pages/AboutUs";
 
 // Sections Import Start
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 import theme from "./Theme";
 import Service from "./components/Service";
 
@@ -33,7 +34,7 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/services" element={<Service />} />
-            <Route path="/about" />
+            <Route path="/about"  element={<AboutUs />}/>
           </Routes>
           <Footer />
         </BrowserRouter>
