@@ -37,7 +37,7 @@
 .about-services {
   display: flex;
   justify-content: space-around;
-  background-image: url("../../assets/about-us/bg-grid2.png");
+  background-image: url("./assets/about-us/bg-grid2.png");
   padding: 4rem 3rem;
 }
 
@@ -85,7 +85,7 @@
   left: 63.81rem;
 }
 .about-team {
-  background-image: url("../../assets/about-us/team-bg.png");
+  background-image: url("./assets/about-us/team-bg.png");
   padding-top: 5rem;
   padding-bottom: 5rem;
   margin-top: 5rem;
@@ -97,7 +97,7 @@
   align-items: center;
   position: relative;
   /*
-  background-image: url("../../assets/about-us/bg-values.png");
+  background-image: url("./assets/about-us/bg-values.png");
   background-repeat: no-repeat;
   background-position: right;
   */
