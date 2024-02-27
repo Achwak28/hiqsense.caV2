@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  overflow: hidden
 }
 
 @tailwind base;
@@ -21,6 +22,8 @@
     grid-template-columns: 0.8fr 2.2fr;
   }
 }
+
+
 
 @media only screen and (min-width: 1024px) {
   .serviceParent> :nth-child(2) {
@@ -50,22 +53,31 @@
 
   .whyChooseParent> :nth-child(2) {
     position: relative;
-    transform: translateX(80px);
+    right: -100px;
   }
 
   .whyChooseParent> :nth-child(3) {
     position: relative;
-    transform: translateX(160px);
+    right: -200px;
   }
 
   .whyChooseParent> :nth-child(4) {
     position: relative;
-    transform: translateX(80px);
+    right: -100px;
   }
 
 }
 
-
+@media only screen and (min-width: 1024px) {
+  .largeElipseBlock {
+    position: absolute;
+    bottom: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    z-index: -1;
+  }
+}
 
 
 .custom-drop-shadow {
@@ -164,6 +176,8 @@ select {
   font-family: 'Open Sans Hebrew-Regular';
 }
 
+
+
 /* Hero Images Starts Here */
 .largeElipseBlock {
   position: absolute;
@@ -174,6 +188,7 @@ select {
   width: 600px;
   z-index: -1;
 }
+
 
 .largeElipseBlock .dropShadow,
 .mediumElipseBlock .dropShadow,
@@ -436,6 +451,32 @@ select {
 
 }
 
+.largeElipseBlock.animate__animated.animate__pulse {
+  --animate-duration: 3s;
+  --animate-delay: 3s;
+}
+
+.mediumElipseBlock.animate__animated.animate__pulse {
+  --animate-duration: 1.5s;
+  --animate-delay: 2s;
+}
+
+.smallElipseBlock.animate__animated.animate__pulse {
+  --animate-duration: 1.2s;
+  --animate-delay: 2s;
+}
+
+.characterBlock.animate__animated.animate__pulse {
+  --animate-duration: 1s;
+  --animate-delay: 2s;
+}
+
+
+
+
+
+
+
 
 .firstWord::before {
   content: '';
@@ -663,7 +704,7 @@ select {
     bottom: -580px;
     z-index: -1;
     width: 1200px;
-    left: 50%;
+    left: 8%;
     transform: translateX(-50%);
   }
 
@@ -1053,3 +1094,16 @@ select {
 
 /* Lato Font Face Ends Here */
 /* Font Face Ends Here */
+
+/* Animations Starts Here */
+.hero-heading-styles {
+  --animate-duration: 2s;
+}
+
+/* Animations Ends Here */
+@media only screen and (min-width: 1280px) and (max-width: 1660px) {
+  .lg\:px-40 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}

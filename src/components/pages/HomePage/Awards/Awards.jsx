@@ -17,9 +17,9 @@ function Awards() {
                 <PrimarySubHeading subText="Recognized by top industry leaders for exceptional work" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 awardsBottomLine">
-                    <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5 lg:text-left lg:w-[60%] lg:text-[40px]">We’ve More Then 254+
+                    <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5 lg:text-left lg:w-[60%] lg:text-[40px]" data-aos="fade-right" data-aos-duration="1500">We’ve More Then 254+
                         Global Partners</h3></div>
-                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] w-[65%] mx-auto lg:text-left lg:w-[60%] lg:text-[18px]">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
+                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] w-[65%] mx-auto lg:text-left lg:w-[60%] lg:text-[18px]" data-aos="fade-left" data-aos-duration="1500">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
                 </div>
                 <div className="mt-10 lg:mt-20">
                     <Splide aria-label="Partners Images" className="awardsSplide" options={

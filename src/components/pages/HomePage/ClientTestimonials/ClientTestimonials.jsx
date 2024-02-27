@@ -148,7 +148,7 @@ function ClientTestimonials() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
-            <div className="md:order-2">
+            <div className="md:order-2" data-aos="fade-up" data-aos-duration="1500" >
               <img
                 src={transformBusinessImg}
                 alt="Transform Business"

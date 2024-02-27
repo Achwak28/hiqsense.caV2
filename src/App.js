@@ -23,9 +23,18 @@ import Awards from "./components/pages/HomePage/Awards/Awards";
 import PricingOptions from "./components/pages/HomePage/PricingOptions/PricingOptions";
 import Cta from "./components/pages/HomePage/CTA/Cta";
 import GetInTouch from "./components/pages/GetInTouch/GetInTouch";
+import 'animate.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <div className="App">

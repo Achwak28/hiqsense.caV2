@@ -10,10 +10,14 @@ function FeaturedWork() {
         <>
             <section className="bg-txt-primary h-auto px-4 lg:px-40 py-10 lg:py-20 relative z-[1] overflow-hidden">
 
-            <div className="featuredLeftPulse">
+            <div className="featuredLeftPulse"  data-aos="zoom-out"
+            data-aos-duration="3000"
+            data-aos-easing="linear">
                 <img src={featuredPulseImg} alt="FeaturedPulseImg" />
             </div>
-            <div className="featuredRightPulse">
+            <div className="featuredRightPulse"  data-aos="zoom-out"
+            data-aos-duration="3000"
+            data-aos-easing="linear">
             <img src={featuredPulseImg} alt="FeaturedPulseImg" />
             </div>
 

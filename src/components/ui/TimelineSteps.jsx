@@ -9,7 +9,7 @@ function TimelineSteps({ stepsContent }) {
 
     return (
         <>
-            <div className={`w-[100%] h-[224px] lg:h-[330px] bg-transparent relative rightLine ${lowerCol}`}>
+            <div className={`w-[100%] h-[224px] lg:h-[330px] bg-transparent relative md:z-10 rightLine ${lowerCol}`} data-aos="fade-right" data-aos-duration="1500">
                 <img src={rightImg} alt="rightImage" className='absolute top-0 left-0 lg:w-full' />
                 <h4 className="text-center text-[#FFFFFF] font-hebrew-bold text-[18px] mb-3 lg:text-[20px]">{Steps}</h4>
                 <div>
@@ -30,7 +30,7 @@ function TimelineStepsLeft({ stepsContent }) {
 
     return (
         <>
-            <div className={`w-[100%] h-[224px] lg:h-[330px] bg-transparent relative rightLine ${lowerCol}`}>
+            <div className={`w-[100%] h-[224px] lg:h-[330px] bg-transparent relative md:z-10 rightLine ${lowerCol}`} data-aos="fade-left" data-aos-duration="1500">
                 <img src={leftImg} alt="leftImage" className='absolute top-0 left-0 lg:w-full' />
                 <h4 className="text-center text-[#FFFFFF] font-hebrew-bold text-[18px] mb-3 lg:text-[20px]">{Steps}</h4>
                 <div className='lg:pl-5'>

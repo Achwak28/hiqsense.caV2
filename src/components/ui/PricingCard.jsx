@@ -6,7 +6,7 @@ function PricingCard({serviceName, packageName, priceTag, serviceList}) {
     <>
       <div
         className="w-[100%] lg:w-[450px] h-[710px] rounded-[26px] bg-transparent mb-4 text-left p-5 flex flex-col justify-between md:overflow-hidden"
-        style={{ border: "1px solid #A9ACBB" }}
+        style={{ border: "1px solid #A9ACBB" }} data-aos="fade-up" data-aos-duration="1500"
       >
         <div>
           <div className="mb-3">
