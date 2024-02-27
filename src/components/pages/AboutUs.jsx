@@ -7,12 +7,11 @@ import delivery2 from "../../assets/about-us/delivery2.png";
 import legacy2 from "../../assets/about-us/legacy2.png";
 import milestone1 from "../../assets/about-us/milestone1.png";
 import relationship2 from "../../assets/about-us/relationship2.png";
-import circularBg from "../../assets/about-us/bg-values.png";
+import circularBg from "../../assets/about-us/bg-values.png";                                                                        
 import { features, services } from "../../constants";
-import "./AboutUs.css";
 import Feature from "../Feature";
 import AboutButton from "../AboutButton";
-import Service from "../Service";
+import ServiceCard from "../ServiceCard";
 import Team from "../Team/Team";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +20,7 @@ const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
 
   return (
     <div>
@@ -141,15 +141,15 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div  className="about-services-right">
+        <div className="about-services-right">
           {services.map((service, index) => (
-            <div data-aos="fade-right" key={service.id} data-aos-delay={`${(index+1) * 500}`}>
-            <Service
-              
-              image={service.image}
-              text={service.text}
-              tittle={service.title}
-            />
+            <div data-aos="fade-right" data-aos-delay={`${(index + 1) * 500}`}>
+              <ServiceCard
+                key={service.id}
+                image={service.image}
+                text={service.text}
+                tittle={service.title}
+              />
             </div>
           ))}
         </div>
@@ -224,9 +224,7 @@ const AboutUs = () => {
         </div>
         <AboutButton text="Get started" />
       </div>
-      {/* <div className="footer-img">
-        <img className="footer" src={footer} alt="footer" />
-      </div> */}
+     
     </div>
   );
 };
