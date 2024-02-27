@@ -12,22 +12,22 @@ import ibmImg from '../../../images/awards/ibm.png';
 function Awards() {
     return (
         <>
-            <section className="px-4 lg:px-40 pt-10">
+            <section className="px-4 lg:px-40 pt-10 lg:pt-20">
                 <PrimaryHeading headingText="Recognition and Awards" />
                 <PrimarySubHeading subText="Recognized by top industry leaders for exceptional work" />
 
-                <div className="grid grid-cols-1 awardsBottomLine">
-                    <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5">We’ve More Then 254+
+                <div className="grid grid-cols-1 lg:grid-cols-2 awardsBottomLine">
+                    <div><h3 className="text-center font-hebrew-bold text-txt-primary text-[32px] mb-5 lg:text-left lg:w-[60%] lg:text-[40px]">We’ve More Then 254+
                         Global Partners</h3></div>
-                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] w-[65%] mx-auto">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
+                    <div><p className="text-center font-hebrew-regular text-txt-primary text-[14px] w-[65%] mx-auto lg:text-left lg:w-[60%] lg:text-[18px]">We’ve partnered and recognized by 20+ companies. We aim to continue serving businesses and offering them the best possible solution.</p></div>
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 lg:mt-20">
                     <Splide aria-label="Partners Images" className="awardsSplide" options={
                         {
                             heightRatio: "auto",         // Set the height ratio of the slider
-                            pagination: true,       // Enable or disable pagination
+                            pagination: false,       // Enable or disable pagination
                             arrows: true,
-                            
+                            perPage: 6,
                             breakpoints: {
                                 1024: {
                                     perPage: 3,

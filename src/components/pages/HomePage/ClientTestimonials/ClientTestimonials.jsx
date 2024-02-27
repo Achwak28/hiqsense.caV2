@@ -140,10 +140,10 @@ function ClientTestimonials() {
         <div className="px-2 py-5 lg:py-20 lg:px-40">
           <div className="grid grid-cols-1 md:grid-cols-2 md:items-center md:gap-5 md:mt-10">
             <div>
-              <PrimaryHeading headingText="Crafting Digital Experiences That Inspire and Engage" />
+              <PrimaryHeading headingText="Crafting Digital Experiences That Inspire and Engage" tarnsformBusinessLg="lg:w-[75%] lg:mx-auto lg:text-left"/>
             </div>
             <div>
-              <PrimarySubHeading subText="We are a team of experts dedicated to creating digital experiences that inspire and engage. With our innovative web and graphic design solutions, we tailor our services to perfectly match your brand." />
+              <PrimarySubHeading subText="We are a team of experts dedicated to creating digital experiences that inspire and engage. With our innovative web and graphic design solutions, we tailor our services to perfectly match your brand." tarnsformBusinessLg="lg:w-[75%] lg:mx-auto lg:text-left"/>
               <PrimaryButtonSolid buttonlabel="About Us" />
             </div>
           </div>
@@ -156,8 +156,14 @@ function ClientTestimonials() {
               />
             </div>
             <div className="md:order-1">
-              <PrimaryHeading headingText="Transform Your Business Today" />
-              <PrimarySubHeading subText="Schedule a free consultation or request a quote to get started." />
+              <PrimaryHeading
+                headingText="Transform Your Business Today"
+                tarnsformBusinessLg="lg:w-[75%] lg:mx-auto lg:text-left"
+              />
+              <PrimarySubHeading
+                subText="Schedule a free consultation or request a quote to get started."
+                tarnsformBusinessLg="lg:w-[75%] lg:mx-auto lg:text-left"
+              />
               <PrimaryButtonSolid
                 buttonlabel="Free Consultation"
                 testimonialsMarg="15px"

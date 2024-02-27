@@ -18,7 +18,7 @@ function WhyChooseUs() {
 
                 <div className="grid grid-cols-1 whyChooseAfter pt-10 lg:grid-cols-2">
                     <div className="whyLargeEllipseBlock">
-                        <img src={whyLargeEllipse} alt="whyLargeEllipse" className="lg:w-[500px]"/>
+                        <img src={whyLargeEllipse} alt="whyLargeEllipse" className="lg:w-[100%]"/>
                     </div>
                     <div><img src={pcImg} alt="PC Image" className='mb-10 md:mx-auto' /></div>
                     <div className="whyChooseParent">

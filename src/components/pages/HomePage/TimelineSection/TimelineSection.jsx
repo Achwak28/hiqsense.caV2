@@ -26,10 +26,10 @@ function TimelineSection() {
         </div>
         <PrimaryHeading
           headingText="From Concept to Completion: Our Process for Crafting Digital Experiences"
-          custColor="#fff"
+          custColor="#fff" timelineHeading = "lg:w-[70%] lg:mx-auto"
         />
 
-        <div className="grid grid-cols-1 mt-10 md:grid-cols-2 md:gap-20 md:mb-20">
+        <div className="grid grid-cols-1 mt-10 md:grid-cols-2 md:gap-20 md:mb-20 lg:mb-40 lg:mt-20">
           <TimelineSteps
             stepsContent={{
               Steps: "Step 1",

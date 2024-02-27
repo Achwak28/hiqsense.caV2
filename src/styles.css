@@ -119,6 +119,14 @@
   margin-bottom: 12px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .newsLetterEmail {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+}
+
 .newsLetterEmail::placeholder {
   font-size: 14px;
   font-family: 'Open Sans Hebrew-Regular';
@@ -134,6 +142,15 @@ select {
   padding: 12px 5px 12px 10px;
   width: 100%;
   margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .getInTouchForm input,
+  select {
+
+    margin-bottom: 35px;
+  }
 }
 
 .getInTouchForm input::placeholder {
@@ -640,6 +657,18 @@ select {
   transform: translateX(-50%);
 }
 
+@media only screen and (min-width: 1024px) {
+  .whyLargeEllipseBlock {
+    position: absolute;
+    bottom: -580px;
+    z-index: -1;
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
 .featuredLeftPulse {
   position: absolute;
   left: -90%;
@@ -654,6 +683,24 @@ select {
   bottom: -84px;
   z-index: -1;
   width: 735px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .featuredLeftPulse {
+    position: absolute;
+    left: -350px;
+    top: 0;
+    z-index: -1;
+    width: 735px;
+  }
+
+  .featuredRightPulse {
+    position: absolute;
+    right: -350px;
+    bottom: 0;
+    z-index: -1;
+    width: 735px;
+  }
 }
 
 .clientSplide .splide__pagination {
@@ -682,7 +729,7 @@ select {
   .clientSplide .splide__slide {
 
     display: block;
-    
+
     border-radius: 8px;
     transition: transform 400ms;
     transform: scale(.9);
@@ -694,15 +741,18 @@ select {
   .clientSplide .splide__slide.is-active {
     transform: scale(1.1);
   }
-  .clientSplide .splide__arrow{
+
+  .clientSplide .splide__arrow {
     background: transparent;
   }
+
   .clientSplide .splide__arrow--next::before {
     content: url('../src/components/images/client-testimonials/nectArrow.svg');
-}
-.clientSplide .splide__arrow--prev::before {
-  content: url('../src/components/images/client-testimonials/prevArrow.svg');
-}
+  }
+
+  .clientSplide .splide__arrow--prev::before {
+    content: url('../src/components/images/client-testimonials/prevArrow.svg');
+  }
 
 }
 
@@ -804,6 +854,26 @@ select {
 
 }
 
+@media only screen and (min-width: 1024px) {
+  .rightStick::after {
+    content: '';
+    position: absolute;
+    background-image: url('../src/components/images/Timeline/centerLine.svg');
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 10px;
+    height: 76rem;
+    background-size: contain;
+  }
+
+  .rightLine {
+    padding: 75px 30px 20px 30px;
+    margin-bottom: 50px;
+  }
+}
+
 /* TimeLine Blue Pulse Ends Here */
 
 .awardsBottomLine {
@@ -837,6 +907,24 @@ select {
 
 .pricingContainer> :nth-child(1) {
   position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  .pricingContainer> :nth-child(1) {
+    margin-left: auto;
+  }
+
+  .pricingContainer> :nth-child(2) {
+    margin-right: auto;
+  }
+
+  .pricingContainer> :nth-child(3) {
+    margin-left: auto;
+  }
+
+  .pricingContainer> :nth-child(4) {
+    margin-right: auto;
+  }
 }
 
 .pricingContainer> :nth-child(1)::after {

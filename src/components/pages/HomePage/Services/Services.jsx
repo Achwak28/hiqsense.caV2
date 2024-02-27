@@ -88,7 +88,7 @@ function Services() {
             custRadius="12px"
             custFontSize="18px"
             custMarg="0"
-            lgPadding = "lg:py-[25px]"
+            lgPadding = "lg:py-[25px] lg:w-full"
           />
         </div>
       </div>

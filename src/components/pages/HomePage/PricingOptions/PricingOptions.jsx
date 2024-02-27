@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import PricingCard from "../../../ui/PricingCard";
 import PrimaryHeading from "../../../ui/PrimaryHeading";
 import PrimarySubHeading from "../../../ui/PrimarySubHeading";
+import lgRightEllipse from "../../../images/pricing-options/lgRightEllipse.png";
+import lgLeftEllipse from "../../../images/pricing-options/lgLeftEllipse.png";
 
 const pricingObj = [
   {
@@ -57,6 +59,12 @@ function PricingOptions() {
   return (
     <>
       <section className="px-4 lg:px-40 py-10 lg:py-20 relative overflow-hidden">
+        <div className="hidden lg:block absolute right-0 top-0 -z-10">
+          <img src={lgRightEllipse} alt="lgRightEllipse" />
+        </div>
+        <div className="hidden lg:block absolute left-0 bottom-0 -z-10">
+          <img src={lgLeftEllipse} alt="lgLeftEllipse" />
+        </div>
         <PrimaryHeading headingText="Pricing Options" />
         <PrimarySubHeading subText="Choose the plan that fits your budget" />
 
