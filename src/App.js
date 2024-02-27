@@ -14,12 +14,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 // Sections Import Start
-import HeroSection from './components/pages/HomePage/Hero/Hero'
+import HeroSection from "./components/pages/HomePage/Hero/Hero";
 import Services from "./components/pages/HomePage/Services/Services";
 // Sections Import End
-import React from "react";
-import theme from "./Theme";
-import { ThemeProvider } from "@mui/material/styles";
+
 import WhyChooseUs from "./components/pages/HomePage/WhyChooseUs/WhyChooseUs";
 import FeaturedWork from "./components/pages/HomePage/FeaturedWork/FeaturedWork";
 import ClientTestimonials from "./components/pages/HomePage/ClientTestimonials/ClientTestimonials";
@@ -28,15 +26,13 @@ import Awards from "./components/pages/HomePage/Awards/Awards";
 import PricingOptions from "./components/pages/HomePage/PricingOptions/PricingOptions";
 import Cta from "./components/pages/HomePage/CTA/Cta";
 import GetInTouch from "./components/pages/GetInTouch/GetInTouch";
-import 'animate.css';
+import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-
 import theme from "./Theme";
 import Service from "./components/Service";
-
 
 export default function App() {
   useEffect(() => {
@@ -46,7 +42,6 @@ export default function App() {
   }, []);
   return (
     <ThemeProvider theme={theme}>
-
       <div className="App">
         <BrowserRouter>
           <Header />
@@ -59,21 +54,20 @@ export default function App() {
           <TimelineSection />
           <Awards />
           <PricingOptions />
-          <Cta/>
-          <GetInTouch/>
+          <Cta />
+          <GetInTouch />
+          <Footer />
+        </BrowserRouter>
+
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/services" element={<Service />} />
+            <Route path="/about" />
+          </Routes>
           <Footer />
         </BrowserRouter>
       </div>
-
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/services" element={<Service />} />
-          <Route path="/about" />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-
     </ThemeProvider>
   );
 }
