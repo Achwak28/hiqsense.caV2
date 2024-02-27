@@ -1,25 +1,16 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-=======
-
-
-
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .App {
   font-family: sans-serif;
   text-align: center;
   overflow-x: hidden;
 }
- 
 
 .about-hero-section {
   background-image: url("./assets/about-us/about-bg.png");
@@ -141,16 +132,22 @@
   margin-bottom: 2rem;
 }
 
-@-webkit-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
-@-moz-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
-@keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -230,16 +227,14 @@
     height: 60.93rem;
     width: 30rem;
   }
-  .values-text-container{
+  .values-text-container {
     width: 100% !important;
-    margin-left:1rem ;
+    margin-left: 1rem;
     margin-right: 1rem;
   }
 }
 
-=======
-
-@layer components {
+======= @layer components {
   .hero-heading-styles {
     @apply font-garamond-semibold text-[32px] lg:text-[64px] text-center text-[#F9F9F9] mb-4 leading-tight md:w-[65%] lg:w-[50%];
   }
@@ -253,11 +248,8 @@
   }
 }
 
-
-
 @media only screen and (min-width: 1024px) {
-  .serviceParent> :nth-child(2) {
-
+  .serviceParent > :nth-child(2) {
     background: rgba(10, 6, 40, 0.48);
     border-radius: 20px;
     width: 90%;
@@ -265,37 +257,34 @@
     right: -48px;
   }
 
-  .serviceParent> :nth-child(1) {
+  .serviceParent > :nth-child(1) {
     width: 110%;
   }
 
-  .serviceParent> :nth-child(4) {
+  .serviceParent > :nth-child(4) {
     width: 110%;
     position: relative;
     right: 60px;
   }
 
-  .serviceParent> :nth-child(3) {
+  .serviceParent > :nth-child(3) {
     width: 90%;
-
-
   }
 
-  .whyChooseParent> :nth-child(2) {
+  .whyChooseParent > :nth-child(2) {
     position: relative;
     right: -100px;
   }
 
-  .whyChooseParent> :nth-child(3) {
+  .whyChooseParent > :nth-child(3) {
     position: relative;
     right: -200px;
   }
 
-  .whyChooseParent> :nth-child(4) {
+  .whyChooseParent > :nth-child(4) {
     position: relative;
     right: -100px;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -308,7 +297,6 @@
     z-index: -1;
   }
 }
-
 
 .custom-drop-shadow {
   filter: drop-shadow(0 4px 0px rgba(0, 0, 0, 1));
@@ -333,7 +321,7 @@
 
 .awardsSplide .splide__arrow {
   background: transparent;
-  border: 2.5px solid #186EF2;
+  border: 2.5px solid #186ef2;
   opacity: 1 !important;
 }
 
@@ -342,8 +330,6 @@
   height: 1em;
   width: 1em;
 }
-
-
 
 .awardsSplide .splide__arrow--prev {
   left: 0em;
@@ -366,12 +352,11 @@
     margin-bottom: 0px;
     margin-right: 10px;
   }
-
 }
 
 .newsLetterEmail::placeholder {
   font-size: 14px;
-  font-family: 'Open Sans Hebrew-Regular';
+  font-family: "Open Sans Hebrew-Regular";
 }
 
 .newsLetterEmail:focus-visible {
@@ -380,33 +365,29 @@
 
 .getInTouchForm input,
 select {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   padding: 12px 5px 12px 10px;
   width: 100%;
   margin-bottom: 12px;
 }
 
 @media only screen and (min-width: 1024px) {
-
   .getInTouchForm input,
   select {
-
     margin-bottom: 35px;
   }
 }
 
 .getInTouchForm input::placeholder {
   font-size: 14px;
-  font-family: 'Open Sans Hebrew-Regular';
+  font-family: "Open Sans Hebrew-Regular";
 }
 
 select {
-  color: #0A0628;
+  color: #0a0628;
   font-size: 14px;
-  font-family: 'Open Sans Hebrew-Regular';
+  font-family: "Open Sans Hebrew-Regular";
 }
-
-
 
 /* Hero Images Starts Here */
 .largeElipseBlock {
@@ -419,21 +400,17 @@ select {
   z-index: -1;
 }
 
-
 .largeElipseBlock .dropShadow,
 .mediumElipseBlock .dropShadow,
 .smallElipseBlock .dropShadow {
   filter: drop-shadow(0 0px 55px rgb(0, 0, 0, 25%));
 }
 
-
-
 .mediumElipseBlock {
   position: absolute;
   bottom: -17px;
   left: 28px;
   width: 550px;
-
 }
 
 .smallElipseBlock {
@@ -441,7 +418,6 @@ select {
   bottom: 46px;
   left: 53px;
   width: 450px;
-
 }
 
 .characterBlock {
@@ -449,7 +425,6 @@ select {
   bottom: 170px;
   left: 155px;
   width: 160px;
-
 }
 
 .rocketBlock {
@@ -547,7 +522,6 @@ select {
     bottom: 5px;
     left: 37px;
     width: 695px;
-
   }
 
   .smallElipseBlock {
@@ -555,7 +529,6 @@ select {
     bottom: -7px;
     left: 22px;
     width: 650px;
-
   }
 
   .characterBlock {
@@ -563,7 +536,6 @@ select {
     bottom: 224px;
     left: 238px;
     width: 200px;
-
   }
 
   .rocketBlock {
@@ -677,8 +649,6 @@ select {
     transform: translateY(60%);
     left: 282px;
   }
-
-
 }
 
 .largeElipseBlock.animate__animated.animate__pulse {
@@ -701,19 +671,12 @@ select {
   --animate-delay: 2s;
 }
 
-
-
-
-
-
-
-
 .firstWord::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 15px;
-  background-color: #F6393D;
+  background-color: #f6393d;
   bottom: 0;
   border-radius: 100px;
   z-index: -1;
@@ -721,11 +684,11 @@ select {
 
 @media only screen and (min-width: 1024px) {
   .firstWord::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 25px;
-    background-color: #F6393D;
+    background-color: #f6393d;
     bottom: 3px;
     border-radius: 100px;
     z-index: -1;
@@ -855,8 +818,6 @@ select {
     top: -40px;
     width: 100px;
   }
-
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -905,9 +866,9 @@ select {
 }
 
 .whyChooseAfter::after {
-  content: '';
+  content: "";
   position: absolute;
-  background-image: url('../src/components/images/why-choose-us/pseudo.png');
+  background-image: url("../src/components/images/why-choose-us/pseudo.png");
   background-repeat: no-repeat;
   width: 85px;
   height: 10px;
@@ -937,7 +898,6 @@ select {
     left: 8%;
     transform: translateX(-50%);
   }
-
 }
 
 .featuredLeftPulse {
@@ -995,19 +955,14 @@ select {
     margin-bottom: 2rem;
   }
 
-
-
   .clientSplide .splide__slide {
-
     display: block;
 
     border-radius: 8px;
     transition: transform 400ms;
-    transform: scale(.9);
+    transform: scale(0.9);
     transform-origin: center center;
-
   }
-
 
   .clientSplide .splide__slide.is-active {
     transform: scale(1.1);
@@ -1018,20 +973,18 @@ select {
   }
 
   .clientSplide .splide__arrow--next::before {
-    content: url('../src/components/images/client-testimonials/nectArrow.svg');
+    content: url("../src/components/images/client-testimonials/nectArrow.svg");
   }
 
   .clientSplide .splide__arrow--prev::before {
-    content: url('../src/components/images/client-testimonials/prevArrow.svg');
+    content: url("../src/components/images/client-testimonials/prevArrow.svg");
   }
-
 }
-
 
 .clientSplide .splide__pagination__page {
   height: 17px;
   width: 17px;
-  background: #C5C5C5;
+  background: #c5c5c5;
 }
 
 .clientSplide .splide__pagination__page.is-active {
@@ -1077,15 +1030,12 @@ select {
   z-index: -1;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-
   /* Your styles for tablets with a minimum width of 600 pixels go here */
   .rightStick::after {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../src/components/images/Timeline/centerLine.svg');
+    background-image: url("../src/components/images/Timeline/centerLine.svg");
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -1096,9 +1046,9 @@ select {
   }
 
   .pointLeft::after {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../src/components/images/Timeline/rightPointer.svg');
+    background-image: url("../src/components/images/Timeline/rightPointer.svg");
     background-repeat: no-repeat;
     top: 50%;
     left: -42px;
@@ -1110,9 +1060,9 @@ select {
   }
 
   .pointRight::before {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../src/components/images/Timeline/leftPointer.svg');
+    background-image: url("../src/components/images/Timeline/leftPointer.svg");
     background-repeat: no-repeat;
     top: 50%;
     right: -51px;
@@ -1122,14 +1072,13 @@ select {
     background-size: contain;
     z-index: 1;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
   .rightStick::after {
-    content: '';
+    content: "";
     position: absolute;
-    background-image: url('../src/components/images/Timeline/centerLine.svg');
+    background-image: url("../src/components/images/Timeline/centerLine.svg");
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -1152,8 +1101,8 @@ select {
 }
 
 .awardsBottomLine::after {
-  content: '';
-  border-bottom: 1px solid #4334B6;
+  content: "";
+  border-bottom: 1px solid #4334b6;
   width: 100%;
   position: absolute;
   bottom: -30px;
@@ -1176,31 +1125,31 @@ select {
   transform: rotate3d(1, 0, -20, 181deg);
 }
 
-.pricingContainer> :nth-child(1) {
+.pricingContainer > :nth-child(1) {
   position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
-  .pricingContainer> :nth-child(1) {
+  .pricingContainer > :nth-child(1) {
     margin-left: auto;
   }
 
-  .pricingContainer> :nth-child(2) {
+  .pricingContainer > :nth-child(2) {
     margin-right: auto;
   }
 
-  .pricingContainer> :nth-child(3) {
+  .pricingContainer > :nth-child(3) {
     margin-left: auto;
   }
 
-  .pricingContainer> :nth-child(4) {
+  .pricingContainer > :nth-child(4) {
     margin-right: auto;
   }
 }
 
-.pricingContainer> :nth-child(1)::after {
-  content: '';
-  background-image: url('../src/components/images/pricing-options/topHalfEllipse.png');
+.pricingContainer > :nth-child(1)::after {
+  content: "";
+  background-image: url("../src/components/images/pricing-options/topHalfEllipse.png");
   background-repeat: no-repeat;
   height: 2000px;
   position: absolute;
@@ -1210,13 +1159,13 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(2) {
+.pricingContainer > :nth-child(2) {
   position: relative;
 }
 
-.pricingContainer> :nth-child(2)::after {
-  content: '';
-  background-image: url('../src/components/images/pricing-options/halfElipse.png');
+.pricingContainer > :nth-child(2)::after {
+  content: "";
+  background-image: url("../src/components/images/pricing-options/halfElipse.png");
   background-repeat: no-repeat;
   height: 100%;
   position: absolute;
@@ -1226,13 +1175,13 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(3) {
+.pricingContainer > :nth-child(3) {
   position: relative;
 }
 
-.pricingContainer> :nth-child(3)::after {
-  content: '';
-  background-image: url('../src/components/images/pricing-options/thirdEllipse.png');
+.pricingContainer > :nth-child(3)::after {
+  content: "";
+  background-image: url("../src/components/images/pricing-options/thirdEllipse.png");
   background-repeat: no-repeat;
   height: 100%;
   position: absolute;
@@ -1242,30 +1191,30 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(3),
-.pricingContainer> :nth-child(4) {
+.pricingContainer > :nth-child(3),
+.pricingContainer > :nth-child(4) {
   background-image: linear-gradient(to bottom, #4334b642, #9c8fff00);
 }
 
 /* Price Eliipses Ends Here */
 
-
-
 /* Font Face Starts Here */
 /* Garamond Font face Stars Here */
 @font-face {
-  font-family: 'EB Garamond-SemiBold';
-  src: url('../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2') format('woff2'),
-    url('../public/fonts/EBGaramond/EBGaramond-SemiBold.woff') format('woff');
+  font-family: "EB Garamond-SemiBold";
+  src:
+    url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2") format("woff2"),
+    url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'EB Garamond-Bold';
-  src: url('../public/fonts/EBGaramond/EBGaramond-Bold.woff2') format('woff2'),
-    url('../public/fonts/EBGaramond/EBGaramond-Bold.woff') format('woff');
+  font-family: "EB Garamond-Bold";
+  src:
+    url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
+    url("../public/fonts/EBGaramond/EBGaramond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -1275,27 +1224,36 @@ select {
 
 /* Open Sans Hebrew Font face Stars Here */
 @font-face {
-  font-family: 'Open Sans Hebrew-Regular';
-  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2') format('woff2'),
-    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff') format('woff');
+  font-family: "Open Sans Hebrew-Regular";
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans Hebrew-Bold';
-  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2') format('woff2'),
-    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff') format('woff');
+  font-family: "Open Sans Hebrew-Bold";
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff")
+      format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans Hebrew-Light';
-  src: url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2') format('woff2'),
-    url('../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff') format('woff');
+  font-family: "Open Sans Hebrew-Light";
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff")
+      format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1305,18 +1263,20 @@ select {
 
 /* Lato Font Face Starts Here */
 @font-face {
-  font-family: 'Lato-bold';
-  src: url('../public/fonts/Lato/Lato-Bold.woff2') format('woff2'),
-    url('../public/fonts/Lato/Lato-Bold.woff') format('woff');
+  font-family: "Lato-bold";
+  src:
+    url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+    url("../public/fonts/Lato/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato-regular';
-  src: url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2'),
-    url('../public/fonts/Lato/Lato-Regular.woff') format('woff');
+  font-family: "Lato-regular";
+  src:
+    url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+    url("../public/fonts/Lato/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1337,4 +1297,3 @@ select {
     padding-right: 3rem !important;
   }
 }
-

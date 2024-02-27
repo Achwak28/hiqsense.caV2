@@ -12,8 +12,6 @@ const headerStyle = {
   width: "100%",
   height: "auto",
   backgroundColor: "#4334B6",
-  position: "fixed",
-  zIndex: "99",
 };
 const NavigationBar = () => (
   <nav className="flex gap-5 justify-between pr-8">
