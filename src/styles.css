@@ -14,12 +14,12 @@
  
 
 .about-hero-section {
-  background-image: url("../../assets/about-us/about-bg.png");
+  background-image: url("./assets/about-us/about-bg.png");
   height: fit-content;
 }
 
 .about-hero-section-container {
-  background-image: url("../../assets/about-us/about-bg.png");
+  background-image: url("./assets/about-us/about-bg.png");
   display: flex;
   justify-content: center !important;
   align-items: center;
