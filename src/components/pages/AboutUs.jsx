@@ -143,9 +143,9 @@ const AboutUs = () => {
         </div>
         <div className="about-services-right">
           {services.map((service, index) => (
-            <div data-aos="fade-right" data-aos-delay={`${(index + 1) * 500}`}>
+            <div key={service.id} data-aos="fade-right" data-aos-delay={`${(index + 1) * 500}`}>
               <ServiceCard
-                key={service.id}
+                
                 image={service.image}
                 text={service.text}
                 tittle={service.title}
