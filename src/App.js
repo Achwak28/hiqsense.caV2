@@ -14,7 +14,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutUs from "./components/pages/AboutUs";
 import theme from "./Theme";
-import Service from "./components/Service";
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/services" element={<Service />} />
           <Route path="/about"  element={<AboutUs />}/>
         </Routes>
         <Footer />
