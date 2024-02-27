@@ -32,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer
-      style={{ opacity: 0.85 }}
+      style={{ opacity: 0.85, marginTop:"0px"}}
       className="flex flex-col items-center px-16 w-full bg-violet-950 py-10 max-md:px-5 max-md:mt-10 max-md:max-w-full"
     >
       <div className="flex z-10 flex-col mt-0 w-full max-w-[1188px] max-md:max-w-full">
@@ -79,11 +79,10 @@ const Footer = () => {
         width="100%"
         style={{
           padding: "0",
-
           position: "relative",
           bottom: 80,
         }}
-      ></div>
+      />
     </footer>
   );
 };
