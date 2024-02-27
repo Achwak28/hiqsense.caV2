@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "imageUrl": "1.png",
+      "title": "Web Design",
+      "subTitle": "Shaping Digital Experiences",
+      "options": [
+        {
+          "title": "Creative Interface Design",
+          "content": "Bringing a blend of creativity and functionality to design intuitive and visually appealing interfaces."
+        },
+        {
+          "title": "User-Centric Approach",
+          "content": "Prioritizing user experience to create seamless interactions and enhance overall satisfaction."
+        },
+        {
+          "title": "Digital Transformation Solutions",
+          "content": "Designing solutions that align with industry trends and propel your brand into the digital future."
+        }
+      ],
+      "images": [
+        {
+          "image": "1-1.png",
+          "caption": "User Approach"
+        },
+        {
+          "image": "1-2.png",
+          "caption": "Creative Design"
+        },
+        {
+          "image": "1-3.png",
+          "caption": "Iterative Refinement"
+        }
+      ]
+    },
+    {
+      "imageUrl": "2.png",
+      "title": "Logo and Graphic Design",
+      "subTitle": "Crafting Visual Identities",
+      "options": [
+        {
+          "title": "Exceptional Design",
+          "content": "Creating visually stunning logos and graphics that captivate and resonate with your brand identity."
+        },
+        {
+          "title": "Brand Representation",
+          "content": "Crafting visual elements that leave a lasting impression and strengthen brand recognition."
+        },
+        {
+          "title": "Graphic Design Expertise",
+          "content": "Providing a range of graphic design services to enhance your overall visual communication."
+        }
+      ],
+      "images": [
+        {
+          "image": "2-1.png",
+          "caption": "Brand Discovery"
+        },
+        {
+          "image": "2-2.png",
+          "caption": "Visual Conceptualization"
+        },
+        {
+          "image": "2-3.png",
+          "caption": "Iterative Collaboration"
+        }
+      ]
+    },
+    {
+      "imageUrl": "3.png",
+      "title": "SEO Optimization",
+      "subTitle": "Optimizing Your Digital Presence",
+      "options": [
+        {
+          "title": "Strategic Optimization",
+          "content": "Crafting and implementing SEO strategies to enhance online visibility and organic search rankings."
+        },
+        {
+          "title": "Keyword Research",
+          "content": "uncovering the most effective keywords to drive targeted traffic and increase your digital footprint."
+        },
+        {
+          "title": "Content Optimization",
+          "content": "Fine-tuning digital content for search engines, ensuring maximum impact and engagement."
+        }
+      ],
+      "images": [
+        {
+          "image": "3-1.png",
+          "caption": "In-depth Analysis"
+        },
+        {
+          "image": "3-2.png",
+          "caption": "Strategic Planning"
+        },
+        {
+          "image": "3-3.png",
+          "caption": "Implementation"
+        }
+      ]
+    },
+    {
+      "imageUrl": "4.png",
+      "title": "Email Hosting Configuration",
+      "subTitle": "Ensuring Effortless Communication Channels",
+      "options": [
+        {
+          "title": "Infrastructure Management",
+          "content": "Expertly managing email hosting infrastructure for optimal efficiency and security."
+        },
+        {
+          "title": "Optimization Strategies",
+          "content": "Ensuring reliable and efficient communication channels for seamless business operations."
+        },
+        {
+          "title": "Customized Solutions",
+          "content": "Tailoring email hosting services to meet the unique needs of your business."
+        }
+      ],
+      "images": [
+        {
+          "image": "4-1.png",
+          "caption": "Thorought Assessment"
+        },
+        {
+          "image": "4-2.png",
+          "caption": "Optimization Strategies"
+        },
+        {
+          "image": "4-3.png",
+          "caption": "Ongoing Support"
+        }
+      ]
+    }
+  ]
+}

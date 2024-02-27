@@ -1,8 +1,11 @@
+
 .App {
   font-family: sans-serif;
   text-align: center;
   overflow: hidden
 }
+
+
 
 @tailwind base;
 @tailwind components;
