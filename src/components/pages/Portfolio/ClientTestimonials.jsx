@@ -16,7 +16,7 @@ export default function ClientTestimonials() {
 
     return (
         <div className='relative'>
-            <div className="absolute inset-0" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', filter: 'blur(10px)', zIndex: -1 }}></div>
+            <div className="absolute inset-0" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', filter: 'blur(30px)', zIndex: -1 }}></div>
             <div className='flex flex-col gap-4 pt-24'>
                 <h2 className='font-serif font-bold text-5xl leading-normal pl-4 text-[#0A0628]'>Client Testimonials</h2>
                 <p className='font-sans font-normal text-[#0A0628] pl-4 mb-12'>Read what our clients have to say about us</p>
@@ -26,7 +26,7 @@ export default function ClientTestimonials() {
                         {items.map((_, index) => (
                             <button
                                 key={index}
-                                className={`w-4 h-4 bg-gray-400 mx-1 rounded-full focus:outline-none ${index === selected ? 'bg-gray-800' : ''
+                                className={`w-3 h-3 bg-gray-400 mx-1 mt-8 rounded-full focus:outline-none ${index === selected ? 'bg-gray-800' : ''
                                     }`}
                                 onClick={() => setSelected(index)}
                             />
