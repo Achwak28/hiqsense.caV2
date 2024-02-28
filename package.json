@@ -23,6 +23,9 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "@splidejs/react-splide": "^0.7.12",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "babel-eslint": "^10.1.0",
     "dotenv": "^16.4.4",
     "eslint": "^7.2.0",
