@@ -1,26 +1,28 @@
-@@ -26,6 +26,7 @@ module.exports = {
-},
-plugins: [],
-
-
-export const content = ["./src/**/*.{js,ts,jsx,tsx}"];
-export const theme = {
-extend: {
-@@ -75,6 +76,18 @@ export const theme = {
-      slideLeft: 'slideLeft 2s ease-out forwards',
-      slideRight: 'slideRight 2s ease-out forwards'
+/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "btn-primary": "#F6393D",
+        "txt-primary": "#0A0628",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        whyChooseCols: "0.7fr 2fr 0.3fr",
+      },
     },
-   fontFamily:{
-      body:['EB Garamond'],
-      subTitle:['Open Sans'],
-      otherFont:['Poppins']
+    fontFamily: {
+      "garamond-semibold": ["EB Garamond-SemiBold"],
+      "hebrew-regular": ["Open Sans Hebrew-Regular"],
+      "hebrew-bold": ["Open Sans Hebrew-Bold"],
+      "garamond-bold": ["EB Garamond-Bold"],
+      "hebrew-light": ["Open Sans Hebrew-Light"],
+      "lato-bold": ["Lato-bold"],
+      "lato-regular": ["Lato-regular"],
     },
-    backgroundImage: {
-      'hero-pattern': "url('/src/assets/about-us/about-bg.png')",
-    },
-    colors:{
-      whiteTitle: "#F9F9F9"
-    }
-},
-
+  },
+  plugins: [],
 };
+
