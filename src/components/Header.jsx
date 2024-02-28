@@ -11,6 +11,7 @@ const headerStyle = {
   zIndex: 10,
   width: "100%",
   height: "auto",
+  backgroundColor: "#4334B6",
 };
 const NavigationBar = () => (
   <nav className="flex gap-5 justify-between pr-8">
@@ -32,10 +33,14 @@ const NavigationBar = () => (
 const Header = () => (
   <header
     style={headerStyle}
-    className="flex flex-row gap-5 justify-between self-center px-20 w-full text-sm bg-indigo-700 border-b border-solid 
-  shadow border-b-slate-800 border-b-opacity-10 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:max-w-full"
+    className="md:flex relative hidden flex-row gap-5 justify-between self-center
+    px-20 w-full text-sm bg-indigo-700 border-b border-solid 
+    shadow border-b-slate-800 border-b-opacity-10 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:max-w-full"
   >
-    <div className="flex gap-5 justify-between py-5 tracking-wide leading-5 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+    <div
+      className="flex gap-5 justify-between py-5 tracking-wide leading-5 
+    whitespace-nowrap max-md:flex-wrap max-md:max-w-full"
+    >
       <Link to="/" style={linkStyle}>
         <img
           loading="lazy"
@@ -44,15 +49,17 @@ const Header = () => (
           className="my-auto max-w-full aspect-[7.69] w-[153px]"
         />
       </Link>
+
       <Box sx={{ display: { xs: "none", sm: "block" } }}>
         <NavigationBar />
       </Box>
-    </div>
-    <div className="flex gap-5 justify-between px-0.5 py-1 my-auto leading-[143%]">
-      <div className="my-auto tracking-wide">Learn more</div>
-      <button className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-red-500 rounded max-md:px-5">
-        Get started
-      </button>
+
+      <div className="flex gap-5 justify-between px-0.5 py-1 my-auto leading-[143%]">
+        <div className="my-auto tracking-wide">Learn more</div>
+        <button className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-btn-primary rounded max-md:px-5">
+          Get started
+        </button>
+      </div>
     </div>
   </header>
 );

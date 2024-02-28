@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,20 +11,27 @@ import "@fontsource/roboto/700.css";
 //import CatchAllRoute from "./components/BuilderIo";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./components/pages/HomePage/Home";
+import AboutUs from "./components/pages/AboutUs";
+
+// Sections Import Start
 import theme from "./Theme";
 import Service from "./components/Service";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/services" element={<Service />} />
-          <Route path="/about" />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <div className="App">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+          <Route path="/index" element={<Home />} />
+            <Route path="/services" element={<Service />} />
+            <Route path="/about" element={<AboutUs />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </div>
     </ThemeProvider>
   );
 }
