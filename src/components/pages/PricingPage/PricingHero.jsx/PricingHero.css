@@ -1,0 +1,14 @@
+.pricing-hero-container{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    background-image: url("../../../../assets/pricing/pricing-hero-bg.png");
+}
+
+.pricing-hero-container .pricing-hero-img{
+    flex-grow: 1;
+}
+
+.pricing-hero-container .pricing-hero-text{
+    flex-grow: 2;
+}

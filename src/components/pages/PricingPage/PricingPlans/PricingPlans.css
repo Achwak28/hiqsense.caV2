@@ -1,0 +1,31 @@
+.pricing-plans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-plans-container .pricing-plan1 {
+  width: 100%;
+  position: relative;
+}
+.pricing-plans-container .pricing-plan1 .pricing-plan-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.pricing-plans-container .pricing-plan1 .pricing-plan-features{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 2rem 4rem 2rem;
+}
+.pricing-plans-container .pricing-plan2 .pricing-plan-features{
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-plans-container .pricing-plan2 .pricing-plan-features .pricing-feature{
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+}
