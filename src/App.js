@@ -11,7 +11,6 @@ import "@fontsource/roboto/700.css";
 //import CatchAllRoute from "./components/BuilderIo";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/pages/HomePage/Home";
 import AboutUs from "./components/pages/AboutUs";
 
 // Sections Import Start
@@ -25,7 +24,6 @@ export default function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-          <Route path="/index" element={<Home />} />
             <Route path="/services" element={<Service />} />
             <Route path="/about" element={<AboutUs />} />
           </Routes>
