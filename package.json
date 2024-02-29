@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.10",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
+    "framer-motion": "^11.0.8",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
