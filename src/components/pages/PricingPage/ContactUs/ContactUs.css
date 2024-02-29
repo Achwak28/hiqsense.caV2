@@ -12,9 +12,9 @@
   position: relative;
 }
 
-.pricing-contact-us .pricing-contact-right .map{
-    height: 90%;
-    width: 100%;
+.pricing-contact-us .pricing-contact-right .map {
+  height: 90%;
+  width: 100%;
 }
 
 .pricing-contact-us .pricing-contact-right .pricing-map-marker {
@@ -97,9 +97,27 @@
   color: #ef4444;
 }
 
-@media only screen and (max-width: 768px){
-    .pricing-contact-us .pricing-contact-right {
-        display: none;
-      }
-
+@media only screen and (max-width: 768px) {
+  .pricing-contact-us .pricing-contact-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 459px) {
+  .pricing-contact-us .pricing-contact-left {
+    width: 100%;
+  }
+  .pricing-contact-us .pricing-contact-left .inputs {
+    width: 100%;
+  }
+  .pricing-contact-us .pricing-contact-left .inputs input,
+  .pricing-contact-us .pricing-contact-left .inputs select {
+    width: 100%;
+  }
+  .pricing-contact-us .pricing-contact-left .pricing-contact-info {
+    justify-content: center;
+  }
+  .pricing-contact-us .pricing-contact-left .pricing-contact-info .social-info {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
