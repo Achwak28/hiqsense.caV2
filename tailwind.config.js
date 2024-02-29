@@ -23,6 +23,7 @@ module.exports = {
       "lato-bold": ["Lato-bold"],
       "lato-regular": ["Lato-regular"],
     },
+
     minWidth: {
       4: "1rem", // 16px
     },
@@ -83,6 +84,10 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+ 
+
 
 
 export const theme = {

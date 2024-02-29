@@ -536,10 +536,6 @@ select {
     bottom: 224px;
     left: 238px;
     width: 200px;
-  }
-
-  .rocketBlock {
-    position: absolute;
     width: 150px;
     top: 19%;
     -ms-transform: translateY(-19%);

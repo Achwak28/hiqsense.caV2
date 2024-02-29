@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,21 +17,31 @@ import AboutUs from "./components/pages/AboutUs";
 import Home from "./components/pages/HomePage/Home";
 import Pricing from "./components/pages/PricingPage/Pricing"
 
-// Sections Import Start
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import theme from "./Theme";
 import Service from "./components/Service";
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
         <BrowserRouter>
           <Header />
           <Routes>
+
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Service />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/pricing" element={<Pricing />} />
+
+          
           </Routes>
           <Footer />
         </BrowserRouter>
