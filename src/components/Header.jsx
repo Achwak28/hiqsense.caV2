@@ -16,7 +16,7 @@ const NavigationBar = () => (
     <Link to="about"> <NavLink>About Us</NavLink></Link>
     <Link to="services"> <NavLink>Services</NavLink></Link>
     <Link to="portfolio"> <NavLink>Portfolio</NavLink></Link>
-    <Link to="contact"> <NavLink>AContact Us</NavLink></Link>
+    <Link to="contact"> <NavLink>Contact Us</NavLink></Link>
   </nav>
 );
 
