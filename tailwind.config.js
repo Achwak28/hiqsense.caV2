@@ -4,6 +4,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+
       colors: {
         "btn-primary": "#F6393D",
         "txt-primary": "#0A0628",
@@ -22,6 +23,7 @@ module.exports = {
       "lato-bold": ["Lato-bold"],
       "lato-regular": ["Lato-regular"],
     },
+
   },
   plugins: [],
 };
