@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import icon from "../../../../assets/pricing/Icon.png";
 import check from "../../../../assets/pricing/Check.png";
-
 import "./PricingCard.css";
 
 const PricingCard = ({
@@ -13,9 +14,12 @@ const PricingCard = ({
   bgColor,
   offers,
 }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
     <div className="pricing-card-container">
-      <div className={`pricing-plan-card ${bgColor}`}>
+      <div data-aos="fade-up" className={`pricing-plan-card ${bgColor}`}>
         <img
           className={`pricing-card-image ${imagePosition}`}
           src={image}
@@ -45,7 +49,7 @@ const PricingCard = ({
             <div className="plan-card-list">
               {offers.map((offer) => (
                 <div key={offer.id} className="plan-card-list-item">
-                  <img className="w-[28px] " src={check} alt="check" />
+                  <img className="w-[28px] h-[28px] " src={check} alt="check" />
                   <p className="font-normal font-subTitle text-2xl ml-2">
                     {offer.text}
                   </p>

@@ -14,6 +14,7 @@
 
 .pricing-contact-us .pricing-contact-right .map{
     height: 90%;
+    width: 100%;
 }
 
 .pricing-contact-us .pricing-contact-right .pricing-map-marker {
@@ -60,7 +61,7 @@
 .pricing-contact-us .pricing-contact-left .pricing-contact-info .social-info {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   text-align: end;
 }
 
@@ -91,7 +92,14 @@
   .pricing-contact-left
   .pricing-contact-info
   .social-info
-  .social-info-icon.social-info-text
+  .social-info-text
   .subtitle {
   color: #ef4444;
+}
+
+@media only screen and (max-width: 768px){
+    .pricing-contact-us .pricing-contact-right {
+        display: none;
+      }
+
 }

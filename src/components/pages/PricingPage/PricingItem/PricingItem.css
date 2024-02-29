@@ -4,11 +4,13 @@
   width: 16.87rem;
 }
 .pricing-plan-feature .pricing-plan-feature-title {
+  background: linear-gradient(124.85deg, #4334B6 4.69%, #F6393D 253.57%);
+/*
   background-image: linear-gradient(
     to top left,
     rgba(246, 57, 61, 1) -57%,
     rgba(67, 52, 182, 1) 100%
-  );
+  );*/
   color: white;
   width: fit-content;
   font-weight: 400;

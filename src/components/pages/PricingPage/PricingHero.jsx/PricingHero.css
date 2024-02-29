@@ -1,14 +1,34 @@
-.pricing-hero-container{
-    height: 100vh;
-    display: flex;
-    align-items: stretch;
+.pricing-hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  background-image: url("../../../../assets/pricing/pricing-hero-bg.png");
+}
+
+.pricing-hero-container .pricing-hero-img {
+  flex-grow: 1;
+  margin-top: 6.25rem;
+}
+
+.pricing-hero-container .pricing-hero-text .hero-text {
+  flex-grow: 2;
+  margin-top: 14rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .pricing-hero-container {
+    height: 90vh;
+    height: fit-content;
+    flex-direction: column-reverse;
+    padding: 1rem 1rem 4rem;
     background-image: url("../../../../assets/pricing/pricing-hero-bg.png");
-}
+  }
 
-.pricing-hero-container .pricing-hero-img{
-    flex-grow: 1;
-}
-
-.pricing-hero-container .pricing-hero-text{
+  .pricing-hero-container .pricing-hero-img {
+    margin-top: 1.57rem;
+  }
+  .pricing-hero-container .pricing-hero-text .hero-text {
     flex-grow: 2;
+    margin-top: 10rem;
+  }
 }

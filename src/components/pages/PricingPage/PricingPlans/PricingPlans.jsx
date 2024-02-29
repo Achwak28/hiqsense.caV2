@@ -1,16 +1,16 @@
 import React from "react";
-import "./PricingPlans.css";
 import PricingCard from "../PricingCard/PricingCard";
 import ellipses1 from "../../../../assets/pricing/bg-ellipses1.png";
 import ellipses2 from "../../../../assets/pricing/ellipse-bg2.png";
-import ellipses3 from '../../../../assets/pricing/ellipses-bg3.png'
+import ellipses3 from "../../../../assets/pricing/ellipses-bg3.png";
 import PricingItem from "../PricingItem/PricingItem";
 import { pricing_plans } from "../../../../constants";
+import "./PricingPlans.css";
 
 const PricingPlans = () => {
   return (
     <div className="pricing-plans-container">
-      <div style={{ width: "65%" }} className="pricing-plans-text">
+      <div className="pricing-plans-text">
         {" "}
         <p
           style={{ fontSize: "3.5rem", marginTop: "5rem" }}
@@ -34,9 +34,13 @@ const PricingPlans = () => {
       </div>
 
       <div className="pricing-plan1">
-        <img className="ellipses-bg1 " src={ellipses1} alt="ellipse" />
+        <img
+          className="ellipses-bg1 hidden md:block "
+          src={ellipses1}
+          alt="ellipse"
+        />
         <PricingCard
-         imagePosition="postion-top-right"
+          imagePosition="postion-top-right"
           image={pricing_plans[0].image}
           key={pricing_plans[0].id}
           title={pricing_plans[0].title}
@@ -49,7 +53,7 @@ const PricingPlans = () => {
             style={{
               fontSize: "1.125rem",
             }}
-            className="font-normal font-subTitle my-12"
+            className="font-normal font-subTitle my-12 "
           >
             {" "}
             Launching your online presence has never been more accessible. Our
@@ -59,13 +63,18 @@ const PricingPlans = () => {
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[0].features.map((feature) => (
-            <PricingItem
-              styles="left-right-spacing"
+          {pricing_plans[0].features.map((feature, index) => (
+            <div
               key={feature.id}
-              title={feature.title}
-              content={feature.content}
-            />
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 300}`}
+            >
+              <PricingItem
+                styles="left-right-spacing"
+                title={feature.title}
+                content={feature.content}
+              />
+            </div>
           ))}
         </div>
       </div>
@@ -95,19 +104,29 @@ const PricingPlans = () => {
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[1].features.map((feature) => (
+          {pricing_plans[1].features.map((feature, index) => (
+            <div
+            key={feature.id}
+            data-aos="fade-up"
+            data-aos-delay={`${(index + 1) * 300}`}
+          >
             <PricingItem
               styles="left-right-spacing"
               key={feature.id}
               title={feature.title}
               content={feature.content}
             />
+            </div>
           ))}
         </div>
       </div>
 
       <div className="pricing-plan1">
-        <img className="pricing-plan-bg2 " src={ellipses2} alt="ellipse" />
+        <img
+          className="pricing-plan-bg2 hidden md:block "
+          src={ellipses2}
+          alt="ellipse"
+        />
         <PricingCard
           imagePosition="postion-right"
           image={pricing_plans[2].image}
@@ -133,23 +152,33 @@ const PricingPlans = () => {
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[0].features.map((feature) => (
+          {pricing_plans[0].features.map((feature, index) => (
+            <div
+            key={feature.id}
+            data-aos="fade-up"
+            data-aos-delay={`${(index + 1) * 300}`}
+          >
             <PricingItem
               styles="left-right-spacing"
               key={feature.id}
               title={feature.title}
               content={feature.content}
             />
+            </div>
           ))}
         </div>
       </div>
 
       <div className="pricing-plan2">
-        <img className="pricing-plan-bg2 " src={ellipses3} alt="ellipse" />
+        <img
+          className="pricing-plan-bg2 hidden md:block"
+          src={ellipses3}
+          alt="ellipse"
+        />
         <PricingCard
           image={pricing_plans[3].image}
           imagePosition="position-top"
-          bgColor='bg-transparent'
+          bgColor="bg-transparent"
           key={pricing_plans[3].id}
           title={pricing_plans[3].title}
           packageName={pricing_plans[3].packageName}
@@ -171,13 +200,19 @@ const PricingPlans = () => {
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[1].features.map((feature) => (
+          {pricing_plans[1].features.map((feature, index) => (
+            <div
+            key={feature.id}
+            data-aos="fade-up"
+            data-aos-delay={`${(index + 1) * 300}`}
+          >
             <PricingItem
               styles="left-right-spacing"
               key={feature.id}
               title={feature.title}
               content={feature.content}
             />
+            </div>
           ))}
         </div>
       </div>

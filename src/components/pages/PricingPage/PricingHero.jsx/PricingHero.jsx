@@ -6,22 +6,22 @@ import "./PricingHero.css";
 
 const PricingHero = () => {
     useEffect(() => {
-        AOS.init({ duration: 2000 });
+        AOS.init();
       }, []);
   return (
     <div className="pricing-hero-container">
       <div data-aos="fade-right" className="pricing-hero-text">
         <p
+      
           style={{
             fontSize: "3rem",
-            marginTop: "10.56rem",
             marginLeft: "6.125rem",
             color: "#F9F9F9",
             lineHeight: "4.56rem",
           }}
-          className="about-hero-text font-body font-bold text-center md:text-left text-whiteTitle"
+          className="about-hero-text font-body font-bold text-center md:text-left text-whiteTitle hero-text"
         >
-          Pricing Plans: Tailored Solutions for <br /> Your Digital
+          Pricing Plans: Tailored Solutions for Your Digital
           Transformation
         </p>
         <p
@@ -39,8 +39,7 @@ const PricingHero = () => {
         </p>
       </div>
       <img
-        style={{ marginTop: "10.56rem" }}
-        className="w-[500px] mx-auto my-4 pricing-hero-img"
+        className="w-[23.68rem] h-[23.68rem] md:w-[31.25rem] md:h-[31.25rem]  mx-auto my-4 pricing-hero-img"
         src={heroImg}
         alt="heroImg"
         data-aos="fade-left"
