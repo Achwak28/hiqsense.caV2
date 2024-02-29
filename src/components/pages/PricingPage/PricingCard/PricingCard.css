@@ -4,6 +4,13 @@
  
 }
 
+.linear-gradient-bg{
+  background: linear-gradient(180deg, rgba(67, 52, 182, 0.37) 0%, rgba(159, 147, 250, 0.08) 100%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.bg-transparent{
+  background-color: transparent !important;
+}
 
 .pricing-card-container .pricing-plan-card {
   width: 30.5rem;
@@ -14,11 +21,29 @@
   padding: 2.5rem;
   position: relative;
   z-index: 99;
+  overflow: hidden !important;
 }
 .pricing-card-container .pricing-plan-card .pricing-card-image {
   position: absolute;
+ 
+}
+.postion-top-right{
   right: 0;
   top: 10%;
+}
+.postion-right{
+  right: 0;
+
+}
+.position-top{
+  top:0;
+  left: 0;
+}
+.position-left{
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .pricing-card-container .pricing-plan-card .plan-card-content {

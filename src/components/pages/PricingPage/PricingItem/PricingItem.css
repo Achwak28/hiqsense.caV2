@@ -27,3 +27,7 @@
   color: white;
   text-align: left;
 }
+
+.left-right-spacing{
+  margin: 0.5rem 1rem 1rem;
+}

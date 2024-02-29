@@ -4,28 +4,39 @@
   align-items: center;
 }
 
-.pricing-plans-container .pricing-plan1 {
+.pricing-plans-container .pricing-plan1,
+.pricing-plans-container .pricing-plan2 {
   width: 100%;
   position: relative;
 }
-.pricing-plans-container .pricing-plan1 .pricing-plan-bg {
+.pricing-plans-container .pricing-plan1 .ellipses-bg1 {
   position: absolute;
   right: 0;
   top: 0;
   z-index: -1;
 }
+.pricing-plans-container .pricing-plan1 .pricing-plan-bg2 {
+    position: absolute;
+    left: 0;
+    top: -15%;
+    z-index: -1;
+  }
+  .pricing-plans-container .pricing-plan2 .pricing-plan-bg2 {
+    position: absolute;
+    right: 0;
+    top: 25%;
 
-.pricing-plans-container .pricing-plan1 .pricing-plan-features{
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem 2rem 4rem 2rem;
+  }
+
+.pricing-plans-container .pricing-plan1 .pricing-plan-features {
+  display: flex;
+  flex-wrap : wrap;
+  justify-content: center;
+  margin: 1rem 2rem 4rem 2rem;
 }
-.pricing-plans-container .pricing-plan2 .pricing-plan-features{
-    display: flex;
+.pricing-plans-container .pricing-plan2 .pricing-plan-features {
+  display: flex;
   flex-wrap: wrap;
-}
-
-.pricing-plans-container .pricing-plan2 .pricing-plan-features .pricing-feature{
-    flex-basis: calc(33.33% - 10px);
-    margin: 5px;
+  justify-content: center;
+  margin: 1rem 9rem 4rem 9rem;
 }
