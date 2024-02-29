@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
@@ -20,6 +21,13 @@ const NavigationBar = () => (
 );
 
 
+const navigationLinks = [
+  { url: "about", label: "About Us" },
+  { url: "services", label: "Services" },
+  { url: "portfolio", label: "Portfolio" },
+  { url: "contact", label: "Contact Us" },
+];
+
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const overlayRef = React.useRef(null);
@@ -37,7 +45,9 @@ const MobileNavigation = () => {
       setIsOpen(false);
     }
   }
-
+  const closeMenu = () => {
+    setIsOpen(false);
+  }
 
   return (
     <>
@@ -48,14 +58,22 @@ const MobileNavigation = () => {
         <>
           <div ref={overlayRef} className="fixed inset-0 bg-black/50" onClick={handleClick} />
           <div className=" fixed inset-0 w-full sm:w-[300px] h-screen p-8 bg-[#4334B6] shadow-lg text-white flex flex-col gap-5">
-            <button className="ml-auto" onClick={() => setIsOpen(false)}>
+            <button className="ml-auto" onClick={closeMenu}>
               <CloseIcon />
             </button>
             <div className="flex text-left flex-col gap-5 ">
-              <Link to="about" className="p-2 hover:bg-white/10 hover:text-white rounded cursor-pointer"> About Us</Link>
-              <Link to="services" className="p-2 hover:bg-white/10 hover:text-white rounded cursor-pointer"> Services</Link>
-              <Link to="portfolio" className="p-2 hover:bg-white/10 hover:text-white rounded cursor-pointer"> Portfolio</Link>
-              <Link to="contact" className="p-2 hover:bg-white/10 hover:text-white rounded cursor-pointer"> Contact Us</Link>
+              {
+                navigationLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    to={link.url}
+                    className="p-2 hover:bg-white/10 hover:text-white rounded cursor-pointer"
+                    onClick={closeMenu}
+                  >
+                    {link.label}
+                  </Link>
+                ))
+              }
             </div>
           </div >
         </>
