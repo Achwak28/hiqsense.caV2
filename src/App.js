@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./components/pages/HomePage/Home";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
 //import AboutUs from "./components/pages/AboutUs";
 
 
@@ -26,6 +27,7 @@ export default function App() {
           <Routes>
 
             <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactUs />} />
             {/*<Route path="/services" element={<Service />} />
             <Route path="/about" element={<AboutUs />} /> */}
 
