@@ -289,7 +289,7 @@ function HeroSection() {
               id="pathLg"
               d="M850 0a850 350 0 1 0 0 700a850 350 0 1 0 0-700z"
               fill="none"
-              stroke="green"
+              stroke="none"
             />
           </svg>
           <svg
@@ -303,7 +303,7 @@ function HeroSection() {
               id="path"
               d="M350 0a350 850 0 1 0 0 1700a350 850 0 1 0 0-1700z"
               fill="none"
-              stroke="green"
+              stroke="none"
             />
           </svg>
           <svg
@@ -317,7 +317,7 @@ function HeroSection() {
               id="pathMd"
               d="M500 0a500 850 0 1 0 0 1700a500 850 0 1 0 0-1700z"
               fill="none"
-              stroke="green"
+              stroke="none"
             />
           </svg>
           {/* Ends Here */}
@@ -333,7 +333,7 @@ function HeroSection() {
               id="path600Lg"
               d="M900 0a900 400 0 1 0 0 800a900 400 0 1 0 0-800z"
               fill="none"
-              stroke="brown"
+              stroke="none"
             />
           </svg>
           <svg
@@ -347,7 +347,7 @@ function HeroSection() {
               id="path600"
               d="M400 0a400 900 0 1 0 0 1800a400 900 0 1 0 0-1800z"
               fill="none"
-              stroke="brown"
+              stroke="none"
             />
           </svg>
           <svg
@@ -361,7 +361,7 @@ function HeroSection() {
               id="path600Md"
               d="M650 0a650 900 0 1 0 0 1800a650 900 0 1 0 0-1800z"
               fill="none"
-              stroke="brown"
+              stroke="none"
             />
           </svg>
           {/* Ends Here */}
@@ -377,7 +377,7 @@ function HeroSection() {
               id="pathNotepadLg"
               d="M650 0a650 400 0 1 0 0 800a650 400 0 1 0 0-800z"
               fill="none"
-              stroke="pink"
+             stroke="none"
             />
           </svg>
           <svg
@@ -391,7 +391,7 @@ function HeroSection() {
               id="pathNotepad"
               d="M400 0a400 650 0 1 0 0 1300a400 650 0 1 0 0-1300z"
               fill="none"
-              stroke="pink"
+             stroke="none"
             />
           </svg>
           <svg
@@ -405,7 +405,7 @@ function HeroSection() {
               id="pathNotepadMd"
               d="M600 0a600 650 0 1 0 0 1300a600 650 0 1 0 0-1300z"
               fill="none"
-              stroke="pink"
+             stroke="none"
             />
           </svg>
           {/* Ends Here */}
@@ -421,7 +421,7 @@ function HeroSection() {
               id="pathcandelstickBlockLg"
               d="M750 0a750 350 0 1 0 0 700a750 350 0 1 0 0-700z"
               fill="none"
-              stroke="red"
+              stroke="none"
             />
           </svg>
           <svg
@@ -435,7 +435,7 @@ function HeroSection() {
               id="pathcandelstickBlock"
               d="M350 0a350 750 0 1 0 0 1500a350 750 0 1 0 0-1500z"
               fill="none"
-              stroke="red"
+              stroke="none"
             />
           </svg>
           <svg
@@ -449,7 +449,7 @@ function HeroSection() {
               id="pathcandelstickBlockMd"
               d="M600 0a600 750 0 1 0 0 1500a600 750 0 1 0 0-1500z"
               fill="none"
-              stroke="red"
+              stroke="none"
             />
           </svg>
           {/* Ends Here */}
@@ -465,7 +465,7 @@ function HeroSection() {
               id="pathworldBlockLg"
               d="M850 0a850 400 0 1 0 0 800a850 400 0 1 0 0-800z"
               fill="none"
-              stroke="black"
+              stroke="none"
             />
           </svg>
           <svg
@@ -479,7 +479,7 @@ function HeroSection() {
               id="pathworldBlock"
               d="M400 0a400 850 0 1 0 0 1700a400 850 0 1 0 0-1700z"
               fill="none"
-              stroke="black"
+              stroke="none"
             />
           </svg>
           <svg
@@ -493,7 +493,7 @@ function HeroSection() {
               id="pathworldBlockMd"
               d="M600 0a600 850 0 1 0 0 1700a600 850 0 1 0 0-1700z"
               fill="none"
-              stroke="black"
+              stroke="none"
             />
           </svg>
           {/* Ends Here */}
