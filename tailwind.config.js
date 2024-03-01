@@ -9,7 +9,7 @@ module.exports = {
         'garamond': ['EB Garamond', 'serif'],
       },
       screens: {
-        'md': '767px',
+        'md': '900px',
         'sm':'200px'
       },
     },
