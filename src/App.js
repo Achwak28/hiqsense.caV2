@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 
 import Home from "./components/pages/HomePage/Home";
 import AboutUs from "./components/pages/AboutUs";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
 
 // Sections Import Start
 import theme from "./Theme";
@@ -31,6 +32,8 @@ export default function App() {
             <Route path="/services" element={<Service />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/portfolio" element={<Portfolio/>} />
+            <Route path="/contact" element={<ContactUs />} />
+
           </Routes>
 
           <Footer />

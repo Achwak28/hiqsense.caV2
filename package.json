@@ -17,7 +17,11 @@
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
+
     "gsap": "^3.12.5",
+
+    "framer-motion": "^11.0.8",
+
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
