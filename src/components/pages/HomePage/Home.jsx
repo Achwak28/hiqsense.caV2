@@ -14,6 +14,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
+
+
 // import AOS from "../../../../node_modules/aos/dist/aos";
 // import "aos/dist/aos.css";
 // import "../../../../node_modules/animate.css";
@@ -23,6 +25,7 @@ export default function Home() {
     AOS.init({
       easing: "ease-out-cubic",
     });
+ 
   }, []);
   return (
     <div>
@@ -39,4 +42,3 @@ export default function Home() {
     </div>
   );
 }
-
