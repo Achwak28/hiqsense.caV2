@@ -4,10 +4,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-
       colors: {
         "btn-primary": "#F6393D",
         "txt-primary": "#0A0628",
+      },
+      screens: {
+        'md': '900px',
+        'sm':'200px'
       },
       gridTemplateColumns: {
         // Simple 16 column grid
@@ -23,8 +26,6 @@ module.exports = {
       "lato-bold": ["Lato-bold"],
       "lato-regular": ["Lato-regular"],
     },
-
   },
   plugins: [],
 };
-
