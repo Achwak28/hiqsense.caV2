@@ -12,7 +12,8 @@ import "@fontsource/roboto/700.css";
 
 //import CatchAllRoute from "./components/BuilderIo";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
+import UpdatedFooter from './components/UpdatedFooter/UpdatedFooter'
 /*import AboutUs from "./components/pages/AboutUs";
 import Home from "./components/pages/HomePage/Home";
 import Service from "./components/Service";*/
@@ -47,7 +48,8 @@ export default function App() {
 
           
           </Routes>
-          <Footer />
+          {/*<Footer />*/}
+          <UpdatedFooter/>
         </BrowserRouter>
       </div>
     </ThemeProvider>

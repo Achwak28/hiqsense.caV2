@@ -115,4 +115,9 @@
   .plan-card-list-item {
     font-size: 1.1rem;
 }
+.pricing-card-container .pricing-plan-card {
+
+  height: fit-content;
+ 
+}
 }

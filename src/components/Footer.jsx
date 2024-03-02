@@ -32,12 +32,9 @@ const Footer = () => {
 
   return (
     <footer
-
-      style={{ opacity: 0.85, marginTop:"0px", backgroundColor:"#4d347c"}}
+      style={{ opacity: 0.85, marginTop: "0px", backgroundColor: "#4d347c" }}
       className="flex flex-col items-center px-16 w-full bg-violet-950 py-10 max-md:px-5 max-md:mt-10 max-md:max-w-full"
- 
->
-     
+    >
       <div className="flex z-10 flex-col mt-0 w-full max-w-[1188px] max-md:max-w-full">
         <header className="flex gap-5 justify-between mt-24 text-2xl font-bold text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
           <img
@@ -48,17 +45,16 @@ const Footer = () => {
           />
           <div
             className="flex-auto self-end mt-8"
-
-            style={{ paddingRight: "10%", textAlign: "right", color:"white" }}
-
+            style={{ paddingRight: "10%", textAlign: "right", color: "white" }}
           >
             Lets do it!
           </div>
         </header>
         <nav className="flex gap-5 justify-between items-start pr-12 my-8 w-full max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
-
-          <div style={{color:"white"}} className="flex gap-5 justify-between self-center pr-2 mt-20 text-white whitespace-nowrap max-md:mt-10">
-
+          <div
+            style={{ color: "white" }}
+            className="flex gap-5 justify-between self-center pr-2 mt-20 text-white whitespace-nowrap max-md:mt-10"
+          >
             {navigationLinks.map((link) => (
               <NavigationLink key={link.label} {...link} />
             ))}
@@ -70,14 +66,22 @@ const Footer = () => {
           </div>
         </nav>
 
-
-        <div style={{borderTop:"1px solid white", paddingTop:"1rem"}} className="flex gap-5 justify-between mt-5 w-full text-white max-md:flex-wrap max-md:max-w-full">
+        <div
+          style={{ borderTop: "1px solid white", paddingTop: "1rem" }}
+          className="flex gap-5 justify-between mt-5 w-full text-white max-md:flex-wrap max-md:max-w-full"
+        >
           <div className="flex flex-row gap-5 justify-between text-lg">
-            <div style={{color:"white"}} className="flex-auto text-white">Privacy Policy</div>
-            <div style={{color:"white"}} className="flex-auto">Terms of Use</div>
+            <div style={{ color: "white" }} className="flex-auto text-white">
+              Privacy Policy
+            </div>
+            <div style={{ color: "white" }} className="flex-auto">
+              Terms of Use
+            </div>
           </div>
-          <div style={{color:"white"}} className="flex-auto my-auto text-sm font-light text-right">
-
+          <div
+            style={{ color: "white" }}
+            className="flex-auto my-auto text-sm font-light text-right"
+          >
             © 2024 All Rights Reserved
           </div>
         </div>
