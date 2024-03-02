@@ -30,7 +30,7 @@ const ContactUs = () => {
             <input type="text" id="email" placeholder="Email *" />
           </div>
           <div className="inputs">
-            <input type="text" id="user-name" placeholder="Phone Number *" />
+            <input type="text" id="phone" placeholder="Phone Number *" />
           </div>
 
           <div className="inputs">

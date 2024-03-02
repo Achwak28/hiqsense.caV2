@@ -106,11 +106,11 @@ const UpdatedFooter = () => {
       </div>
       <div className="footer-division-line"></div>
       <div className="footer-lower-content">
-        <div style={{ display: "flex" }}>
+        <div className="privacy-text" style={{ display: "flex" }}>
           <p style={{marginRight:"2rem"}}>Privacy Policy</p>
           <p>Terms of Use</p>
         </div>
-        <div className='right-text font-thin' style={{ color: "white" }}>© 2024 All Rights Reserved</div>
+        <div className='right-text font-thin' style={{ color: "white", fontWeight:"100", whiteSpace: "nowrap" }}>© 2024 All Rights Reserved</div>
       </div>
     </div>
   );
