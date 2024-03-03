@@ -33,7 +33,7 @@ export default function Portfolio() {
 
     return (
         <>
-            <section className='flex flex-col md:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0'>
+            <section className='flex flex-col pt-[250px] md:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0 md:pt-0'>
                 <div className='flex flex-col gap-2'>
                     <h1 className={`font-serif font-bold text-5xl leading-normal pl-4 text-left text-[#F9F9F9] sm:text-center md:text-left ${isVisible ? 'slide-in-left' : ''}`}>
                         Explore Our Signature Projects that Define the Future of <br />
