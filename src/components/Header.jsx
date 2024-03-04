@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
-
 import SmallLogo from "../components/images/smallLogo.svg";
+import logo from "../components/images/Logo.png";
 
 const NavLink = ({ children }) => (
   <div className="grow">{children}</div>
@@ -87,14 +87,21 @@ const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 910px)");
 
   return (
-    <header style={{ backgroundColor: "#4334B6", position: "fixed", zIndex: "99" }} className="flex relative flex-row gap-5 justify-between self-center px-16 w-full text-sm bg-indigo-700 border-b border-solid 
-  shadow border-b-slate-800 border-b-opacity-10 text-stone-50 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
-      <div className="flex gap-5 justify-between py-3 sm:py-5 tracking-wide leading-5 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+    <header style={{ backgroundColor: "#4334B6", 
+    position: "fixed", zIndex: "99" }} 
+    className="flex relative flex-row gap-5 
+    justify-between self-center px-16 w-full 
+    text-sm bg-indigo-700 border-b border-solid 
+  shadow border-b-slate-800 border-b-opacity-10 
+  text-stone-50 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+      <div className="flex gap-5 justify-between py-3 sm:py-5 
+      tracking-wide leading-5 whitespace-nowrap max-md:flex-wrap 
+      max-md:max-w-full">
         {isDesktop ? (<>
           <Link to="/" >
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/4bb48ea2e0ce7936ae3b35ffc1023004fda6b609c8aa7a9ed59f44db3c4370cd?apiKey=80a5e28f4487459e9fd570b5e7227164&"
+              src={logo}
               alt="Company Logo"
               className="my-auto max-w-full aspect-[7.69] w-[153px]" />
           </Link>
