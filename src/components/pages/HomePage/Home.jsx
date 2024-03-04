@@ -15,17 +15,33 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
 
-
 // import AOS from "../../../../node_modules/aos/dist/aos";
 // import "aos/dist/aos.css";
 // import "../../../../node_modules/animate.css";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
+    const initializeAOS = () => {
+      AOS.init({
+        easing: "ease-out-cubic",
+      });
+    };
+
+    // Delay initialization by a short duration 
+    const delay = 100;
+    const timeoutId = setTimeout(initializeAOS, delay);
+
+    // Cleanup function to clear the timeout in case the component unmounts
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    // Run this code after the component has mounted
+    const images = document.querySelectorAll('img');
+    
+    images.forEach((image) => {
+      image.draggable = false;
     });
- 
   }, []);
   return (
     <div>
@@ -40,5 +56,6 @@ export default function Home() {
       <Cta />
       <GetInTouch />
     </div>
+    
   );
 }
