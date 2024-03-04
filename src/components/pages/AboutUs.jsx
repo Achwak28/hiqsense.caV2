@@ -192,7 +192,7 @@ const AboutUs = () => {
        
 
         <div style={{width:"65%"}} className="values-text-container">
-          {" "} 
+          {" "}
           <p
             style={{ fontSize: "3.5rem", marginTop: "5rem" }}
             className="font-body font-bold text-6xl"
@@ -210,7 +210,7 @@ const AboutUs = () => {
         </div>
 
         <img className="pseudo" src={pseudo} alt="pseudo" />
-        <div className="about-features  ">
+        <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
           {features.map((feature, index) => (
             <div key={feature.id} data-aos="fade-up" data-aos-delay={`${(index + 1) * 500}`}>
               <Feature
@@ -230,4 +230,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-

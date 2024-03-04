@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 
-
-//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img`
-
-const imagePath = "/assets/images/service_img"
-
-//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img`
-
+// eslint-disable-next-line no-undef
+const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img`
 
 const OfferingCard = ({ index, imageUrl, title, isReversed, subTitle, options, images }) => {
 
