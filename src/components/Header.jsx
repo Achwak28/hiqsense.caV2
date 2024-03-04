@@ -116,7 +116,7 @@ const Header = () => {
                 alt="Company Logo"
                 className="w-[50px] sm:w-[40px]  object-contain"
               />
-            </Link> 
+            </Link>
           </>
         )}
       </div>
