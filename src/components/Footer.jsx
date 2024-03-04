@@ -42,7 +42,6 @@ const Footer = () => {
   ];
 
   return (
-
     <footer className="flex flex-col items-center px-16 w-full bg-[#31135E] py-2 max-md:px-5  max-md:max-w-full">
       <div className="z-[0] relative w-full">
         <div className="absolute  left-1/2 p-4 rounded-lg transform -translate-x-1/2 -translate-y-1/2 w-[80%] bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
@@ -72,7 +71,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div className="flex z-10 flex-col mt-0 w-full max-w-[1188px] max-md:max-w-full">
         <header className="flex gap-5 justify-between mt-24 text-2xl font-bold text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
           <img
@@ -81,7 +79,6 @@ const Footer = () => {
             alt="Brand logo"
             className="aspect-[7.69] w-full sm:w-[380px] "
           />
-
           {!isMobile && (
             <div className="flex flex-col items-center gap-2">
               <div className="self-end mt-8">Lets do it!</div>
@@ -96,7 +93,6 @@ const Footer = () => {
 
         <nav className="flex flex-col gap-5 justify-between items-center sm:items-start  my-8 w-full max-md:flex-wrap  max-md:max-w-full">
           <div className="w-full sm:w-fit sm:gap-5 flex sm:items-start justify-between sm:justify-normal mb-5 sm:mb-10 text-white whitespace-nowrap ">
-
             {navigationLinks.map((link) => (
               <NavigationLink key={link.label} {...link} />
             ))}
@@ -115,17 +111,12 @@ const Footer = () => {
           )}
         </nav>
 
-
         <div className="flex flex-col items-center sm:flex-row gap-5 justify-between mt-5 w-full text-white max-md:flex-wrap max-md:max-w-full">
           <div className="flex flex-row gap-5 justify-between items-center text-lg">
             <div className="flex-auto">Privacy Policy</div>
             <div className="flex-auto">Terms of Use</div>
-
           </div>
-          <div
-            style={{ color: "white" }}
-            className="flex-auto my-auto text-sm font-light text-right"
-          >
+          <div className="flex-auto my-auto text-sm font-light text-right">
             © 2024 All Rights Reserved
           </div>
         </div>

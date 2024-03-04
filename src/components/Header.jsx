@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,6 @@ const NavLink = ({ children }) => (
   <div className="grow">{children}</div>
 );
 
-
 const NavigationBar = () => (
   <nav className="flex gap-5 justify-between pr-8">
     <Link to="about"> <NavLink>About Us</NavLink></Link>
@@ -21,8 +19,6 @@ const NavigationBar = () => (
     <Link to="contact"> <NavLink>Contact Us</NavLink></Link>
   </nav>
 );
-
-
 
 
 const navigationLinks = [
@@ -116,23 +112,15 @@ const Header = () => {
             </Link>
           </>
         )}
-
       </div>
       <div className="flex gap-5 justify-between px-0.5 py-1 my-auto leading-[143%]">
         <div className="my-auto tracking-wide">Learn more</div>
-        <Link to="/pricing" style={linkStyle}>
-          <button
-            style={{ backgroundColor: "#ef4444" }}
-            className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-red-500 rounded max-md:px-5"
-          >
-            Get started
-          </button>
-        </Link>
+        <button className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-btn-primary rounded max-md:px-5">
+          Get started
+        </button>
       </div>
     </header>
-
   );
 }
-
 
 export default Header;
