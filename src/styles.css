@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .App {
   font-family: sans-serif;
@@ -948,6 +945,7 @@ select {
   position: relative;
 }
 
+
 .pricingContainer> :nth-child(2)::after {
   content: "";
   background-image: url("../src/components/images/pricing-options/halfElipse.png");
@@ -959,6 +957,13 @@ select {
   left: -14%;
   z-index: -2;
 }
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+} 
 
 .pricingContainer> :nth-child(3) {
   position: relative;
@@ -1069,6 +1074,7 @@ select {
     padding-right: 3rem !important;
   }
 }
+
 
 .about-hero-section {
   background-image: url("./assets/about-us/about-bg.png");
@@ -1313,13 +1319,13 @@ select {
 }
 
 @layer components {
-  .hero-heading-styles {
+ /* .hero-heading-styles {
     @apply font-garamond-semibold text-[32px] lg:text-[64px] text-center text-[#F9F9F9] mb-4 leading-tight md:w-[65%] lg:w-[50%];
   }
 
   .hero-sub-heading {
     @apply font-hebrew-regular text-[14px] lg:text-[18px] text-center text-[#FFFFFF] mb-4 tracking-[0.25px] leading-6 lg:w-[25%];
-  }
+  }*/
 
   .grid-cols-custom {
     grid-template-columns: 0.8fr 2.2fr;
@@ -1327,7 +1333,9 @@ select {
 }
 
 @media only screen and (min-width: 1024px) {
-  .serviceParent> :nth-child(2) {
+
+  .serviceParent > :nth-child(2) {
+
     background: rgba(10, 6, 40, 0.48);
     border-radius: 20px;
     width: 90%;
@@ -1335,31 +1343,31 @@ select {
     right: -48px;
   }
 
-  .serviceParent> :nth-child(1) {
+  .serviceParent > :nth-child(1) {
     width: 110%;
   }
 
-  .serviceParent> :nth-child(4) {
+  .serviceParent > :nth-child(4) {
     width: 110%;
     position: relative;
     right: 60px;
   }
 
-  .serviceParent> :nth-child(3) {
+  .serviceParent > :nth-child(3) {
     width: 90%;
   }
 
-  .whyChooseParent> :nth-child(2) {
+  .whyChooseParent > :nth-child(2) {
     position: relative;
     right: -100px;
   }
 
-  .whyChooseParent> :nth-child(3) {
+  .whyChooseParent > :nth-child(3) {
     position: relative;
     right: -200px;
   }
 
-  .whyChooseParent> :nth-child(4) {
+  .whyChooseParent > :nth-child(4) {
     position: relative;
     right: -100px;
   }
@@ -1450,7 +1458,6 @@ select {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .getInTouchForm input,
   select {
     margin-bottom: 35px;
@@ -1615,10 +1622,12 @@ select {
     bottom: 224px;
     left: 238px;
     width: 200px;
+
   }
 
   .rocketBlock {
     position: absolute;
+
     width: 150px;
     top: 19%;
     -ms-transform: translateY(-19%);
@@ -2110,7 +2119,6 @@ select {
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Your styles for tablets with a minimum width of 600 pixels go here */
   .rightStick::after {
     content: "";
@@ -2205,29 +2213,31 @@ select {
   transform: rotate3d(1, 0, -20, 181deg);
 }
 
-.pricingContainer> :nth-child(1) {
+.pricingContainer > :nth-child(1) {
   position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
-  .pricingContainer> :nth-child(1) {
+  .pricingContainer > :nth-child(1) {
     margin-left: auto;
   }
 
-  .pricingContainer> :nth-child(2) {
+  .pricingContainer > :nth-child(2) {
     margin-right: auto;
   }
 
-  .pricingContainer> :nth-child(3) {
+  .pricingContainer > :nth-child(3) {
     margin-left: auto;
   }
 
-  .pricingContainer> :nth-child(4) {
+  .pricingContainer > :nth-child(4) {
     margin-right: auto;
   }
 }
 
-.pricingContainer> :nth-child(1)::after {
+.pricingContainer > :nth-child(1)::after {
+
+
   content: "";
   background-image: url("../src/components/images/pricing-options/topHalfEllipse.png");
   background-repeat: no-repeat;
@@ -2239,11 +2249,12 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(2) {
+.pricingContainer > :nth-child(2) {
   position: relative;
 }
 
-.pricingContainer> :nth-child(2)::after {
+
+.pricingContainer > :nth-child(2)::after {
   content: "";
   background-image: url("../src/components/images/pricing-options/halfElipse.png");
   background-repeat: no-repeat;
@@ -2255,11 +2266,14 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(3) {
+.pricingContainer > :nth-child(3) {
   position: relative;
 }
 
-.pricingContainer> :nth-child(3)::after {
+
+.pricingContainer > :nth-child(3)::after {
+
+
   content: "";
   background-image: url("../src/components/images/pricing-options/thirdEllipse.png");
   background-repeat: no-repeat;
@@ -2271,8 +2285,8 @@ select {
   z-index: -2;
 }
 
-.pricingContainer> :nth-child(3),
-.pricingContainer> :nth-child(4) {
+.pricingContainer > :nth-child(3),
+.pricingContainer > :nth-child(4) {
   background-image: linear-gradient(to bottom, #4334b642, #9c8fff00);
 }
 
@@ -2282,7 +2296,10 @@ select {
 /* Garamond Font face Stars Here */
 @font-face {
   font-family: "EB Garamond-SemiBold";
-  src: url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2") format("woff2"),
+
+  src:
+    url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2") format("woff2"),
+
     url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -2291,7 +2308,10 @@ select {
 
 @font-face {
   font-family: "EB Garamond-Bold";
-  src: url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
+
+  src:
+    url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
+
     url("../public/fonts/EBGaramond/EBGaramond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -2303,8 +2323,13 @@ select {
 /* Open Sans Hebrew Font face Stars Here */
 @font-face {
   font-family: "Open Sans Hebrew-Regular";
-  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2") format("woff2"),
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff");
+
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff")
+      format("woff");
+
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -2312,8 +2337,13 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Bold";
-  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2") format("woff2"),
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff") format("woff");
+
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff")
+      format("woff");
+
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -2321,8 +2351,14 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Light";
-  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2") format("woff2"),
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff") format("woff");
+
+  src:
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
+      format("woff2"),
+    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff")
+      format("woff");
+
+
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2333,7 +2369,10 @@ select {
 /* Lato Font Face Starts Here */
 @font-face {
   font-family: "Lato-bold";
-  src: url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+
+  src:
+    url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+
     url("../public/fonts/Lato/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -2342,7 +2381,10 @@ select {
 
 @font-face {
   font-family: "Lato-regular";
-  src: url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+
+  src:
+    url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+
     url("../public/fonts/Lato/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -2364,6 +2406,7 @@ select {
     padding-right: 3rem !important;
   }
 }
+
 
 /* Starts Here */
 .circle {
@@ -2500,3 +2543,4 @@ select {
 }
 
 /* Ends Here */
+

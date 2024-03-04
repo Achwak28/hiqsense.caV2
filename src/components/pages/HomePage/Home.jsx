@@ -1,3 +1,4 @@
+
 import HeroSection from "../HomePage/Hero/Hero";
 import Services from "../HomePage/Services/Services";
 // Sections Import End
@@ -20,12 +21,13 @@ import "animate.css";
 // import "aos/dist/aos.css";
 // import "../../../../node_modules/animate.css";
 
+
 export default function Home() {
   useEffect(() => {
     AOS.init({
       easing: "ease-out-cubic",
     });
- 
+
   }, []);
   return (
     <div>
@@ -42,3 +44,4 @@ export default function Home() {
     </div>
   );
 }
+

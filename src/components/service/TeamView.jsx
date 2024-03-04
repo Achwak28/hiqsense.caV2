@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
-// eslint-disable-next-line no-undef
-const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/teamview/teamview.png`;
+
+//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/teamview/teamview.png`;
+
+const imagePath = "/assets/images/service_img/teamview/teamview.png";
+
+
+//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/teamview/teamview.png`;
+
 
 const TeamView = () => {
   const [isVisible, setIsVisible] = useState(false);

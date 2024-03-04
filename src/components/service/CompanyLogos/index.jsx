@@ -12,7 +12,12 @@ import './styles.css';
 
 // import required modules
 // eslint-disable-next-line no-undef
-const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/content`
+
+//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/content`
+const imagePath = "/assets/images/service_img/content"
+
+//const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/content`
+
 
 const CompanyLogos = () => {
 
