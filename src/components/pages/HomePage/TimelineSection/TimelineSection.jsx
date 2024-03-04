@@ -26,7 +26,8 @@ function TimelineSection() {
         </div>
         <PrimaryHeading
           headingText="From Concept to Completion: Our Process for Crafting Digital Experiences"
-          custColor="#fff" timelineHeading = "lg:w-[70%] lg:mx-auto"
+          custColor="#fff"
+          timelineHeading="lg:w-[70%] lg:mx-auto"
         />
 
         <div className="grid grid-cols-1 mt-10 md:grid-cols-2 md:gap-20 md:mb-20 lg:mb-40 lg:mt-20">
@@ -35,7 +36,7 @@ function TimelineSection() {
               Steps: "Step 1",
               Heading: "Planning",
               SubHeading: "Planning and brainstroming strategy",
-              lowerCol: "md:relative pointRight"
+              lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft
@@ -53,7 +54,7 @@ function TimelineSection() {
               Heading: "Create",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
-                lowerCol: "md:relative pointRight"
+              lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft
@@ -71,7 +72,7 @@ function TimelineSection() {
               Heading: "Design",
               SubHeading:
                 "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
-                lowerCol: "md:relative pointRight"
+              lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft

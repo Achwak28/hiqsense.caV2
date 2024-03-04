@@ -10,7 +10,7 @@ function Projects({
   return (
     <>
       <div>
-        <img src={img1} alt={altText} className="md:m-auto lg:w-[100%]" />
+        <img src={img1} alt={altText} className="md:m-auto lg:w-[100%]" data-aos="fade-up" data-aos-duration="1000"/>
         <div className="lg:flex lg:text-left lg:justify-between lg:mt-[1rem] lg:mx-[0] lg:mb-[5rem]">
           <div>
             <h3 className="font-hebrew-bold text-[24px] text-[#FFFFFF] my-3" data-aos="fade-up" data-aos-duration="1500">
