@@ -39,6 +39,7 @@ export default function Home() {
       <PricingOptions />
       <Cta />
       <GetInTouch />
+     
     </div>
   );
 }
