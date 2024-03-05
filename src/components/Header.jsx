@@ -122,9 +122,11 @@ const Header = () => {
       </div>
       <div className="flex gap-5 justify-between px-0.5 py-1 my-auto leading-[143%]">
         <div className="my-auto tracking-wide">Learn more</div>
+        <Link to="/pricing">
         <button className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-btn-primary rounded max-md:px-5">
           Get started
         </button>
+        </Link>
       </div>
     </header>
   );
