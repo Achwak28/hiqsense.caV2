@@ -3,6 +3,7 @@ import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 import FourOhFour from "./pages/FourOhFour";
 
 // Put your API key here
+// eslint-disable-next-line no-undef
 const apiKey = process.env.REACT_APP_API_KEY;
 builder.init(apiKey);
 
