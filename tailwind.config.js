@@ -9,8 +9,8 @@ module.exports = {
         "txt-primary": "#0A0628",
       },
       screens: {
-        'md': '930px',
-        'sm':'200px'
+        'mid': '930px',
+        'small':'200px'
       },
       gridTemplateColumns: {
         // Simple 16 column grid
