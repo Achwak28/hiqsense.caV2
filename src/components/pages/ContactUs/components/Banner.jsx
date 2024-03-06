@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import Avatar1 from "../../../images/ContactUs/Avatar.png";
 import Avatar2 from "../../../images/ContactUs/avatar2.png";
 import { useMediaQuery } from '../../../../hooks/useMediaQuery';
-import Earth from '../../../images/ContactUs/Earth.jpg';
 import { Whirl } from './Whirl'
 import { motion } from 'framer-motion'
+import { Globe } from './Globe';
 
 const duration = 2
 
@@ -21,17 +21,13 @@ export const Banner = () => {
     }, []);
 
     return (
-        <div className='pt-14 relative flex justify-center w-full h-[569px] md:h-[450px] bg-[#4334B6] text-white overflow-hidden'>
+        <div className='relative flex justify-center w-full h-[569px] md:h-[450px] bg-[#4334B6] text-white overflow-hidden'>
             <Whirl />
             <div className='absolute w-full flex justify-center items-center h-[60.0625rem]'>
                 <div className='relative w-full max-w-[1300px] flex justify-center lg:justify-end items-center h-[56.37825rem]'>
-                    <img
-                        src={Earth}
-                        alt=""
-                        className='z-10 right-0 opacity-80 transition duration-1000 ease-in-out rounded-full'
-                    />
+                    <Globe />
                     <motion.svg
-                        viewBox="0 0 1115 1152"
+                        viewBox="0 0 1115 1352"
                         fill="transparent" xmlns="http://www.w3.org/2000/svg" className="absolute max-w-[1021px] max-h-[1054px] z-30 opacity-30">
                         <motion.path initial={{
                             pathLength: 0.5,
@@ -44,7 +40,6 @@ export const Banner = () => {
                             }}
                             d="M152.892 610.513C54.2483 654.145 -3.64275 693.655 2.99781 718.43C16.0892 767.273 275.027 740.35 581.351 658.296C887.675 576.243 1125.39 470.131 1112.3 421.289C1105.63 396.416 1035.2 391.192 927.232 402.891" stroke="#22DAE5" strokeWidth="6.22155"
                         />
-
                         <motion.path initial={{
                             pathLength: 0,
                         }}
@@ -76,10 +71,7 @@ export const Banner = () => {
                                 <stop offset="1" stopColor="#22DAE5" stopOpacity="0" />
                             </radialGradient>
                         </defs>
-
-
                     </motion.svg>
-
                 </div>
             </div>
             <div className='w-full max-w-[1500px] h-full flex flex-col justify-between items-center px-2 md:px-12 xl:px-[7.5rem] z-[40]'>
@@ -104,7 +96,7 @@ export const Banner = () => {
                     {isDesktop && (
                         <div className='flex flex-col'>
                             <h1 className='text-4xl font-bold'>Contact Us</h1>
-                            <p className='text-base lg:text-xl mt-5'>
+                            <p className='text-base lg:text-xl mt-5 text-center'>
                                 Let&apos;s Transform Your Ideas into Reality - Reach Out Today
                             </p>
                         </div>

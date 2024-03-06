@@ -40,7 +40,7 @@ const ContactUs = () => {
     )
 
     return (
-        <main className='bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col'>
+        <main className='pt-14 bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col'>
             <Banner />
             <Container>
                 <div className='w-full h-full grid grid-cols-1 md:grid-cols-2 gap-x-10 justify-start px-1 md:px-3 py-9 lg:p-16 lg:pb-20' >
