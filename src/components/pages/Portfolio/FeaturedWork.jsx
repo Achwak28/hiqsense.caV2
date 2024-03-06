@@ -58,13 +58,13 @@ export default function FeaturedWork() {
         <container className='flex flex-col gap-3 bg-[#0A0628] pt-24'>
             <h2 className='font-serif font-bold text-5xl leading-normal pl-4 text-[#F9F9F9]'>Featured Work</h2>
             <p className='font-sans font-normal text-[#F9F9F9] pl-4 mb-12'>Explore our diverse range of creative projects.</p>
-            <section className='flex flex-col md:flex-row'>
+            <section className='flex flex-col mid:flex-row'>
                 <div className='relative flex flex-col gap-4 w-[35%]'>
                     <NavigationCircle items={items} onItemClick={handleNavClick} />
-                    <div className='hidden md:block'>
+                    <div className='hidden mid:block'>
                         <img src={linear} className='absolute bottom-[-15%]' />
                     </div>
-                    <div className='hidden md:block'>
+                    <div className='hidden mid:block'>
                         <img src={smallRoll} className='h-[40px] w-[40px] absolute top-[50%] right-[20%] transform -translate-y-1/2' />
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export default function FeaturedWork() {
                         types.map((card, index) => (
                             card.visible &&
                             <>
-                                <div className={`hidden gird-cols-1 carousel-track ${isVisible ? 'slide-up' : ''} md:flex md:block`} key={index}>
+                                <div className={`hidden gird-cols-1 carousel-track ${isVisible ? 'slide-up' : ''} mid:flex mid:block`} key={index}>
                                     {index % 2 === 0 ? (
                                         <>
                                             <img src={card.img} className='h-[400px] w-1/2' />
@@ -100,7 +100,7 @@ export default function FeaturedWork() {
                                         </>
                                     )}
                                 </div>
-                                <div className={`block flex flex-col items-center carousel-track ${isVisible ? 'slide-up' : ''} md:hidden`} key={index}>
+                                <div className={`block flex flex-col items-center carousel-track ${isVisible ? 'slide-up' : ''} mid:hidden`} key={index}>
                                     {index % 2 === 0 ? (
                                         <>
                                             <img src={card.img} className='h-[400px]' />

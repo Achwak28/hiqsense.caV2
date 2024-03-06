@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-full w-full bg-hero bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-hero via-hero to-hero-bottom-gradient">
+    <div className="relative overflow-hidden h-full w-full bg-hero bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-hero via-hero to-hero-bottom-gradient" style={{marginTop: "40px"}}>
       <div id="animatedHero" className="inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_4px,transparent_4px),linear-gradient(to_top,#80808012_4px,transparent_4px)] bg-[size:80px_80px] flex">
         <div className="w-full justify-center pb-16 sm:px-4 md:px-8 lg:px-10 xl:px-16 max-w-10xl flex flex-col-reverse items-center lg:flex-row md:flex-row sm:flex-row sm:items-center">
           <div className={`flex flex-col px-2 text-white lg:gap-y-8 md:gap-y-4 sm:gap-y-2 gap-y-1 transition-transform duration-500 ${isVisible ? 'animate-slideRight' : 'translate-x-full'}`}>
