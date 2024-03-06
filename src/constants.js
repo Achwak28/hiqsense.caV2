@@ -23,54 +23,52 @@ const TEAM_MEMBERS = [
 const features = [
   {
     id: "f1",
-    title:"Commitment to Creativity",
+    title: "Commitment to Creativity",
     image: "/assets/about-us/feature-icon-1.png",
     text: "Commitment to Creativity",
   },
   {
     id: "f2",
-    title:"Client Satisfaction",
+    title: "Client Satisfaction",
     image: "/assets/about-us/feature-icon-2.png",
     text: "Client Satisfaction",
   },
   {
     id: "f3",
-    title:"Digital Trends",
+    title: "Digital Trends",
     image: "/assets/about-us/feature-icon-3.png",
     text: "Digital Trends",
   },
-  
 ];
 
 const services = [
   {
     id: "s1",
-    title:"A Decade of Expertise",
+    title: "A Decade of Expertise",
     image: "/assets/about-us/decade.svg",
     text: "A Decade of Expertise",
   },
   {
     id: "s2",
-    title:"Innovative Design",
+    title: "Innovative Design",
     image: "/assets/about-us/clean.svg",
     text: "Innovative Design",
   },
   {
     id: "s3",
-    title:"Client-Centric Approach",
+    title: "Client-Centric Approach",
     image: "/assets/about-us/protection.svg",
     text: "Client-Centric Approach",
   },
-  
 ];
 
 const pricing_plans = [
   {
     id: "p1",
     title: "Web Design",
-    packageName:"Startup Package",
-    price:"$100",
-    image:"/assets/pricing/ellipse.png",
+    packageName: "Startup Package",
+    price: "$100",
+    image: "/assets/pricing/ellipse.png",
     offers: [
       {
         id: "o1",
@@ -116,9 +114,9 @@ const pricing_plans = [
   {
     id: "p2",
     title: "Web Design",
-    packageName:"E-Commerce Package",
-    price:"$100",
-    image:"/assets/pricing/ellipse2.png",
+    packageName: "E-Commerce Package",
+    price: "$100",
+    image: "/assets/pricing/ellipse2.png",
     offers: [
       {
         id: "o1",
@@ -173,9 +171,9 @@ const pricing_plans = [
   {
     id: "p3",
     title: "Graphic Design",
-    packageName:"Logo and Graphic Design Package",
-    price:"$100",
-    image:"/assets/pricing/ellipse3.png",
+    packageName: "Logo and Graphic Design Package",
+    price: "$100",
+    image: "/assets/pricing/ellipse3.png",
     offers: [
       {
         id: "o1",
@@ -192,7 +190,7 @@ const pricing_plans = [
       {
         id: "o4",
         text: "Stationary Design",
-      }
+      },
     ],
     features: [
       {
@@ -221,9 +219,9 @@ const pricing_plans = [
   {
     id: "p4",
     title: "SEO",
-    packageName:"Take Your Business to the Next Level with Business Plan.",
-    price:"Custom",
-    image:"/assets/pricing/Pattern.png",
+    packageName: "Take Your Business to the Next Level with Business Plan.",
+    price: "Custom",
+    image: "/assets/pricing/Pattern.png",
     offers: [
       {
         id: "o1",
@@ -276,5 +274,72 @@ const pricing_plans = [
     ],
   },
 ];
-export { features, services, pricing_plans };
+
+const faq_sections = [
+  {
+    id: "s1",
+    title: "Web Designs",
+  },
+  {
+    id: "s2",
+    title: "Graphic Designs",
+  },
+  {
+    id: "s3",
+    title: "SEO Optimization",
+  },
+  {
+    id: "s4",
+    title: "Email Hosting",
+  },
+  {
+    id: "s5",
+    title: "Others",
+  },
+];
+
+const faq_answers = [
+  {
+    id: "a1",
+    title: "What is UX design?",
+    answer:
+      "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+  },
+  {
+    id: "a2",
+    title: "What are the key principles of UX design?",
+    answer:
+    "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+
+  },
+  {
+    id: "a3",
+    title: "What is a Wireframe?",
+    answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+
+  },
+  {
+    id: "a4",
+    title: "What is a User Testing?",
+    answer:
+    "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+
+  },
+  {
+    id: "a5",
+    title: "How to avail your services?",
+    answer:
+    "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+
+  },
+  {
+    id: "a5",
+    title: "What is your turnover rate?",
+    answer:
+    "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+
+  },
+];
+
+export { features, services, pricing_plans, faq_sections, faq_answers };
 export default TEAM_MEMBERS;

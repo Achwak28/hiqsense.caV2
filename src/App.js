@@ -20,6 +20,8 @@ import Pricing from "./components/pages/PricingPage/Pricing";
 import theme from "./Theme";
 import Service from "./components/Service";
 import Portfolio from './components/pages/Portfolio'
+import PrivacyPolicy from './components/pages/PrivacyPolicy/PrivacyPolicy'
+import FAQ from './components/pages/FAQ/FAQ'
 
 export default function App() {
   return (
@@ -35,6 +37,8 @@ export default function App() {
             <Route path="/portfolio" element={<Portfolio/>} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/faq" element={<FAQ />} />
 
           </Routes>
 

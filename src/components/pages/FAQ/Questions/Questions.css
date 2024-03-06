@@ -1,0 +1,24 @@
+.faq-questions-container{
+    display: flex;
+    padding: 6rem 4rem;
+    position: relative;
+}
+.faq-questions-container .left-bg{
+    position: absolute;
+    left: 0;
+    top: -35%;
+    z-index: -1;
+
+}
+.faq-questions-container .questions-titles{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-questions-container .question-answer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
