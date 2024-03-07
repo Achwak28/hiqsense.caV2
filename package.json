@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@builder.io/react": "^3.2.4",
+    "@emailjs/browser": "^4.3.1",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
@@ -17,6 +18,14 @@
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
+
+
+    "cobe": "^0.6.3",
+
+
+    "gsap": "^3.12.5",
+
+
     "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
     "loader-utils": "3.2.1",
