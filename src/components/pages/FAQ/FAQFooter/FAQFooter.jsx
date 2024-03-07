@@ -9,7 +9,7 @@ const FAQFooter = () => {
         AOS.init({ duration: 2000 });
       }, []);
   return (
-    <div data-aos="fade-up" className="faq-footer-container">
+    <div data-aos="fade-up" className="faq-footer-container ">
       <div className="faq-box">
         <div className="faq-box-left">
           <p className="font-bold font-subTitle leading-5 text-sm pb-2" >

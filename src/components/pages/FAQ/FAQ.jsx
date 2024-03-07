@@ -1,5 +1,5 @@
 import React from 'react'
-import FAQHero from './FAQHero'
+import FAQHero from './FAQHero/FAQHero'
 import Questions from './Questions/Questions'
 import FAQFooter from './FAQFooter/FAQFooter'
 

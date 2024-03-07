@@ -14,34 +14,35 @@ const Questions = () => {
   };
   const [openIndex, setOpenIndex] = useState(0);
 
- 
-
-  const [selectedTitle, setSelectedTitle] = useState(faq_sections.length > 0 ? faq_sections[0].title : null);
+  const [selectedTitle, setSelectedTitle] = useState(
+    faq_sections.length > 0 ? faq_sections[0].title : null
+  );
 
   const handleTitleClick = (title) => {
     setSelectedTitle(title);
   };
 
   return (
-    <div className="faq-questions-container" style={{ height: "150vh" }}>
-      <img className="left-bg" src={image} alt="image" />
+    <div className="faq-questions-container">
+      <img className="left-bg hidden md:block" src={image} alt="image" />
       <div className="questions-titles">
-        <p style={titleStyle} className="font-subTitle text-start">
+        <p style={titleStyle} className="font-subTitle text-center md:text-start">
           FAQ Sections
         </p>
-
-        {faq_sections.map((section) => (
-          <div
-            key={section.id}
-            style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}
-          >
-            <Title
-              title={section.title}
-              onClick={() => handleTitleClick(section.title)}
-              isSelected={selectedTitle === section.title}
-            />
-          </div>
-        ))}
+        <div className="questions-titles-items">
+          {faq_sections.map((section) => (
+            <div
+              key={section.id}
+              className="pr-2 my-2"
+            >
+              <Title
+                title={section.title}
+                onClick={() => handleTitleClick(section.title)}
+                isSelected={selectedTitle === section.title}
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="question-answer">
         {faq_answers.map((answer, index) => (
@@ -59,8 +60,6 @@ const Questions = () => {
           </div>
         ))}
       </div>
-
-    
     </div>
   );
 };

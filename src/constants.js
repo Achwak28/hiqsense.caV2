@@ -333,7 +333,7 @@ const faq_answers = [
 
   },
   {
-    id: "a5",
+    id: "a6",
     title: "What is your turnover rate?",
     answer:
     "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
