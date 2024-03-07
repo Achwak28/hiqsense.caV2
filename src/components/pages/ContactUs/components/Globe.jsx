@@ -8,7 +8,6 @@ export const Globe = () => {
     useEffect(() => {
         let phi = 0;
         let width = 0;
-        let spin = true;
         const onResize = () => canvasRef.current && (
             width = canvasRef.current.clientWidth,
             setCanvasWidth(width)
@@ -37,12 +36,11 @@ export const Globe = () => {
                 state.height = width > 902 ? 1060 * 1.7 : width * 2 * 1.15;
 
                 state.phi = phi;
-                if (spin) phi += 0.013;
+                phi += 0.013;
             }
         })
         setCanvasWidth(width)
         setTimeout(() => canvasRef.current.style.opacity = '1')
-        setTimeout(() => spin = false, 8000)
         return () => {
             globe.destroy();
             window.removeEventListener('resize', onResize);
