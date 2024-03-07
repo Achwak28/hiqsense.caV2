@@ -1,8 +1,9 @@
+// NavigationCircle.js
 import React, { useState } from "react";
 import "./style.css";
 import circle from '../../images/circle.png';
 
-export default function NavigationCircle({ items }) {
+export default function NavigationCircle({ items, onItemClick }) {
     const [rotate, setRotate] = useState(0);
     const [selectedItem, setSelectedItem] = useState(1);
 
@@ -10,6 +11,7 @@ export default function NavigationCircle({ items }) {
         setSelectedItem(index);
         const rotationAngle = items.find(item => item.index === index)?.rotationAngle || 0;
         setRotate(rotationAngle);
+        onItemClick(index);
     };
 
     return (
@@ -23,11 +25,10 @@ export default function NavigationCircle({ items }) {
                         {items.map((item) => (
                             <li
                                 key={item.index}
-                                className={`mb-8 w-[90%] text-2xl cursor-pointer ${
-                                    selectedItem === item.index
+                                className={`mb-8 w-[90%] text-2xl cursor-pointer ${selectedItem === item.index
                                         ? 'pb-2 text-[#F6393D] border-b-[2px] border-[#EA98F7]'
                                         : 'text-[#343333]'
-                                }`}
+                                    }`}
                                 onClick={() => handleItemClick(item.index)}
                             >
                                 {item.title}

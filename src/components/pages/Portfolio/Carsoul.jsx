@@ -26,24 +26,24 @@ const Carousel = ({ items, selected, setSelected }) => {
 
     return (
         <div className="flex justify-center items-center gap-8 relative overflow-hidden">
-            <button className='hidden md:block p-12' onClick={handlePrev}>
+            <button className='hidden mid:block p-12' onClick={handlePrev}>
                 <img src={left} className='w-[300px] h-[100px]' />
             </button>
             {adjustedItems.map((item, index) => (
                 <div
                     key={index}
-                    className={`w-full mx-1 relative ${index !== 1 && 'hidden md:block'}`} // Hide cards except the middle one on small screens
+                    className={`w-full mx-1 relative ${index !== 1 && 'hidden mid:block'}`} // Hide cards except the middle one on small screens
                 >
                     <div className="bg-white h-[400px] p-4 rounded-lg shadow-md">
                         <div className='flex flex-col items-center gap-5'>
-                            <div className='flex flex-col md:flex-row gap-2'>
+                            <div className='flex flex-col mid:flex-row gap-2'>
                                 <img src={item.profileImage} />
-                                <div className='flex flex-col md:flex-row justify-between w-full items-center'>
+                                <div className='flex flex-col mid:flex-row justify-between w-full items-center'>
                                     <div className='flex flex-col'>
                                         <p>{item.name}</p>
                                         <p>{item.job}</p>
                                     </div>
-                                    <img src={item.star} className='w-full md:w-[50%] h-[20px]' />
+                                    <img src={item.star} className='w-full mid:w-[50%] h-[20px]' />
                                 </div>
                             </div>
                             <h2 className="text-lg font-semibold">{item.title}</h2>
@@ -52,7 +52,7 @@ const Carousel = ({ items, selected, setSelected }) => {
                     </div>
                 </div>
             ))}
-            <button className='hidden md:block p-12' onClick={handleNext}>
+            <button className='hidden mid:block p-12' onClick={handleNext}>
                 <img src={right} className='w-[300px] h-[100px]' />
             </button>
         </div>

@@ -13,7 +13,7 @@ export default function Portfolio() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.1 
+            threshold: 0.1
         };
 
         const observer = new IntersectionObserver(([entry]) => {
@@ -33,13 +33,13 @@ export default function Portfolio() {
 
     return (
         <>
-            <section className='flex flex-col md:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0'>
+            <section className='flex flex-col pt-[250px] mid:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0 mid:pt-0'>
                 <div className='flex flex-col gap-2'>
-                    <h1 className={`font-serif font-bold text-5xl leading-normal pl-4 text-left text-[#F9F9F9] sm:text-center md:text-left ${isVisible ? 'slide-in-left' : ''}`}>
+                    <h1 className={`font-serif font-bold text-5xl leading-normal pl-4 text-left text-[#F9F9F9] sm:text-center mid:text-left ${isVisible ? 'slide-in-left' : ''}`}>
                         Explore Our Signature Projects that Define the Future of <br />
                         Design
                     </h1>
-                    <p className={`md:w-3/4 font-sans font-semi text-left text-[#F9F9F9] pl-4 sm:text-center md:text-left ${isVisible ? 'slide-in-left' : ''}`}>
+                    <p className={`mid:w-3/4 font-sans font-semi text-left text-[#F9F9F9] pl-4 sm:text-center mid:text-left ${isVisible ? 'slide-in-left' : ''}`}>
                         Immerse yourself in a collection of projects that exemplify our commitment to pushing the boundaries of innovation and design excellence. Each entry is a testament to our multifaceted expertise
                     </p>
                 </div>

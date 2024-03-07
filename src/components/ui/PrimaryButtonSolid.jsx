@@ -1,5 +1,6 @@
 function PrimaryButtonSolid({
   buttonlabel,
+  pricingBorder,
   custRadius,
   custFontSize,
   custMarg,
@@ -7,7 +8,7 @@ function PrimaryButtonSolid({
   pricingBtnColor,
   pricingTxtCenter,
   pricingLgWidth,
-  lgPadding
+  lgPadding,
 }) {
   let btnStyle = {
     borderRadius: custRadius,
@@ -24,8 +25,10 @@ function PrimaryButtonSolid({
     <>
       <a href="#">
         <div
-          className={`bg-btn-primary border border-btn-primary text-[#F9F9F9] font-hebrew-bold tracking-[0.1px] px-6 py-2.5 rounded text-sm mx-2 ${lgPadding} lg:inline-block lg:px-20 ${pricingLgWidth}`}
-          style={btnStyle} data-aos="fade-up" data-aos-duration="1500"
+          className={`bg-btn-primary border border-btn-primary text-[#F9F9F9] font-hebrew-bold tracking-[0.1px] px-6 py-2.5 rounded-[${pricingBorder}] rounded text-sm mx-2 ${lgPadding} lg:inline-block lg:px-20 ${pricingLgWidth}`}
+          style={btnStyle}
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           {buttonlabel}
         </div>

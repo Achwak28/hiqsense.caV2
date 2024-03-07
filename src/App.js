@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Home from "./components/pages/HomePage/Home";
 import AboutUs from "./components/pages/AboutUs";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
+import Pricing from "./components/pages/PricingPage/Pricing";
 
 // Sections Import Start
 import theme from "./Theme";
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/portfolio" element={<Portfolio/>} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/pricing" element={<Pricing />} />
 
           </Routes>
 
