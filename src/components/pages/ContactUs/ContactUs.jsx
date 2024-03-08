@@ -53,9 +53,9 @@ const ContactUs = () => {
                         </h1>
                         <ContactForm />
                         <div className='flex flex-wrap items-start justify-around gap-4 pt-10'>
-                            <ContactInfo icon={phoneIcon} title='PHONE' text='03 5432 1234' />
-                            <ContactInfo icon={facebookIcon} title='FACEBOOK' text='facebook.com/abc' />
-                            <ContactInfo icon={mailIcon} title='EMAIL' text="abc@gmail.com" />
+                          <Link to = "tel:3062618582">  <ContactInfo icon={phoneIcon}  text='+1 306 912 9997' /></Link>
+                          <Link to = "https://www.facebook.com/hiqsense" > <ContactInfo icon={facebookIcon} /*title='FACEBOOK'*/ text='facebook.com/hiqsense' /></Link>
+                           <Link to ="mailto:info@hiqsense.ca"> <ContactInfo icon={mailIcon}  text="info@hiqsense.ca" /></Link>
                         </div>
                     </div>
                     {isDesktop && (

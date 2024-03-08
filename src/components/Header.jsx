@@ -12,25 +12,29 @@ const NavLink = ({ children }) => <div className="grow">{children}</div>;
 const NavigationBar = () => (
   <nav className="flex gap-5 justify-between pr-8">
     <Link to="about">
-      {" "}
+      
       <NavLink>About Us</NavLink>
     </Link>
     <Link to="services">
-      {" "}
+   
       <NavLink>Services</NavLink>
     </Link>
     <Link to="portfolio">
-      {" "}
+   
       <NavLink>Portfolio</NavLink>
     </Link>
 
     <Link to="pricing">
-      {" "}
+
       <NavLink>Pricing</NavLink>
     </Link>
     <Link to="contact">
-      {" "}
+
       <NavLink>Contact Us</NavLink>
+    </Link>
+    <Link to="faq">
+
+    <NavLink>FAQ</NavLink>
     </Link>
   </nav>
 );
@@ -42,6 +46,7 @@ const navigationLinks = [
 
   { url: "pricing", label: "Pricing" },
   { url: "contact", label: "Contact Us" },
+  { url: "faq", label: "FAQ" },
 ];
 
 const MobileNavigation = () => {
