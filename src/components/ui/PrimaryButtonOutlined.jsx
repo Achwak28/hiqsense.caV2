@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 function PrimaryButtonOutlined({ buttonlabel, href }) {
   return (
     <>
-      <Link to= {href}>
+      <Link to={href}>
         <div
           className={`bg-transparent border border-btn-primary 
           text-[#F6393D] font-hebrew-bold tracking-[0.1px] px-6 py-2.5

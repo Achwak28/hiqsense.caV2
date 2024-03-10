@@ -1,8 +1,10 @@
-function ServiceCards({ img1, altText, cardText, imgLg }) {
+import { HashLink as Link } from "react-router-hash-link";
+
+function ServiceCards({ img1, altText, cardText, imgLg, href }) {
   const isLargeScreen = window.innerWidth >= 1024;
   return (
     <>
-      <a href="#">
+      <Link to={href}>
         <div className="w-full h-[325px] lg:h-[494px] mb-5 lg:mb-0 relative flex flex-col flex-wrap justify-end ">
           <img
             src={isLargeScreen ? imgLg : img1}
@@ -15,7 +17,7 @@ function ServiceCards({ img1, altText, cardText, imgLg }) {
             {cardText}
           </h3>
         </div>
-      </a>
+      </Link>
     </>
   );
 }

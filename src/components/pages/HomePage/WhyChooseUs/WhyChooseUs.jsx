@@ -13,7 +13,9 @@ function WhyChooseUs() {
     <>
       <section className="px-4 lg:px-40 py-10 lg:py-20 overflow-hidden">
         <PrimaryHeading headingText="Why Choose Us?" />
-        <PrimarySubHeading subText="Elevate your online presence with us! Expert in web design, graphic/logo design, email hosting, and SEO optimization. Tailored solutions, creative excellence, and reliable support – choose us for an innovative digital experience." />
+        <PrimarySubHeading 
+        subText="
+        Elevating Your Business with Exceptional Design, Unmatched Support, and Strategic Expertise" />
 
         <div className="grid grid-cols-1 whyChooseAfter pt-10 lg:grid-cols-2">
           <div
@@ -32,11 +34,16 @@ function WhyChooseUs() {
             <img src={pcImg} alt="PC Image" className="mb-10 md:mx-auto" />
           </div>
           <div className="whyChooseParent">
-            <WhyChooseBoxes whyImg={creativeImg} altText="Creative Design" />
-            <WhyChooseBoxes whyImg={webStrategyimg} altText="Web Strategy" />
-            <WhyChooseBoxes whyImg={dedicatedImg} altText="Dedicated Support" />
-            <WhyChooseBoxes whyImg={quickImg} altText="Quick Turnover" />
-            <WhyChooseBoxes whyImg={maintenanceImg} altText="Maintenance" />
+            <WhyChooseBoxes whyImg={creativeImg} altText="Creative Design" heading = "Creative Design" 
+            subHeading= "Our innovative designs are not just visually stunning, but also strategically crafted to engage and captivate your audience."/>
+            <WhyChooseBoxes whyImg={webStrategyimg} altText="Web Strategy" heading = "Web Strategy" 
+            subHeading= "We don't just build websites; we provide a complete web strategy to ensure your online presence is effective and impactful." />
+            <WhyChooseBoxes whyImg={dedicatedImg} altText="Dedicated Support" heading = "Customer Service" 
+            subHeading= "Prioritizing our clients with responsive, professional support tailored to your unique needs." />
+            <WhyChooseBoxes whyImg={quickImg} altText="Quick Turnover"  heading = "Quick Turnove" 
+            subHeading= "We value your time, ensuring speedy delivery without compromising on quality, so your vision is brought to life efficiently."/>
+            <WhyChooseBoxes whyImg={maintenanceImg} altText="Maintenance"  heading = "Free Maintenance" 
+            subHeading= "Offering post-launch adjustments for a month, because we know you might change your mind. Perfecting your vision is our commitment."/>
           </div>
         </div>
       </section>
