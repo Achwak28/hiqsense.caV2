@@ -11,7 +11,7 @@ import bubble8 from "../../../../assets/FAQ/bubble8.png";
 import bubble9 from "../../../../assets/FAQ/bubble9.png";
 import "./FAQHero.css";
 
-const FAQHero = () => {
+const FAQHero = (props) => {
   useEffect(() => {
     AOS.init({ duration: 4000 });
   }, []);
@@ -19,22 +19,33 @@ const FAQHero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
 
-    return () => clearTimeout(timer); 
-});
+    return () => clearTimeout(timer);
+  });
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="faq-container">
-      <div className="big-left-bubble" >
-        <img className=" opacity-70 md:opacity-40" src={bubble4} alt="bubble4" />
+      <div className="big-left-bubble">
+        <img
+          className=" opacity-70 md:opacity-40"
+          src={bubble4}
+          alt="bubble4"
+        />
       </div>
-      <div className={`small-left-bubble ${isVisible ? 'animate' : ''}`}>
-        <img className=" opacity-20 md:opacity-40" src={bubble3} alt="bubble3" />
+      <div className={`small-left-bubble ${isVisible ? "animate" : ""}`}>
+        <img
+          className=" opacity-20 md:opacity-40"
+          src={bubble3}
+          alt="bubble3"
+        />
       </div>
-      <div className={`middle-bubble ${isVisible ? 'animate' : ''}`} >
+      <div className={`middle-bubble ${isVisible ? "animate" : ""}`}>
         <img className=" opacity-40" src={bubble7} alt="bubble7" />
       </div>
 
@@ -50,12 +61,15 @@ const FAQHero = () => {
         >
           Ask us Anything
         </p>
-        <p className="py-8 font-subTitle text-sm font-normal">Have any questions? We are here to assist you.</p>
-        <form className="nosubmit">
+        <p className="py-8 font-subTitle text-sm font-normal">
+          Have any questions? We are here to assist you.
+        </p>
+        <form onSubmit={submitHandler} className="nosubmit">
           <input
-            className="nosubmit"
+            className="nosubmit text-black"
             type="search"
             placeholder="Search questions..."
+            onChange={(e) => props.onSearchQuestion(e.target.value)}
           />
         </form>
       </div>
@@ -67,16 +81,28 @@ const FAQHero = () => {
         <img className=" z-50" src={rightPerson} alt="person" />
       </div>
 
-      <div className="big-right-bubble" >
-        <img className=" opacity-40 hidden md:block" src={bubble1} alt="bubble1" />
+      <div className="big-right-bubble">
+        <img
+          className=" opacity-40 hidden md:block"
+          src={bubble1}
+          alt="bubble1"
+        />
       </div>
 
-      <div  className={`small-right-bubble ${isVisible ? 'animate' : ''}`} >
-        <img className=" opacity-40 hidden md:block" src={bubble8} alt="bubble8" />
+      <div className={`small-right-bubble ${isVisible ? "animate" : ""}`}>
+        <img
+          className=" opacity-40 hidden md:block"
+          src={bubble8}
+          alt="bubble8"
+        />
       </div>
 
-      <div className="bottom-right-bubble" >
-        <img className=" opacity-40 hidden md:block" src={bubble9} alt="bubble9" />
+      <div className="bottom-right-bubble">
+        <img
+          className=" opacity-40 hidden md:block"
+          src={bubble9}
+          alt="bubble9"
+        />
       </div>
     </div>
   );

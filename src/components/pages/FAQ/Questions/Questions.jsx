@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Title from "./Title/Title";
 import Item from "./Item/Item";
-import { faq_sections, faq_answers } from "../../../../constants";
+import { faq_sections } from "../../../../constants";
 import image from "../../../../assets/FAQ/group.png";
 import "./Questions.css";
 
-const Questions = () => {
+const Questions = (props) => {
   const titleStyle = {
     fontSize: "2rem",
     fontWeight: "700",
@@ -41,11 +41,11 @@ const Questions = () => {
                 isSelected={selectedTitle === section.title}
               />
             </div>
-          ))}
+          ))} 
         </div>
       </div>
       <div className="question-answer">
-        {faq_answers.map((answer, index) => (
+        {props.questions.map((answer, index) => (
           <div
             key={answer.id}
             style={{ marginTop: "1rem", marginBottom: "1rem" }}
