@@ -25,8 +25,12 @@ function FeaturedWork() {
                 <PrimarySubHeading custColor="#fff" subText="Explore our diverse range of creative projects." />
 
                 <div>
-                    <Projects img1={projectOneImg} altText="Project One" projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you." linkText="View Project" />
-                    <Projects img1={projectTwoImg} altText="Project Two" projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you." linkText="View Project" />
+                    <Projects img1={projectOneImg} altText="Project One"
+                     projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you." 
+                     linkText="View Project" />
+                    <Projects img1={projectTwoImg} altText="Project Two" 
+                    projectHeading="Project ABC" projectSubHeading="Discover our latest creative work and see how we can inspire you."
+                     linkText="View Project" />
                     <PrimaryButtonOutlined buttonlabel="View All" lgInline="lg:inline-block" lgWidth="lg:w-[200px]"/>
                 </div>
             </section>

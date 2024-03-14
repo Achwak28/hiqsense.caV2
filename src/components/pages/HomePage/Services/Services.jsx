@@ -21,7 +21,14 @@ function Services() {
   return (
     <section className="px-4 lg:px-40 py-10 lg:py-20 overflow-hidden">
       <PrimaryHeading headingText="Our Services" />
-      <PrimarySubHeading subText="Elevate your online presence with our diverse services. From captivating logo and graphic design to cutting-edge web design, we craft unique digital experiences. Boost visibility through our SEO optimization, and ensure seamless communication with our Email Hosting Configuration. Let us transform your digital presence into a powerful asset." />
+      <PrimarySubHeading
+        subText="
+        Elevate your business with Hiqsense &trade;.
+         Our budget-friendly packages offer beautifully designed websites, 
+         professional domain names, and branded email services to ensure your 
+         small business stands out with a polished, professional online presence. 
+         Make a memorable impact without stretching your budget!"
+      />
 
       <div className="grid grid-cols-1 lg:grid-cols-custom lg:gap-8">
         <div className="grid two-onlyCols md:grid-cols-2 grid-cols-1 md:gap-4 lg:gap-8 lg:order-2 serviceParent ">
@@ -30,12 +37,14 @@ function Services() {
             imgLg={webPng}
             altText="Web design"
             cardText="Web Design"
+            href="/services#animatedOfferingCard1"
           />
           <ServiceCards
             img1={seoImg}
             imgLg={seoPng}
             altText="SEO Optimization"
             cardText="SEO Optimization"
+            href="/services#animatedOfferingCard3"
           />
 
           <ServiceCards
@@ -43,12 +52,14 @@ function Services() {
             imgLg={logoDesignPng}
             altText="Logo & Graphic Design"
             cardText="Logo & Graphic Design"
+            href="/services#animatedOfferingCard2"
           />
           <ServiceCards
             img1={emailHostingImg}
             imgLg={emailHostingPng}
-            altText="Email Hosting"
-            cardText="Email Hosting"
+            altText="Email Hosting Setup"
+            cardText="Email Hosting Setup"
+            href="/services#animatedOfferingCard4"
           />
         </div>
         <div>
@@ -107,14 +118,17 @@ function Services() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                We aim to deliver the best possible solutions for you.
+                {
+                  "Unleash Your Brand's Full Potential with Saskatchewan's Leading Web Design, UI/UX, and SEO Experts!"
+                }
               </p>
               <footer
-                className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-hebrew-regular text-center w-4/5 mx-auto mt-1"
+                className="text-[#FFFFFF] text-[14px] lg:text-[18px] font-hebrew-regular text-center w-4/5 mx-auto
+                 mt-10"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                -HIQSense
+                Hiqsense &trade; Smart Systems
               </footer>
             </blockquote>
           </div>
@@ -124,6 +138,7 @@ function Services() {
             custFontSize="18px"
             custMarg="0"
             lgPadding="lg:py-[25px] lg:w-full"
+            href="/services#servicesStart"
           />
         </div>
       </div>

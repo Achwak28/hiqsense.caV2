@@ -31,7 +31,7 @@ export default function ContactUs() {
 
     return (
         <div className='flex flex-col items-center'>
-            <div className='flex flex-col mid:flex-row justify-between items-center bg-[#0A0628] h-[750px]'>
+            <div className='w-full flex flex-col mid:flex-row justify-between items-center bg-[#0A0628] h-[750px]'>
                 <div className='relative flex flex-col gap-4 small:items-center mid:items-start'>
                     <div ref={titleRef}>
                         <h3 className={`font-serif font-bold text-5xl leading-normal text-left text-[#F9F9F9] small:text-center mid:text-left pl-0 mid:pl-[100px] ${isVisible ? 'slide-in-left' : ''}`}>

@@ -12,9 +12,9 @@ function HeroContent({ firstWord, headingText, subHeading }) {
         {headingText}
       </h1>
       <p className="hero-sub-heading" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">{subHeading}</p>
-      <div className="flex justify-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
-        <PrimaryButtonSolid buttonlabel="View Our Work" />
-        <PrimaryButtonOutlined buttonlabel="Get in Touch" />
+      <div style= {{zIndex: 10}} className="flex justify-center" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
+        <PrimaryButtonSolid buttonlabel="View Our Work" href="/portfolio"/>
+        <PrimaryButtonOutlined buttonlabel="Get in Touch" href= "/contact" />
       </div>
     </>
   );

@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 function PrimaryButtonSolid({
   buttonlabel,
   pricingBorder,
@@ -9,6 +10,7 @@ function PrimaryButtonSolid({
   pricingTxtCenter,
   pricingLgWidth,
   lgPadding,
+  href,
 }) {
   let btnStyle = {
     borderRadius: custRadius,
@@ -23,7 +25,7 @@ function PrimaryButtonSolid({
 
   return (
     <>
-      <a href="#">
+      <Link to={href}>
         <div
           className={`bg-btn-primary border border-btn-primary text-[#F9F9F9] font-hebrew-bold tracking-[0.1px] px-6 py-2.5 rounded-[${pricingBorder}] rounded text-sm mx-2 ${lgPadding} lg:inline-block lg:px-20 ${pricingLgWidth}`}
           style={btnStyle}
@@ -32,7 +34,7 @@ function PrimaryButtonSolid({
         >
           {buttonlabel}
         </div>
-      </a>
+      </Link>
     </>
   );
 }
