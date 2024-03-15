@@ -6,6 +6,7 @@ function Projects({
   projectHeading,
   projectSubHeading,
   linkText,
+  href
 }) {
   return (
     <>
@@ -21,14 +22,14 @@ function Projects({
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="1500">
-            <a href="#">
+            <a href={href} target="_blank" rel="noreferrer" >
               <span className="flex justify-center items-center font-hebrew-regular text-[18px] text-[#FFFFFF] my-7">
-                {linkText}{" "}
+                {linkText}
                 <img
                   src={directimg}
                   alt="Direct Arrow"
                   className="w-[7px] h-[12px] ml-2.5"
-                />{" "}
+                />
               </span>
             </a>
           </div>
