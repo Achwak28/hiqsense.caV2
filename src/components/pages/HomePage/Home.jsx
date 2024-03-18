@@ -3,7 +3,8 @@ import Services from "../HomePage/Services/Services";
 // Sections Import End
 import WhyChooseUs from "../HomePage/WhyChooseUs/WhyChooseUs";
 import FeaturedWork from "../HomePage/FeaturedWork/FeaturedWork";
-import ClientTestimonials from "../HomePage/ClientTestimonials/ClientTestimonials";
+import Consultation from "./Consultation/Consultation";
+import ClientTestimonials from "../Portfolio/ClientTestimonials"
 import TimelineSection from "../HomePage/TimelineSection/TimelineSection";
 import Awards from "../HomePage/Awards/Awards";
 import PricingOptions from "../HomePage/PricingOptions/PricingOptions";
@@ -49,7 +50,9 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <FeaturedWork />
+      <Consultation />
       <ClientTestimonials />
+      
       <TimelineSection />
       <Awards />
       <PricingOptions />
