@@ -49,40 +49,37 @@ const Questions = (props) => {
         </div>
       </div>
       <div className="question-answer">
-  {props.onSearch === true ? (
-    props.questions.map((answer, index) => (
-      <div
-        key={answer.id}
-        style={{ marginTop: "1rem", marginBottom: "1rem" }}
-      >
-        <Item
-          title={answer.title}
-          answer={answer.answer}
-          index={index}
-          openIndex={openIndex}
-          setOpenIndex={setOpenIndex}
-        />
+        {props.onSearch === true
+          ? props.questions.map((answer, index) => (
+              <div
+                key={answer.id}
+                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+              >
+                <Item
+                  title={answer.title}
+                  answer={answer.answer}
+                  index={index}
+                  openIndex={openIndex}
+                  setOpenIndex={setOpenIndex}
+                />
+              </div>
+            ))
+          : selectedSection &&
+            selectedSection.questions.map((answer, index) => (
+              <div
+                key={answer.id}
+                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+              >
+                <Item
+                  title={answer.title}
+                  answer={answer.answer}
+                  index={index}
+                  openIndex={openIndex}
+                  setOpenIndex={setOpenIndex}
+                />
+              </div>
+            ))}
       </div>
-    ))
-  ) : (
-    selectedSection &&
-    selectedSection.questions.map((answer, index) => (
-      <div
-        key={answer.id}
-        style={{ marginTop: "1rem", marginBottom: "1rem" }}
-      >
-        <Item
-          title={answer.title}
-          answer={answer.answer}
-          index={index}
-          openIndex={openIndex}
-          setOpenIndex={setOpenIndex}
-        />
-      </div>
-    ))
-  )}
-</div>
-
     </div>
   );
 };

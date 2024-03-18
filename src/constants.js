@@ -279,7 +279,7 @@ const faq_questions = [
   {
     id: "s1",
     title: "Web Designs",
-    questions : [
+    questions: [
       {
         id: "a1",
         title: "Web Design questions",
@@ -290,42 +290,38 @@ const faq_questions = [
         id: "a2",
         title: "Web Design questions",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a3",
         title: "Web Design questionse?",
-        answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+        answer:
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a4",
         title: "Web Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a5",
         title: "Web Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a6",
         title: "Web Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
-    ]
+    ],
   },
   {
     id: "s2",
     title: "Graphic Designs",
-    questions : [
+    questions: [
       {
         id: "a7",
         title: "Graphic Design questions",
@@ -336,42 +332,38 @@ const faq_questions = [
         id: "a8",
         title: "Graphic Design questions",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a9",
         title: "Graphic Design questionse?",
-        answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+        answer:
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a10",
         title: "Graphic Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a11",
         title: "Graphic Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a12",
         title: "Graphic Design questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
-    ]
+    ],
   },
   {
     id: "s3",
     title: "SEO Optimization",
-    questions : [
+    questions: [
       {
         id: "a13",
         title: "SEO questions",
@@ -382,42 +374,38 @@ const faq_questions = [
         id: "a14",
         title: "SEO questions",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a15",
         title: "SEO questionse?",
-        answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+        answer:
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a16",
         title: "SEO questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a17",
         title: "SEO questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a18",
         title: "SEO questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
-    ]
+    ],
   },
   {
     id: "s4",
     title: "Email Hosting",
-    questions : [
+    questions: [
       {
         id: "a19",
         title: "Email Hosting questions",
@@ -428,42 +416,38 @@ const faq_questions = [
         id: "a20",
         title: "Email Hosting questions",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a21",
         title: "Email Hosting questionse?",
-        answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+        answer:
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a22",
         title: "Email Hosting questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a23",
         title: "Email Hosting questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a24",
         title: "Email Hosting questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
-    ]
+    ],
   },
   {
     id: "s5",
     title: "Others",
-    questions : [
+    questions: [
       {
         id: "a25",
         title: "Other questions",
@@ -474,40 +458,35 @@ const faq_questions = [
         id: "a26",
         title: "Other questions",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a27",
         title: "Other questionse?",
-        answer:"UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+        answer:
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a28",
         title: "Other questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a29",
         title: "Other questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
       {
         id: "a30",
         title: "Other questions?",
         answer:
-        "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
-    
+          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
       },
-    ]
+    ],
   },
 ];
-
 
 export { features, services, pricing_plans, faq_questions };
 export default TEAM_MEMBERS;
