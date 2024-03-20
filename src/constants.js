@@ -282,15 +282,15 @@ const faq_questions = [
     questions: [
       {
         id: "a1",
-        title: "Web Design questions",
+        title: "What web design services does Hiqsense Smart Systems offer?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "Hiqsense specializes in a range of web design services including custom website design, responsive web design, e-commerce website development, content management systems (CMS), user interface (UI) and user experience (UX) design, and website maintenance and support.",
       },
       {
         id: "a2",
-        title: "Web Design questions",
+        title: "How does the design process work?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "Our design process begins with understanding your business goals and target audience. We then create a conceptual design, which upon your approval, is developed into a fully functional website. We involve our clients at each stage for feedback and revisions to ensure the final product meets their expectations.",
       },
       {
         id: "a3",
@@ -324,15 +324,15 @@ const faq_questions = [
     questions: [
       {
         id: "a7",
-        title: "Graphic Design questions",
+        title:"What type of graphic design services does Hiqsense provide?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "Hiqsense offers a wide range of graphic design services including corporate identity creation, logo design, stationery design, brochure and flyer design, infographics, and custom illustrations. Our designs are tailored to enhance your brand's visual appeal and communication.",
       },
       {
         id: "a8",
-        title: "Graphic Design questions",
+        title: "Can Hiqsense help with rebranding my company?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "Absolutely! We specialize in corporate rebranding. Our team can revamp your existing brand elements or create an entirely new brand identity, aligning with your company’s evolution and future direction.",
       },
       {
         id: "a9",
@@ -366,15 +366,15 @@ const faq_questions = [
     questions: [
       {
         id: "a13",
-        title: "SEO questions",
+        title: " What SEO services does Hiqsense provide?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "Hiqsense offers comprehensive SEO services that include keyword research and optimization, on-page SEO, off-page SEO (such as backlink building), technical SEO to improve website structure and performance, content creation for SEO, and local SEO strategies for businesses looking to enhance their local market presence.",
       },
       {
         id: "a14",
-        title: "SEO questions",
+        title: "How does Hiqsense improve our website’s ranking on search engines?",
         answer:
-          "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user.",
+          "We employ a multi-faceted approach to improve your website's ranking. This includes optimizing website content with relevant keywords, enhancing website speed and user experience, building quality backlinks, and ensuring your site is easily crawlable by search engine bots. We also stay updated with the latest search engine algorithms to refine our strategies.",
       },
       {
         id: "a15",
