@@ -60,12 +60,15 @@ function Consultation() {
               <PrimarySubHeading
                 subText="Schedule a free consultation or request a quote to get started."
                 tarnsformBusinessLg="lg:w-[75%] lg:mx-auto lg:text-left"
+                
               />
               <PrimaryButtonSolid
                 buttonlabel="Free Consultation"
                 testimonialsMarg="15px"
+                href = "/booking#root"
               />
-              <PrimaryButtonOutlined buttonlabel="Request a Quote" />
+              <PrimaryButtonOutlined buttonlabel="Request a Quote" 
+              href= "/contact#root"/>
             </div>
           </div>
         </div>

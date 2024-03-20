@@ -4,7 +4,7 @@ import Services from "../HomePage/Services/Services";
 import WhyChooseUs from "../HomePage/WhyChooseUs/WhyChooseUs";
 import FeaturedWork from "../HomePage/FeaturedWork/FeaturedWork";
 import Consultation from "./Consultation/Consultation";
-import ClientTestimonials from "../Portfolio/ClientTestimonials"
+//import ClientTestimonials from "../Portfolio/ClientTestimonials";
 import TimelineSection from "../HomePage/TimelineSection/TimelineSection";
 import Awards from "../HomePage/Awards/Awards";
 import PricingOptions from "../HomePage/PricingOptions/PricingOptions";
@@ -28,7 +28,7 @@ export default function Home() {
       });
     };
 
-    // Delay initialization by a short duration 
+    // Delay initialization by a short duration
     const delay = 100;
     const timeoutId = setTimeout(initializeAOS, delay);
 
@@ -38,8 +38,8 @@ export default function Home() {
 
   useEffect(() => {
     // Run this code after the component has mounted
-    const images = document.querySelectorAll('img');
-    
+    const images = document.querySelectorAll("img");
+
     images.forEach((image) => {
       image.draggable = false;
     });
@@ -51,15 +51,13 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturedWork />
       <Consultation />
-      <ClientTestimonials />
-      
+      {/* <ClientTestimonials /> */ }
+
       <TimelineSection />
       <Awards />
       <PricingOptions />
       <Cta />
       <GetInTouch />
-     
     </div>
-    
   );
 }
