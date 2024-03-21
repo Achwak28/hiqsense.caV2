@@ -1,0 +1,175 @@
+.faq-container {
+  height: 28.125rem;
+  background-image: url("../../../../assets/FAQ/rectangle.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+  background-color: white;
+  border-radius: 48px;
+}
+
+input.nosubmit {
+  border: 1px solid black;
+  border-radius: 48px;
+  width: 100%;
+  padding: 9px 10px 9px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+input.nosubmit:focus {
+  outline: none; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+.faq-container .left-person {
+  position: absolute;
+  bottom: 0;
+  left: 6.1rem;
+}
+
+.faq-container .right-person {
+  position: absolute;
+  bottom: 0;
+  right: 6.1rem;
+}
+
+.faq-container .big-left-bubble {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.faq-container .bottom-right-bubble {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.faq-container .big-right-bubble {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Animation */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatingX {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+
+@media only screen and (max-width: 768px) {
+  .faq-container {
+    height: fit-content;
+  }
+
+  .faq-container .left-person {
+    left: 0;
+    width: 14.125rem;
+    height: 15.31rem;
+    z-index: 99;
+  }
+
+  .faq-container .right-person {
+    right: 0;
+    bottom: 5%;
+    width: 14.56rem;
+    height: 12.12rem;
+    z-index: 99;
+  }
+
+  .faq-container .big-left-bubble {
+    bottom: -10%;
+    z-index: 10;
+  }
+  .faq-container .small-left-bubble {
+    position: absolute;
+    bottom: 25%;
+    left: 3rem;
+    transform: rotate(200deg)
+  }
+ 
+  .faq-container .middle-bubble {
+    position: absolute;
+    right: -15%;
+    top: 100%;
+    transition: top 8s ease-out, transform 8s ease-out;
+    animation: floating 8s ease-out;
+  }
+
+  .faq-container .middle-bubble.animate {
+    top: 5%;
+    right: -15% !important;
+  }
+}
+
+@media only screen and (min-width: 768px){
+/* Animation */
+.faq-container .small-right-bubble {
+    position: absolute;
+    right: 100%;
+    top: 15%;
+  
+    transition: right 8s ease-out, transform 8s ease-out;
+    animation: floating 8s ease-out 8s;
+  }
+  .faq-container .small-right-bubble.animate {
+    right: 14%;
+  }
+  /* Animation */
+.faq-container .small-left-bubble {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 8s ease-out, transform 8s ease-out;
+    animation: floating 8s ease-out 8s;
+  }
+  
+  .faq-container .small-left-bubble.animate {
+    left: 3rem;
+  }
+  .faq-container .middle-bubble {
+    position: absolute;
+    left: 30%;
+    top: 100%;
+    transition: top 8s ease-out, transform 8s ease-out;
+    animation: floatingX 8s ease-out 8s;
+  }
+  
+  .faq-container .middle-bubble.animate {
+    top: 15%;
+  }
+}

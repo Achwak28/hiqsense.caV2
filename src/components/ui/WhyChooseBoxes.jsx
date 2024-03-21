@@ -1,6 +1,7 @@
 import arrow from "../images/why-choose-us/arrow.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
-function WhyChooseBoxes({ whyImg, altText }) {
+function WhyChooseBoxes({ whyImg, altText, heading , subHeading }) {
   return (
     <>
       <div
@@ -14,18 +15,18 @@ function WhyChooseBoxes({ whyImg, altText }) {
         </div>
         <div>
           <h3 className="text-left font-hebrew-bold text-txt-primary text-lg mb-1">
-            Creative Design
+            {heading}
           </h3>
           <p className="font-hebrew-regular text-sm text-txt-primary text-left leading-6">
-            We only deliver high-quality of products at an optimum speed.
+           {subHeading}
           </p>
         </div>
         <div>
-          <a href="#">
+          <Link to = "/contact#root">
             <div className="bg-[#F6393D] w-[60px] h-[60px] rounded-full flex flex-col items-center justify-center">
               <img src={arrow} alt="Arrow" />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </>
