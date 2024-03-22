@@ -45,6 +45,7 @@
       white-space: nowrap;
       margin-bottom: 6rem;
     }
+  
     .information-titles-items::-webkit-scrollbar {
       display: none; 
     }
@@ -57,4 +58,8 @@
    
   }
   
- 
+  @media only screen and (max-width: 450px){
+    .legal-information-container .information-titles .information-titles-items{
+        padding-left: 1rem;
+    }
+  }
