@@ -41,6 +41,7 @@
       display: flex;
       overflow-x: auto;
       justify-content: center;
+      overflow-x: auto;
       white-space: nowrap;
       margin-bottom: 6rem;
     }
@@ -56,3 +57,4 @@
    
   }
   
+ 

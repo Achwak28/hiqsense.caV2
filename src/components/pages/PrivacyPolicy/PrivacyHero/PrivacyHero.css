@@ -73,3 +73,12 @@
   
  
 }
+
+@media only screen and (max-width: 450px){
+  .privacy-hero-container {
+   height: 30rem;
+  }
+
+  
+  
+}
