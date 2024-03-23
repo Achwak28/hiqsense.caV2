@@ -9,7 +9,7 @@ const Questions = (props) => {
   const titleStyle = {
     fontSize: "2rem",
     fontWeight: "700",
-    color: "#0A0628",
+    color: "#0A0628", 
     marginBottom: "2rem",
   };
   const [openIndex, setOpenIndex] = useState(0);

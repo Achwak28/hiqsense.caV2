@@ -1,0 +1,65 @@
+.legal-information-container {
+    display: flex;
+    padding: 6rem 4rem;
+    position: relative;
+  }
+  .legal-information-container .left-bg {
+    position: absolute;
+    left: 0;
+    top: -35%;
+    z-index: -1;
+  }
+  .legal-information-container .information-titles {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .legal-information-container .legal-info-content {
+    width: 70%;
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .legal-information-container {
+      flex-direction: column;
+      padding: 6rem 1rem;
+      padding-bottom: 10rem;
+    }
+    .legal-information-container .information-titles {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .legal-information-container .information-titles .information-titles-items {
+      display: flex;
+      overflow-x: auto;
+      justify-content: center;
+      overflow-x: auto;
+      white-space: nowrap;
+      margin-bottom: 6rem;
+    }
+  
+    .information-titles-items::-webkit-scrollbar {
+      display: none; 
+    }
+
+    .legal-information-container .legal-info-content {
+        width: 100%;
+       
+      }
+  
+   
+  }
+  
+  @media only screen and (max-width: 450px){
+    .legal-information-container .information-titles .information-titles-items{
+        padding-left: 1rem;
+    }
+  }
