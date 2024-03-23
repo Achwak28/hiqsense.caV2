@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import "./styles.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        <HelmetProvider >
         <BrowserRouter>
           <Header />
 
@@ -46,6 +48,7 @@ export default function App() {
 
           <Footer />
         </BrowserRouter>
+        </HelmetProvider>
       </div>
     </ThemeProvider>
   );

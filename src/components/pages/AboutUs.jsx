@@ -15,6 +15,7 @@ import ServiceCard from "../ServiceCard";
 import Team from "../Team/Team";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -24,6 +25,19 @@ const AboutUs = () => {
 
   return (
     <div>
+      
+       <Helmet>
+        <title>About Us - Hiqsense Smart Systems: Your Canadian Small Business Ally</title>
+        <meta name= "description" content="Meet the team behind Hiqsense Smart Systems, Saskatoon's leading web design and technology agency
+         dedicated to empowering small businesses across Canada. Learn about our journey,
+          values, and commitment to providing top-notch web design, branding, graphic design, SEO,
+           email hosting, and IT support. Discover how our affordable, tailored solutions make technology
+            accessible and effective for small businesses." />
+           <meta name="keywords" content="About Hiqsense, Hiqsense team, web design Saskatoon, small business technology,
+            Canadian web agency, technology services, affordable web solutions, business IT support, Hiqsense values,
+             empowering small businesses, technology journey, graphic design, SEO services, email hosting solutions,
+              IT solutions." />
+      </Helmet>
       <div className="about-hero-section w-full  ">
         <div
           style={{ paddingBottom: "5rem" }}
