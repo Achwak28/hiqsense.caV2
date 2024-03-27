@@ -4,7 +4,7 @@
   background-image:
     linear-gradient(to right, #614f4f 1px, transparent 1px),
     linear-gradient(to bottom, #614f4f 1px, transparent 1px);
-}
+} 
 
 .slide-in-left {
   animation: slideInLeft 0.5s ease forwards;

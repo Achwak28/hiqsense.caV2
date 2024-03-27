@@ -7,7 +7,7 @@ import facebook from "../../../../assets/pricing/facebook.png";
 import phone from "../../../../assets/pricing/phone.png";
 import mapMarker from "../../../../assets/pricing/map-marker.png"
 import "./ContactUs.css";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
     useEffect(() => {
@@ -15,8 +15,7 @@ const ContactUs = () => {
       }, []);
   return (
     <div className="pricing-contact-us">
-      
-        <Helmet>
+      {/* <Helmet>
         <title> Contact Us - Hiqsense Smart Systems: Connect with Our Expert Team</title>
         <meta name= "description" content="Reach out to Hiqsense Smart Systems for all your small business technology needs.
         Our Contact Us page provides easy ways to get in touch, whether you're in Saskatoon or anywhere in Canada.
@@ -27,7 +26,8 @@ const ContactUs = () => {
           technology help for small businesses, Saskatoon tech agency,
            Canadian business support, technology services contact,
             business technology advice, connect with tech experts." />
-      </Helmet>
+      </Helmet> */}
+       
       <div data-aos="fade-right" className="pricing-contact-left">
         <h1
           style={{ fontSize: "3.3rem", marginBottom: "3rem" }}

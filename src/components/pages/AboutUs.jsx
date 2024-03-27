@@ -7,7 +7,7 @@ import delivery2 from "../../assets/about-us/delivery2.png";
 import legacy2 from "../../assets/about-us/legacy2.png";
 import milestone1 from "../../assets/about-us/milestone1.png";
 import relationship2 from "../../assets/about-us/relationship2.png";
-import circularBg from "../../assets/about-us/bg-values.png";                                                                        
+import circularBg from "../../assets/about-us/bg-values.png";
 import { features, services } from "../../constants";
 import Feature from "../Feature";
 import AboutButton from "../AboutButton";
@@ -22,22 +22,29 @@ const AboutUs = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
-
   return (
     <div>
-      
-       <Helmet>
-        <title>About Us - Hiqsense Smart Systems: Your Canadian Small Business Ally</title>
-        <meta name= "description" content="Meet the team behind Hiqsense Smart Systems, Saskatoon's leading web design and technology agency
+      <Helmet>
+        <title>
+          About Us - Hiqsense Smart Systems: Your Canadian Small Business Ally
+        </title>
+        <meta
+          name="description"
+          content="Meet the team behind Hiqsense Smart Systems, Saskatoon's leading web design and technology agency
          dedicated to empowering small businesses across Canada. Learn about our journey,
           values, and commitment to providing top-notch web design, branding, graphic design, SEO,
            email hosting, and IT support. Discover how our affordable, tailored solutions make technology
-            accessible and effective for small businesses." />
-           <meta name="keywords" content="About Hiqsense, Hiqsense team, web design Saskatoon, small business technology,
+            accessible and effective for small businesses."
+        />
+        <meta
+          name="keywords"
+          content="About Hiqsense, Hiqsense team, web design Saskatoon, small business technology,
             Canadian web agency, technology services, affordable web solutions, business IT support, Hiqsense values,
              empowering small businesses, technology journey, graphic design, SEO services, email hosting solutions,
-              IT solutions." />
+              IT solutions."
+        />
       </Helmet>
+
       <div className="about-hero-section w-full  ">
         <div
           style={{ paddingBottom: "5rem" }}
@@ -68,7 +75,8 @@ const AboutUs = () => {
               }}
               className="about-hero-text text-center md:text-left text-whiteTitle font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design
+              Odyssey
             </p>
           </div>
           <img
@@ -94,7 +102,8 @@ const AboutUs = () => {
               style={{ fontSize: "2rem" }}
               className=" transform-text sm:text-3xl  font-bold text-left font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design Odyssey
+              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design
+              Odyssey
             </p>
             <p
               style={{
@@ -109,10 +118,10 @@ const AboutUs = () => {
             >
               Welcome to a decade of design excellence where innovation meets
               urban evolution. At [Your Company Name], we take pride in our
-              commitment to shaping Saskatoon&apos;s landscape through cutting-edge
-              design solutions. Our journey has been marked by a relentless
-              pursuit of excellence, leaving an indelible mark on the city&apos;s
-              digital transformation.
+              commitment to shaping Saskatoon&apos;s landscape through
+              cutting-edge design solutions. Our journey has been marked by a
+              relentless pursuit of excellence, leaving an indelible mark on the
+              city&apos;s digital transformation.
             </p>
             <p
               style={{
@@ -157,9 +166,12 @@ const AboutUs = () => {
         </div>
         <div className="about-services-right">
           {services.map((service, index) => (
-            <div key={service.id} data-aos="fade-right" data-aos-delay={`${(index + 1) * 500}`}>
+            <div
+              key={service.id}
+              data-aos="fade-right"
+              data-aos-delay={`${(index + 1) * 500}`}
+            >
               <ServiceCard
-                
                 image={service.image}
                 text={service.text}
                 tittle={service.title}
@@ -201,11 +213,9 @@ const AboutUs = () => {
       </div>
 
       <div className="about-values">
-       
-          <img  className="circular-bg" src={circularBg} alt="circularBg" />
-       
+        <img className="circular-bg" src={circularBg} alt="circularBg" />
 
-        <div style={{width:"65%"}} className="values-text-container">
+        <div style={{ width: "65%" }} className="values-text-container">
           {" "}
           <p
             style={{ fontSize: "3.5rem", marginTop: "5rem" }}
@@ -226,9 +236,12 @@ const AboutUs = () => {
         <img className="pseudo" src={pseudo} alt="pseudo" />
         <div className="about-features hover:scale-105 hover:shadow-xl duration-300 ">
           {features.map((feature, index) => (
-            <div key={feature.id} data-aos="fade-up" data-aos-delay={`${(index + 1) * 500}`}>
+            <div
+              key={feature.id}
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 500}`}
+            >
               <Feature
-                
                 image={feature.image}
                 text={feature.text}
                 tittle={feature.title}
@@ -238,7 +251,6 @@ const AboutUs = () => {
         </div>
         <AboutButton text="Get started" />
       </div>
-     
     </div>
   );
 };

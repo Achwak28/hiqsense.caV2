@@ -6,7 +6,6 @@ import TeamView from "./service/TeamView";
 const Service = () => {
   return (
     <div className="w-full">
-      
       <Helmet>
         <title>Services - Hiqsense Smart Systems: Enhancing Your Business Through Technology</title>
         <meta name= "description" content="Explore the wide range of services offered by Hiqsense Smart Systems,
@@ -21,7 +20,8 @@ const Service = () => {
              we provide tailored solutions for small businesses in Canada. 
              Discover how our services can transform and grow your business with 
              technology that's both advanced and affordable." />
-      </Helmet>
+      </Helmet> 
+     
       <Hero />
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full">

@@ -47,8 +47,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Helmet>
-        <title>Hiqsense Smart Systems: the Technology Partner for Small Businesses in Canada</title>
+       <Helmet> <title>Hiqsense Smart Systems: the Technology Partner for Small Businesses in Canada</title>
         <meta name= "description" content="Discover Hiqsense Smart Systems (Hiqsense for short),
          a premier web design agency in Saskatoon, Saskatchewan. Specializing in serving small businesses 
          across Canada, Hiqsense offers a comprehensive suite of professional services tailored to your needs.
@@ -60,6 +59,8 @@ export default function Home() {
             web design, corporate branding, graphic design, SEO optimization,
              email hosting, IT support, affordable solutions, business technology partner." />
       </Helmet>
+     
+      
       <HeroSection />
       <Services />
       <WhyChooseUs />

@@ -995,8 +995,8 @@ select {
 /* Garamond Font face Stars Here */
 @font-face {
   font-family: "EB Garamond-SemiBold";
-  src:
-    url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2") format("woff2"),
+  src: url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2")
+      format("woff2"),
     url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -1005,8 +1005,7 @@ select {
 
 @font-face {
   font-family: "EB Garamond-Bold";
-  src:
-    url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
+  src: url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
     url("../public/fonts/EBGaramond/EBGaramond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -1018,8 +1017,7 @@ select {
 /* Open Sans Hebrew Font face Stars Here */
 @font-face {
   font-family: "Open Sans Hebrew-Regular";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff")
       format("woff");
@@ -1030,8 +1028,7 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Bold";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff")
       format("woff");
@@ -1042,8 +1039,7 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Light";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff")
       format("woff");
@@ -1057,8 +1053,7 @@ select {
 /* Lato Font Face Starts Here */
 @font-face {
   font-family: "Lato-bold";
-  src:
-    url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+  src: url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
     url("../public/fonts/Lato/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -1067,8 +1062,7 @@ select {
 
 @font-face {
   font-family: "Lato-regular";
-  src:
-    url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+  src: url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
     url("../public/fonts/Lato/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -2286,8 +2280,8 @@ select {
 /* Garamond Font face Stars Here */
 @font-face {
   font-family: "EB Garamond-SemiBold";
-  src:
-    url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2") format("woff2"),
+  src: url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff2")
+      format("woff2"),
     url("../public/fonts/EBGaramond/EBGaramond-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -2296,8 +2290,7 @@ select {
 
 @font-face {
   font-family: "EB Garamond-Bold";
-  src:
-    url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
+  src: url("../public/fonts/EBGaramond/EBGaramond-Bold.woff2") format("woff2"),
     url("../public/fonts/EBGaramond/EBGaramond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -2309,8 +2302,7 @@ select {
 /* Open Sans Hebrew Font face Stars Here */
 @font-face {
   font-family: "Open Sans Hebrew-Regular";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff")
       format("woff");
@@ -2321,8 +2313,7 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Bold";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff")
       format("woff");
@@ -2333,8 +2324,7 @@ select {
 
 @font-face {
   font-family: "Open Sans Hebrew-Light";
-  src:
-    url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
+  src: url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff2")
       format("woff2"),
     url("../public/fonts/OpenSansHebrew/OpenSansHebrew-Light.woff")
       format("woff");
@@ -2348,8 +2338,7 @@ select {
 /* Lato Font Face Starts Here */
 @font-face {
   font-family: "Lato-bold";
-  src:
-    url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+  src: url("../public/fonts/Lato/Lato-Bold.woff2") format("woff2"),
     url("../public/fonts/Lato/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -2358,8 +2347,7 @@ select {
 
 @font-face {
   font-family: "Lato-regular";
-  src:
-    url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+  src: url("../public/fonts/Lato/Lato-Regular.woff2") format("woff2"),
     url("../public/fonts/Lato/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -2596,4 +2584,42 @@ select {
   .circleCharacter {
     width: 180px;
   }
+}
+
+/***** Footer styling *****/
+.building-business-services {
+  display: flex;
+  flex-direction: row;
+}
+.bulding-business{
+  margin-top: 10rem;
+}
+.footer-division-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px){
+ .footer-content-bottom{
+  padding-top: 15rem;
+ }
+  
+  .building-business-services {
+    flex-direction: column;
+  }
+  .building-business-container{
+    flex-direction: column;
+  }
+  .building-business-buttons{
+    width: 100%;
+  }
+
+  .building-business-button{
+    width: 100%;
+  }
+  .footer-header-content{
+    flex-direction: column;
+  }
+
 }

@@ -86,7 +86,7 @@ const MobileNavigation = () => {
             <button className="ml-auto" onClick={closeMenu}>
               <CloseIcon />
             </button>
-            <div className="flex text-left flex-col gap-5 ">
+            <div className="flex text-left flex-col items-center gap-5 ">
               {navigationLinks.map((link, index) => (
                 <Link
                   key={index}

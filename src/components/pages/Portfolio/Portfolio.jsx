@@ -34,7 +34,7 @@ export default function Portfolio() {
 
     return (
         <>
-                <Helmet>
+         <Helmet>
                     <title>Portfolio - Hiqsense Smart Systems: Showcasing Our Impact on Small Businesses</title>
                     <meta name= "description" content="Delve into the diverse portfolio of Hiqsense Smart Systems and witness 
                     the transformative impact we've had on small businesses across Canada. Our portfolio highlights our expertise in web design,
@@ -44,6 +44,7 @@ export default function Portfolio() {
                      SEO case studies, business transformation, Canadian small businesses, technology impact, portfolio showcase,
                       innovative solutions, client success stories, industry variety, Saskatoon web agency, technology excellence." />
                 </Helmet>
+               
             <section className='flex flex-col pt-[250px] mid:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0 mid:pt-0'>
                 <div className='flex flex-col gap-2'>
                     <h1 className={`font-serif font-bold text-5xl leading-normal pl-4 text-left text-[#F9F9F9] sm:text-center mid:text-left ${isVisible ? 'slide-in-left' : ''}`}>

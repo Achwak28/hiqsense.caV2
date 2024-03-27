@@ -7,8 +7,7 @@ import { Helmet } from 'react-helmet-async'
 const Pricing = () => {
   return (
     <div>
-      
-      <Helmet>
+       <Helmet>
         <title> Pricing - Hiqsense Smart Systems: Affordable, Tailored Technology Packages</title>
         <meta name= "description" content="Unlock exceptional value with Hiqsense Smart Systems' pricing plans, perfectly crafted for small businesses
          in Canada. Our pricing page details various budget-friendly packages that combine services like web design,
@@ -19,6 +18,7 @@ const Pricing = () => {
              IT support pricing, budget-friendly solutions, customized service packages, 
              business technology deals, Saskatoon web agency, value-for-money services." />
       </Helmet>
+     
     <PricingHero />
     <PricingPlans />
     <ContactUs />

@@ -4,7 +4,7 @@ import Questions from "./Questions/Questions";
 import FAQFooter from "./FAQFooter/FAQFooter";
 import { faq_questions } from "../../../constants";
 import { Helmet } from "react-helmet-async";
-
+ 
 const FAQ = () => {
   const allQuestions = faq_questions.flatMap((section) => section.questions);
   const [questionsList, setQuestionsList] = useState(allQuestions);
@@ -30,8 +30,7 @@ const FAQ = () => {
 
   return (
     <div>
-      
-      <Helmet>
+       <Helmet>
         <title>FAQ - Hiqsense Smart Systems: Answers to Your Tech Queries</title>
         <meta name= "description" content="Find quick and clear answers to common questions about Hiqsense Smart Systems'
          services on our FAQ page. Covering topics from web design, SEO, graphic design, to email hosting and IT support,
@@ -43,6 +42,7 @@ const FAQ = () => {
            service process explanation, technology solution details, Saskatoon tech agency,
             business technology insights." />
       </Helmet>
+     
       <FAQHero onSearchQuestion={searchQuestion} />
       <Questions questions={questionsList} onSearch={userIsSearching} />
       <FAQFooter />

@@ -29,7 +29,7 @@
   .faq-questions-container .questions-titles {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
   }
   .faq-questions-container .questions-titles .questions-titles-items {
